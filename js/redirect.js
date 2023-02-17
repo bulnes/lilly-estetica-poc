@@ -28,13 +28,14 @@
             <a href="index.html" 
                rel="noopener" 
                title="Acessar o site Lilly Estética" 
-               class="lilly-redirect__cta lilly-redirect__cta--lilly">
+               class="lilly-redirect__cta lilly-redirect__cta--lilly"
+               data-lilly-redirect-stay>
               Unidades Lilly Estética
             </a>
 
             <span>ou</span>
 
-            <a href="https://lillymed.com.br" 
+            <a href="https://lilly-med-poc.vercel.app/?redirect=false" 
                rel="noopener" 
                title="Acessar o site Lilly Med" 
                class="lilly-redirect__cta lilly-redirect__cta--jk">
@@ -72,10 +73,16 @@
     localStorage.setItem(storageKey, JSON.stringify({ lastAccess }));
   };
 
-  if (isTimeToShowModal()) {
+  if (!window.location.search.includes("redirect=false")) {
     loadCss();
     createHTML();
-  }
 
-  setTimeAccessed();
+    const stay = document.querySelector("[data-lilly-redirect-stay]");
+    stay.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const modalContainer = document.querySelector(".lilly-redirect");
+      modalContainer.remove();
+    });
+  }
 })();
