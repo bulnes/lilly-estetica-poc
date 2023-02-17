@@ -1,0 +1,39 @@
+<script>
+  function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+      return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+      return "Android";
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      return "iOS";
+    }
+
+    return "unknown";
+  }
+
+  var device = getMobileOperatingSystem();
+
+  if (device == "Android") {
+    window.location.replace(
+      "https://play.google.com/store/apps/details?id=br.com.lillyestetica.app&hl=pt"
+    );
+  } else if (device == "iOS") {
+    window.location.replace(
+      "https://apps.apple.com/br/app/lilly-app/id1607382354"
+    );
+  } else {
+    window.location.replace(
+      "/app.html"
+    );
+  }
+</script>
+
+<div id="unknown" style="visibility: hidden">Dispositivo não suportado.</div>

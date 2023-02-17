@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Brandon-black';
+  src: url('/catalogo/resources/fonts/BrandonText-Black.otf');
+}
+
+.font-brandon-black {
+  font-family: Brandon-black, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-black-italic';
+  src: url('/catalogo//resources/fonts/BrandonText-BlackItalic.otf');
+}
+
+.font-brandon-black-italic {
+  font-family: Brandon-black-italic, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-bold';
+  src: url('/catalogo/resources/fonts/BrandonText-Bold.otf');
+}
+
+.font-brandon-bold {
+  font-family: Brandon-bold, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-bold-italic';
+  src: url('/catalogo/resources/fonts/BrandonText-BoldItalic.otf');
+}
+
+.font-brandon-bold-italic {
+  font-family: Brandon-bold-italic, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-light';
+  src: url('/catalogo/resources/fonts/BrandonText-Light.otf');
+}
+
+.font-brandon-light {
+  font-family: Brandon-light, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-light-italic';
+  src: url('/catalogo/resources/fonts/BrandonText-LightItalic.otf');
+}
+
+.font-brandon-light-italic {
+  font-family: Brandon-light-italic, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-medium';
+  src: url('/catalogo/resources/fonts/BrandonText-Medium.otf');
+}
+
+.font-brandon-medium {
+  font-family: Brandon-medium, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-medium-italic';
+  src: url('/catalogo/resources/fonts/BrandonText-MediumItalic.otf');
+}
+
+.font-brandon-medium-italic {
+  font-family: Brandon-medium-italic, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-regular';
+  src: url('/catalogo/resources/fonts/BrandonText-Regular.otf');
+}
+
+.font-brandon-regular {
+  font-family: Brandon-regular, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Brandon-regular-italic';
+  src: url('/catalogo/resources/fonts/BrandonText-RegularItalic.otf');
+}
+
+
+.font-brandon-regular-italic {
+  font-family: Brandon-regular-italic, Arial, Helvetica, sans-serif;
+}

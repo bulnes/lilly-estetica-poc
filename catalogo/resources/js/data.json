@@ -1,0 +1,680 @@
+{
+    "productsInfo": [{
+            "id": 1,
+            "title": "Xô Celulite",
+            "subtitle": "12 sessões de Radiofrequência Posterior de Coxa + Glúteos + Culote",
+            "popUpDescription": "Combate à celulite e flacidez. Através de ondas de radiofrequência de alta tecnologia, promove aquecimento profundo e confortável das camadas da pele, destruindo as células de gordura e trazendo significativa redução de medidas e remodelagem do contorno corporal. ",
+            "numberSessionsResult": "12 sessões",
+            "timeSession": "30 minutos",
+            "intervalSession": "15 dias",
+            "treatmentBenefits": [
+                "Combate a celulite",
+                "Redução de medidas e gordura localizada",
+                "Remodelagem do contorno corporal",
+                "Melhora da Flacidez e aspecto geral da pele",
+                "Proporciona pele mais firme e macia",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/osVpxJ2ew24",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/pacotes/xo_celulite/xo_celulite_01.png",
+                "/catalogo/resources/images/pacotes/xo_celulite/xo_celulite_02.png",
+                "/catalogo/resources/images/pacotes/xo_celulite/xo_celulite_03.png"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Muscular Fit",
+            "subtitle": "10 sessões de Fortalecimento Muscular + 6 sessões de Radiofrequência",
+            "popUpDescription": "A combinação das ondas eletromagnéticas para contração muscular, fortalecem e definem os músculos. Enquanto as ondas de radiofrequência combatem a gordura localizada, a flacidez de pele e auxiliam na redução de medidas.",
+            "numberSessionsResult": "10 + 6 sessões",
+            "timeSession": "30 minutos",
+            "intervalSession": "2x/semana",
+            "treatmentBenefits": [
+                "Fortalecimento muscular",
+                "Definição muscular",
+                "Grandes músculos beneficiados",
+                "Glúteos, abdômen, coxas, panturrilhas e braços",
+                "Redução de medidas",
+                "Gordura localizada",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/DNViWOuK7UE",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/pacotes/muscular_fit/muscular_fit_01.png",
+                "/catalogo/resources/images/pacotes/muscular_fit/muscular_fit_02.png",
+                "/catalogo/resources/images/pacotes/muscular_fit/muscular_fit_03.png"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Abdômen dos Sonhos",
+            "subtitle": "10 sessões de Fortalecimento Muscular + 6 sessões de Radiofrequência",
+            "popUpDescription": "A combinação das ondas eletromagnéticas para contração muscular, fortalecem e definem os músculos. Enquanto as ondas de radiofrequência combatem a gordura localizada, a flacidez de pele e auxiliam na redução de medidas.",
+            "numberSessionsResult": "10 + 6 sessões",
+            "timeSession": "30 minutos",
+            "intervalSession": "2x/semana",
+            "treatmentBenefits": [
+                "Fortalecimento muscular",
+                "Definição muscular",
+                "Redução de medidas",
+                "Redução de gordura localizada",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/Ikl0bJwHTKY",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/pacotes/abdomen_dos_sonhos_fit/abdomen_dos_sonhos_fit_01.png",
+                "/catalogo/resources/images/pacotes/abdomen_dos_sonhos_fit/abdomen_dos_sonhos_fit_02.png",
+                "/catalogo/resources/images/pacotes/abdomen_dos_sonhos_fit/abdomen_dos_sonhos_fit_03.png"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Adeus Melasma",
+            "subtitle": "10 sessões de Melasma + 2 sessões de Hollywood Peel",
+            "popUpDescription": "O poder do laser Q-Switched traz eficácia, conforto e verdadeira ação clareadora para melasmas e melanoses. Atavés da morte dos melanócitos (células escuras), é possível tratar melasmas de tamanhos e graus diferentes, sem downtime e progressivo clareamento.",
+            "numberSessionsResult": "10 + 2 sessões",
+            "timeSession": "30 minutos",
+            "intervalSession": "15 dias",
+            "treatmentBenefits": [
+                "Clareamento de melasmas",
+                "Renovação celular",
+                "Fechamento dos poros",
+                "Estimula a síntese de colágeno e elastina",
+                "Pele suave e macia",
+                "Melhora a textura e brilho da pele",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/pa02E8sKCRk",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/pacotes/adeus_melasma/adeus_melasma_01.png",
+                "/catalogo/resources/images/pacotes/adeus_melasma/adeus_melasma_02.png",
+                "/catalogo/resources/images/pacotes/adeus_melasma/adeus_melasma_03.png"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Lifiting Facial",
+            "subtitle": "1 sessão de Ultraformer Full Face + 6 sessões de Radiofrequência Facial",
+            "popUpDescription": "O melhor lifting não invasivo do mundo é feito pelo nosso Ultraformer III, um ultrassom microfocado capaz de combater a flacidez muscular e da pele. O tratamento ainda é complementado por sessões de radiofrequência, outro poderoso rejuvenescedor.",
+            "numberSessionsResult": "1 + 6 sessões",
+            "timeSession": "90/30 min",
+            "intervalSession": "30/15 dias",
+            "treatmentBenefits": [
+                "Combate à flacidez muscular",
+                "Penetra até a fáscia muscular (SMAS)",
+                "Devolve o contorno da face",
+                "Reduz a gordura da papada",
+                "Promove efeito lifting duradouro",
+                "Deixa a pele mais firme",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/xjNAspWnWkc",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/pacotes/ultra_rejuvenescimento_facial/ultra_rejuvenescimento_facial_01.png",
+                "/catalogo/resources/images/pacotes/ultra_rejuvenescimento_facial/ultra_rejuvenescimento_facial_02.png",
+                "/catalogo/resources/images/pacotes/ultra_rejuvenescimento_facial/ultra_rejuvenescimento_facial_03.png"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Lifting Injetável",
+            "subtitle": "2 sessões de Skin Booster + 3 sessões de Rejuvenescimento 7D",
+            "popUpDescription": "Rejuvenescimento facial rápido e duradouro graças à ação hidratante, intensa e profunda do ácido hialurônico não reticulado. O tratamento ainda conta com sessões de Rejuvenescimento 7D que clareia a pele, fecha os poros e atenua as rugas.",
+            "numberSessionsResult": "2 + 3 sessões",
+            "timeSession": "30/60 min.",
+            "intervalSession": "30/15 dias",
+            "treatmentBenefits": [
+                "Hidratação profunda",
+                "Alisamento da superfície da pele",
+                "Melhora da elasticidade e tônus da pele",
+                "Corrige rugas e sulcos",
+                "Combate à flacidez tissular",
+                "Clareia manchas",
+                "Uniformiza o tom da pele"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/aaIrkEG5ABQ",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/pacotes/lifting_injetavel/lifting_injetavel_01.png",
+                "/catalogo/resources/images/pacotes/lifting_injetavel/lifting_injetavel_02.png",
+                "/catalogo/resources/images/pacotes/lifting_injetavel/lifting_injetavel_03.png"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Bigode Chinês",
+            "subtitle": "1 sessão de Ultraformer inferior de face + 1 sessão de Skinbooster ",
+            "popUpDescription": "O Ultraformer aplicado na face inferior promove verdadeira ancoragem muscular dessa região. Suaviza o sulco do Bigode Chinês e o Skinbooster complementa o tratamento com hidratação profunda e discreta volumização do local. ",
+            "numberSessionsResult": "1 + 1 sessão",
+            "timeSession": "45/30 min.",
+            "intervalSession": "30 dias",
+            "treatmentBenefits": [
+                "Ancoragem muscular",
+                "Melhora do contorno facial",
+                "Firma a pele",
+                "Suaviza o sulco do Bigode Chinês",
+                "Hidratação e iluminação da face"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/iR5bzkuaudY",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/pacotes/bigode_chines/bigode_chines_01.png",
+                "/catalogo/resources/images/pacotes/bigode_chines/bigode_chines_02.png",
+                "/catalogo/resources/images/pacotes/bigode_chines/bigode_chines_03.png"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Estrias",
+            "subtitle": "Q-Plus EVO - Um poderoso laser Q-Switched usado para o tratamento de estrias brancas e vermelhas",
+            "popUpDescription": "Trata a flacidez e as estrias de áreas corporais como: abdômen, glúteos, culotes, flancos e mamas. Tratamento a laser que consiste no aquecimento controlado da área, induzindo a produção de colágeno, renovação da pele e, consequentemente, redução das estrias.",
+            "numberSessionsResult": "4 a 10 sessões",
+            "timeSession": "20 a 30 minutos",
+            "intervalSession": "30 dias",
+            "treatmentBenefits": [
+                "Renovação tecidual",
+                "Melhora do aspecto da pele",
+                "Promove clareamento das estrias vermelhas",
+                "Redução de áreas estriadas e estrias brancas",
+                "Firma a pele"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/KrtiCQCDazI",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/estrias/estrias_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/estrias/estrias_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/estrias/estrias_03.png"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Cicatrizes de Acne",
+            "subtitle": "Correção e alisamento do relevo da pele para tratamento de cicatrizes e irregularidades",
+            "popUpDescription": "A aplicação do laser em toda a face, promove uma benéfica reação inflamatória e estimula a produção de colágeno e elastina. Esse processo ajuda no alisamento do relevo da face pois destrói a fibrose das cicatrizes causadas pela Acne do passado.",
+            "numberSessionsResult": "2 a 6 sessões",
+            "timeSession": "45 minutos",
+            "intervalSession": "30 dias",
+            "treatmentBenefits": [
+                "Melhora do relevo superficial da pele",
+                "Alisamento da superfície da pele",
+                "Pele mais fina e suave",
+                "Fechamento dos poros",
+                "Estimula a produção de colágeno",
+                "Uniformiza o tom da pele"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/Tian2f7_7yc",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/cicatrizes_de_acne/cicatrizes_de_acne_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/cicatrizes_de_acne/cicatrizes_de_acne_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/cicatrizes_de_acne/cicatrizes_de_acne_03.png"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Melasmas",
+            "subtitle": "Laser Fotoacústico para clareamento progressivo e duradouro das manchas melanicas.",
+            "popUpDescription": "O poder do laser Q-Switched traz eficácia, conforto e verdadeira ação clareadora para melasmas e melanoses. Atavés da morte dos melanócitos (células escuras), é possível tratar melasmas de tamanhos e graus diferentes, sem downtime e progressivo clareamento.",
+            "numberSessionsResult": "10 sessões/média",
+            "timeSession": "20 a 30 minutos",
+            "intervalSession": "15 dias",
+            "treatmentBenefits": [
+                "Clareamento de melasmas",
+                "Renovação celular",
+                "Fechamento dos poros",
+                "Estimula a síntese de colágeno e elastina",
+                "Pele suave e macia",
+                "Melhora a textura e brilho da pele",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/ThKoO2EGcgo",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/melasmas/melasmas_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/melasmas/melasmas_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/melasmas/melasmas_03.png"
+            ]
+        },
+        {
+            "id": 11,
+            "title": "Rejuvenescimento 7D",
+            "subtitle": "Laser Fotoacústico para flacidez tissular, clareamento de manchas, tratamento de rugas e ancoragem facial.",
+            "popUpDescription": "Protocolo mais nobre do Q-Plus EVO. Combina 7 etapas de tratamento que combate a flacidez tissular, estimula a neocolagênese, clareia a pele, trata rugas e sulcos, estimula sustentação e ancoragem facial, aumenta a densidade labial e fecha os poros.",
+            "numberSessionsResult": "4 sessões",
+            "timeSession": "60 minutos",
+            "intervalSession": "15 dias",
+            "treatmentBenefits": [
+                "Renovação celular",
+                "Fechamento dos poros",
+                "Estimula a síntese de colágeno e elastina",
+                "Diminui rugas e linhas e de expressão",
+                "Pele suave e macia",
+                "Melhora a textura e brilho da pele",
+                "Uniformiza o tom da pele",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/P44pkdtG2qg",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/rejuvenescimento_7d/rejuvenescimento_7d_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/rejuvenescimento_7d/rejuvenescimento_7d_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/rejuvenescimento_7d/rejuvenescimento_7d_03.png"
+            ]
+        },
+        {
+            "id": 12,
+            "title": "Ultraformer Full Face",
+            "subtitle": "O melhor lifting não invasivo do mundo. Ultrassom micro e macrofocado",
+            "popUpDescription": "O mais famoso protocolo do Ultraformer, o modo Full Face une protocolos para rejuvenescimento de pálpebras, terço médio e inferior de face, contorno facial e papada. Tratamento de flacidez muscular e tissular, ancoragem muscular e neocolagenese. ",
+            "numberSessionsResult": "1 a 3 sessões",
+            "timeSession": "20 a 30 minutos",
+            "intervalSession": "6 meses",
+            "treatmentBenefits": [
+                "Efeito lifting facial e corporal",
+                "Ancoragem e sustentação muscular",
+                "Estimula a síntese de colágeno e elastina",
+                "Diminui rugas e linhas e de expressão",
+                "Pele suave e macia",
+                "Melhora a textura e brilho da pele",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/7ovCtt5cGNA",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/ultraformer_full_face/ultraformer_full_face_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/ultraformer_full_face/ultraformer_full_face_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/ultraformer_full_face/ultraformer_full_face_03.png"
+            ]
+        },
+        {
+            "id": 13,
+            "title": "Hollywood Peel",
+            "subtitle": "O Peeling das Celebridades, é o tratamento facial mais queridinho das famosas e dos tapetes vermelhos.",
+            "popUpDescription": "Laser fotoacústico para renovação celular, fechamento de poros, clareamento e rejuvenescimento da pele. O grande segredo desse tratamento, está na combinação entre a máscara de carvão ativado e o laser, que atuam para potencializar os resultados no rosto. ",
+            "numberSessionsResult": "4 a 10 sessões",
+            "timeSession": "20 a 30 minutos",
+            "intervalSession": "15 dias",
+            "treatmentBenefits": [
+                "Sintetiza colágeno e elastina",
+                "Uniformiza o tom da pele",
+                "Clareia manchas superficiais",
+                "Controla a oleosidade da pele",
+                "Limpa e fecha os poros",
+                "Pode ser aplicado antes de eventos",
+                "Ilumina a pele",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/Hs4-LYJPif0",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/hollywood_peel/hollywood_peel_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/hollywood_peel/hollywood_peel_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/hollywood_peel/hollywood_peel_03.png"
+            ]
+        },
+        {
+            "id": 14,
+            "title": "Radiofrequência por Área",
+            "subtitle": "Tecnologia 3 Deep para combate a flacidez e rejuvenescimento facial e corporal",
+            "popUpDescription": "A tecnologia 3 Deep da Endymed aquece mais intensa e profundamente as camadas da pele, o que possibilita maior eficácia em tratamentos para flacidez, rejuvenescimento, rugas, estrias, celulites e remodelagem do contorno corporal e facial.",
+            "numberSessionsResult": "6 a 10 sessões",
+            "timeSession": "30 minutos",
+            "intervalSession": "15 dias",
+            "treatmentBenefits": [
+                "Melhora da flacidez e aspecto geral da pele",
+                "Redução de medidas e gordura localizada",
+                "Remodelagem do contorno corporal e facial",
+                "Combate a celulite",
+                "Proporciona pele mais firme e macia",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/jNpiCY5T12c",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/radiofrequencia/radiofrequencia_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/radiofrequencia/radiofrequencia_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/radiofrequencia/radiofrequencia_03.png"
+            ]
+        },
+        {
+            "id": 15,
+            "title": "Fortalecimento Muscular",
+            "subtitle": "Ondas eletromagnéticas para hipertrofia e definição muscular",
+            "popUpDescription": "O Z-Field conta com uma tecnologia inovadora que, através de contrações musculares, promove fortalecimento e definição muscular verdadeiros. Seu maior foco é trabalhar a saúde do músculo, proporcionando força e resistência. ",
+            "numberSessionsResult": "6 a 12 sessões",
+            "timeSession": "20 a 30 minutos",
+            "intervalSession": "6 meses",
+            "treatmentBenefits": [
+                "Fortalecimento e hipertrofia muscular",
+                "Definição muscular da área tratada",
+                "Aumento da resistência muscular",
+                "Melhora da postura e condicionamento corporal",
+                "Grandes músculos podem ser tratados",
+                "Abdômen, glúteos, coxas, panturrilhas e braços",
+                "Aumento do metabolismo corporal",
+                "Redução da gordura corporal"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/-eU-t6z28uI",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/fortalecimento_muscular/fortalecimento_muscular_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/fortalecimento_muscular/fortalecimento_muscular_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/fortalecimento_muscular/fortalecimento_muscular_03.png"
+            ]
+        },
+        {
+            "id": 16,
+            "title": "Skinbooster",
+            "subtitle": "Ácido hialurônico para hidratação profunda e alisamento da pele",
+            "popUpDescription": "Rejuvenescimento facial rápido e duradouro graças à ação hidratante, intensa e profunda do ácido hialurônico não reticulado. Promove hidratação de dentro para fora. Alisa e firma a pele, melhora a elasticidade e trata sinais de envelhecimento e rugas.",
+            "numberSessionsResult": "1 a 3 sessões",
+            "timeSession": "20 a 30 minutos",
+            "intervalSession": "6 meses",
+            "treatmentBenefits": [
+                "Hidratação profunda",
+                "Alisamento da superfície da pele",
+                "Melhora da eleasticidade e tônus da pele",
+                "Corrige rugas e sulcos",
+                "Combate à flacidez tissular",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/XYGrN7oWgaU",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/tratamentos_avulsos/skinbooster/skinbooster_01.png",
+                "/catalogo/resources/images/tratamentos_avulsos/skinbooster/skinbooster_02.png",
+                "/catalogo/resources/images/tratamentos_avulsos/skinbooster/skinbooster_03.png"
+            ]
+        },
+        {
+            "id": 17,
+            "title": "Alex Light EVO / Dueto EVO",
+            "subtitle": "Laser de Alexandrita 755nm para depilação definitiva.",
+            "popUpDescription": "Melhor tecnologia em depilação a laser definitiva. Um laser extremamente veloz, eficaz, pois extermina os pêlos pela raiz, higiênico, quase não encosta na pele e praticamente indolor pois possui um sistema de resfriamento integrado.",
+            "numberSessionsResult": "6 a 12 sessões",
+            "timeSession": "30 minutos (clubes)",
+            "intervalSession": "30 a 90 dias",
+            "treatmentBenefits": [
+                "Liberdade de não ter mais pelos",
+                "Pele suave, macia e lisa definitivamente",
+                "Fim da foliculite",
+                "Clareamento da pele",
+                "Todas as áreas do corpo (exceto sobrancelhas)",
+                "Feminino e masculino"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/dHYbwmklohQ",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/equipamentos/alex_light_evo/AlexLight01.png",
+                "/catalogo/resources/images/equipamentos/alex_light_evo/AlexLight-1.png",
+                "/catalogo/resources/images/equipamentos/alex_light_evo/AlexLight-2.png"
+            ]
+        },
+        {
+            "id": 18,
+            "title": "Q-PLus EVO",
+            "subtitle": "Laser Q-Switched para rejuvenescimento fotoacústico e remoção de tatuagens",
+            "popUpDescription": "Poderosa plataforma de laser Q-Switched, última geração em aplicabilidades de rejuvenescimento fotoacústico para tratamento de manchas, rugas, flacidez facial e corporal, estrias, cicatrizes e remoção de tatuagens.",
+            "numberSessionsResult": "Variável",
+            "timeSession": "30 minutos em média",
+            "intervalSession": "15 dias em média",
+            "treatmentBenefits": [
+                "Melhora da flacidez e aspecto geral da pele",
+                "Diminuição de sulcos e rugas",
+                "Clareamento de manchas",
+                "Uniformização do tom da pele",
+                "Alisamento do relevo da pele (cicatrizes e estrias)",
+                "Fechamento de poros",
+                "Controle da oleosidade e PH da pele",
+                "Luminosidade e vitalidade da pele",
+                "Destruição dos pigmentos das tatuagens"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/Qmw-sloknLI",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/equipamentos/q_plus_evo/q-plus01.png",
+                "/catalogo/resources/images/equipamentos/q_plus_evo/q-plus02.png",
+                "/catalogo/resources/images/equipamentos/q_plus_evo/q-plus03.png"
+            ]
+        },
+        {
+            "id": 19,
+            "title": "Endymed",
+            "subtitle": "Radiofrequência 3 Deep para rejuvenescimento facial e corporal",
+            "popUpDescription": "A tecnologia 3 Deep da Endymed aquece mais intensa e profundamente as camadas da pele, o que possibilita maior eficácia em tratamentos para flacidez, rejuvenescimento, rugas, estrias, celulites e remodelagem do contorno corporal e facial.",
+            "numberSessionsResult": "6 a 10 sessões",
+            "timeSession": "30 minutos",
+            "intervalSession": "Em média 15 dias",
+            "treatmentBenefits": [
+                "Melhora da flacidez e aspecto geral da pele",
+                "Redução de medidas e gordura localizada",
+                "Remodelagem do contorno corporal e facial",
+                "Combate a celulite",
+                "Proporciona pele mais firme e macia",
+                "Não tem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/h06Z37UitKw",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/equipamentos/endymed/endymed01.png",
+                "/catalogo/resources/images/equipamentos/endymed/endymed02.png",
+                "/catalogo/resources/images/equipamentos/endymed/endymed03.png"
+            ]
+        },
+        {
+            "id": 20,
+            "title": "Ultraformer III",
+            "subtitle": "Ultrassom Micro e Macrofocado. O Melhor lifting não invasivo do mundo.",
+            "popUpDescription": "Poderosa tecnologia para rejuvenescimento facial não invasivo. O único capaz de atingir o SMAS (Fáscia Muscular), e faz um verdadeiro rejuvenescimento profundo e remodelagem de colágeno. Nos protocolos corporais, se destaca por tratar efetivamente gordura localizada e flacidez tissular.",
+            "numberSessionsResult": "1 a 3 sessões",
+            "timeSession": "20 a 30 minutos",
+            "intervalSession": "mensal, semestral ou anual",
+            "treatmentBenefits": [
+                "Efeito lifting facial",
+                "Ancoragem muscular",
+                "Melhora do contorno facial e corporal",
+                "Redução da papada",
+                "Redução da gordura localizada corporal",
+                "Não invasivo",
+                "Sem downtime"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/46ifjtCFPMU",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/equipamentos/ultraformerlll/ultraformer01.png",
+                "/catalogo/resources/images/equipamentos/ultraformerlll/ultraformer02.png",
+                "/catalogo/resources/images/equipamentos/ultraformerlll/ultraformer03.png"
+            ]
+        },
+        {
+            "id": 21,
+            "title": "Z-Field Dual",
+            "subtitle": "Fortalecimento muscular por ondas eletromagnéticas",
+            "popUpDescription": "Inovadora Tecnologia Tetanic Motion System, que faz o maior número de contrações musculares possíveis, em pouco tempo. Fortalece, define, trabalha a verdadeira saúde do músculo, pois atinge fibras tipo 1 e tipo 2, sem downtime e totalmente indolor.",
+            "numberSessionsResult": "6 a 12 sessões",
+            "timeSession": "30 minutos",
+            "intervalSession": "48 horas",
+            "treatmentBenefits": [
+                "Fortalecimento muscular",
+                "Aumento do tônus muscular",
+                "Definição e hipertrofia",
+                "Melhora do cortorno corporal",
+                "Aumento o metabolismo local"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/mqEaMk2LIg4",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/equipamentos/z_field/Z-Field01.png",
+                "/catalogo/resources/images/equipamentos/z_field/Z-Field02.png",
+                "/catalogo/resources/images/equipamentos/z_field/Z-Field03.png"
+            ]
+        },
+        {
+            "id": 22,
+            "title": "Lilly Club",
+            "subtitle": "Tratamentos estéticos faciais, corporais.",
+            "popUpDescription": "Clube mais versátil da Lilly. O cliente se associa, paga mensalidades fixas e faz 1 ou 2 sessões por mês de 30 minutos de nossos tratamentos inclusos no Lilly Club. Membros do clube têm descontos exclusivos em todos os tratamentos estéticos da Lilly.",
+            "numberSessionsResult": "1 ou 2 por mês",
+            "timeSession": "45 minutos",
+            "intervalSession": "30 dias",
+            "treatmentBenefits": [
+                "Poder se cuidar o ano todo",
+                "Tratamentos faciais e corporais",
+                "Flacidez, rugas, manchas",
+                "Gordura localizada, celulite",
+                "Redução de medidas",
+                "Remoção de tatuagens",
+                "Preços exclusivos nos outros tratamentos"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/DGaCKIKTxmg",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/clubes/lilly_club/LillyClub01.png",
+                "/catalogo/resources/images/clubes/lilly_club/LillyClub02.png",
+                "/catalogo/resources/images/clubes/lilly_club/LillyClub03.png"
+            ]
+        },
+        {
+            "id": 23,
+            "title": "Lilly Boto Club",
+            "subtitle": "Tratamentos com aplicação de toxina botulínica",
+            "popUpDescription": "No Lilly Boto Club, o cliente se associa, paga mensalidades fixas e aplica toxina botulínica, de primeiríssima qualidade uma ou duas vezes por ano,   em uma, duas ou três regiões. São 6 planos de excelente custo benefício e que possibilitam o tratamento de rugas dinâmicas linhas de expressão.",
+            "numberSessionsResult": "1, 2 ou 3 regiões",
+            "timeSession": "45 minutos",
+            "intervalSession": "Depende do plano",
+            "treatmentBenefits": [
+                "Tratamento de rugas e linhas de expressão",
+                "Atendimentos individualizados",
+                "Profissionais qualificadas e capacitadas",
+                "Aplicações seguras e personalizadas",
+                "Você, sem rugas o ano inteiro",
+                "Testa, pés de galinha, rugas frontais",
+                "Sorriso gengival, nariz de coelho, efeito Nefertit",
+                "Sobrancelhas, axilas e mãos como hiperidrose em injetáveis"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/Yfb_rerJR3A",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/clubes/lilly_boto_club/LillyBotoClub01.png",
+                "/catalogo/resources/images/clubes/lilly_boto_club/LillyBotoClub02.png",
+                "/catalogo/resources/images/clubes/lilly_boto_club/LillyBotoClub03.png"
+            ]
+        },
+        {
+            "id": 24,
+            "title": "Lilly Laser Club",
+            "subtitle": "Depilação a laser ilimitada no corpo todo, feminino e masculino",
+            "popUpDescription": "Clube exclusivo para depilação a laser definitiva. O cliente se associa, paga mensalidades fixas e faz 30 minutos de depilação a laser, nas áreas onde quiser, a cada 45 dias. Membros do clube ainda tem descontos exclusivos nos outros tratamentos estéticos da Lilly.",
+            "numberSessionsResult": "30 minutos a cada 45 dias",
+            "timeSession": "45 minutos",
+            "intervalSession": "45 dias",
+            "treatmentBenefits": [
+                "Liberdade de não ter mais pelos",
+                "Pele suave, macia e lisa definitivamente",
+                "Fim da foliculite",
+                "Clareamento da pele",
+                "Todas as áreas do corpo (exceto sobrancelhas)",
+                "Feminino e masculino"
+            ],
+            "srcVideo": "https://www.youtube.com/embed/CF8XMDKFKzQ",
+            "beforeAfterPhotos": [
+                "/catalogo/resources/images/clubes/lilly_laser_club/LillyLaserClub01.png",
+                "/catalogo/resources/images/clubes/lilly_laser_club/LillyLaserClub02.png",
+                "/catalogo/resources/images/clubes/lilly_laser_club/LillyLaserClub03.png"
+            ]
+        }
+    ],
+    "linksNavBar": [
+         {
+            "title": "Clubs Lilly",
+            "subLinks": [{
+                    "id": 22,
+                    "title": "Lilly Club"
+                },
+                {
+                    "id": 23,
+                    "title": "Lilly Boto Club"
+                },
+                {
+                    "id": 24,
+                    "title": "Lilly Laser Club"
+                }
+            ]
+        },
+        {
+            "title": "Pacotes",
+            "subLinks": [{
+                    "id": 1,
+                    "title": "Xô Celulite"
+                },
+                {
+                    "id": 3,
+                    "title": "Abdômen dos Sonhos"
+                },
+                {
+                    "id": 4,
+                    "title": "Adeus Melasma"
+                },
+                {
+                    "id": 5,
+                    "title": "Lifiting Facial"
+                }
+            ]
+        },
+        {
+            "title": "Tratamentos avulsos",
+            "subLinks": [{
+                    "id": 8,
+                    "title": "Estrias"
+                },
+                {
+                    "id": 9,
+                    "title": "Cicatrizes de Acne"
+                },
+                {
+                    "id": 10,
+                    "title": "Melasmas"
+                },
+                {
+                    "id": 11,
+                    "title": "Rejuvenescimento 7D"
+                },
+                {
+                    "id": 12,
+                    "title": "Ultraformer Full Face"
+                },
+                {
+                    "id": 13,
+                    "title": "Hollywood Peel"
+                },
+                {
+                    "id": 14,
+                    "title": "Radiofrequência por área"
+                },
+                {
+                    "id": 15,
+                    "title": "Fortalecimento Muscular"
+                },
+                {
+                    "id": 16,
+                    "title": "Skinbooster"
+                }
+            ]
+        },
+        {
+            "title": "Indique e ganhe",
+            "href": "/catalogo/nominateWin.html"
+        },
+        {
+            "title": "Indique e ganhe",
+            "href": "/catalogo/nominateWin.html"
+        },
+        {
+            "title": "Equipamentos",
+            "subLinks": [{
+                    "id": 17,
+                    "title": "Alex Light EVO / Dueto EVO"
+                },
+                {
+                    "id": 18,
+                    "title": "Q-Plus EVO"
+                },
+                {
+                    "id": 19,
+                    "title": "Endymed"
+                },
+                {
+                    "id": 20,
+                    "title": "Ultraformer III"
+                },
+                {
+                    "id": 21,
+                    "title": "Z-Field"
+                }
+            ]
+        }
+    ]   
+}

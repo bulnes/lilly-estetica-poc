@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /*.html$
+Disallow: /*.pdf$
+Disallow: /indica/200.html
+Sitemap: https://lillyestetica.com.br/sitemap.xml
