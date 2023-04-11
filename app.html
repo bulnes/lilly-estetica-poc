@@ -1039,20 +1039,6 @@
       </div>
     </div>
 
-    <style>
-      .whatsapp-cta {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
-        z-index: 999;
-      }
-    </style>
-    <a href="https://bit.ly/AtendiLillySite" target="_blank" style="border: 0"
-      ><img src="/images/logo-whatsapp-green.svg" class="whatsapp-cta"
-    /></a>
-
     <!-- Start of HubSpot Embed Code -->
     <script
       type="text/javascript"
@@ -1062,5 +1048,16 @@
       src="//js.hs-scripts.com/14506695.js"
     ></script>
     <!-- End of HubSpot Embed Code -->
+
+    <script>
+      var visited = localStorage.getItem("visited-alert-page");
+      if (visited && visited === "true") {
+        localStorage.removeItem("visited-alert-page");
+      } else {
+        var script = document.createElement("script");
+        script.src = "/js/dynamic-components.js";
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>

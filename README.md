@@ -1,1 +1,0 @@
-# lilly-estetica-poc

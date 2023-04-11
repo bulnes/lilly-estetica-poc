@@ -58,6 +58,10 @@
     margin: 0 auto 40px;
   }
 
+  .product-lp--sp .product-lp__cover {
+    margin-top: 80px;
+  }
+
   .product-lp__cover--desktop {
     display: block;
     max-height: 300px;
@@ -278,6 +282,46 @@
   display: none;
 }
 
+.product-lp__cta--dark {
+  background-color: #000000;
+  border-radius: 96.0452px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17.209px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  gap: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__cta--dark {
+    font-size: 19.209px;
+  }
+}
+
+.product-lp__cta--dark img {
+  width: 22px;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__cta--dark img {
+    width: 24px;
+  }
+}
+
+.product-lp__cta--dark.product-lp__cta--fixed {
+  background-color: #FF6074;
+  border-radius: 10px 10px 0px 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 768px) {
   .product-lp__cta--fixed {
     display: flex;
@@ -309,6 +353,22 @@
 @media screen and (min-width: 768px) {
   .whatsapp-cta {
     display: block;
+  }
+
+  .whatsapp-cta--dark {
+    border: 0px;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 17px;
+    right: 16px;
+    z-index: 999;
+    transition: bottom 2s ease 0s;
+    background-color: #ff6074;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -806,5 +866,251 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 48px;
+  }
+}
+
+.product-lp__testimony {
+  background-color: #f7f7f7;
+}
+
+.product-lp__testimony__wrapper {
+  width: calc(100% - 40px);
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.product-lp__testimony__title {
+  font-family: "Brandon Text Light";
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #555c66;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.product-lp__testimony__clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__testimony__clients {
+    flex-direction: row;
+  }
+}
+
+.product-lp__testimony__client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-lp__testimony__client-photo {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.product-lp__testimony__client-text {
+  font-family: "Brandon Text Light";
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #555c66;
+  text-align: center;
+}
+
+.product-lp__testimony__client-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+.product-lp__testimony__client-name strong {
+  font-size: 1rem;
+  font-family: "Brandon Text Bold";
+  font-weight: normal;
+}
+
+.product-lp__testimony__client-name em {
+  font-size: 1rem;
+  font-family: "Brandon Text Light";
+  font-weight: normal;
+  font-style: italic;
+}
+
+.product-lp__empty-footer {
+  background-color: #48546C;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 30px;
+
+  height: 417px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__empty-footer {
+    padding-top: 40px;
+    height: 279px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-lp__empty-footer {
+    padding-top: 73px;
+    height: 480px;
+  }
+}
+
+.product-lp__empty-header {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: -50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__empty-header {
+    margin-bottom: -50px;
+    height: 45.46px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-lp__empty-header {
+    margin-bottom: -80px;
+    height: 78.5px;
+  }
+}
+
+.product-lp__empty-header-wrapper {
+  display: flex;
+  height: 50px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+
+  max-width: 1060px;
+  margin: 0 auto;
+
+  position: relative;
+
+  background-image: url("/images/logo-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  background-position: center center;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__empty-header-wrapper {
+    padding-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-lp__empty-header-wrapper {
+    padding: 0;
+  }
+}
+
+.product-lp__empty-header__logo {
+  aspect-ratio: 83 / 80;
+  width: 100%;
+  height: 80px;
+  margin-top: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__empty-header__logo {
+    height: 95px;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-lp__empty-header__logo {
+    height: 150px;
+    margin-top: 41px;
+  }
+}
+
+.product-lp__empty-header__cta {
+  display: none;
+  margin: 0;
+  border: 1px solid #48495B;
+  font-size: 16px;
+  height: 36px;
+  color: #48495B;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__empty-header__cta {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-lp__empty-header__cta {
+    right: 0;
+    top: 20px;
+  }
+}
+
+.product-lp__alert {
+  background-color: #FF6074;
+  padding: 14px 32.5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  min-height: 60px;
+}
+
+.product-lp__alert span {
+  max-width: 219px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__alert {
+    padding: 15px 32.5px;
+    min-height: 50px;
+  }
+
+  .product-lp__alert span {
+    max-width: 477px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-lp__alert {
+    padding: 15px 0;
+    min-height: 50px;
+    margin-top: 80px;
   }
 }
