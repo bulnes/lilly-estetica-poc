@@ -1,4 +1,4 @@
-(() => {
+const initComponents = () => {
   const globalComponents = ["help"];
 
   // load all global js components
@@ -7,4 +7,6 @@
     $script.src = `/components/${component}/index.js`;
     document.body.appendChild($script);
   });
-})();
+};
+
+initComponents();

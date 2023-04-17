@@ -37,5 +37,88 @@
   top: 14px;
   left: -156px;
 
-  animation: fade-in 1.5s linear both, fade-out 1s linear 10s both;
+  animation: fade-in 1.5s linear 3s both, fade-out 1s linear 13s both;
+}
+
+.help-component-modal-box {
+  display: none;
+
+  background-color: transparent;
+  background-image: url("/components/help/images/help-modal-box.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  height: 327px;
+  width: 332px;
+
+  position: fixed;
+  right: 13px;
+  bottom: 90px;
+  z-index: 1000;
+
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  padding-bottom: 56px;
+  padding-top: 20px;
+}
+
+.help-component-modal-box.active {
+  display: flex;
+}
+
+.help-component-modal-box-close {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  background-color: transparent;
+  background-image: url("/components/help/images/help-modal-box-close-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: -21px;
+}
+
+.help-component-modal-box-link {
+  width: 275px;
+  height: 52px;
+  margin: auto;
+
+  display: block;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.help-component-modal-box-title {
+  width: 231px;
+  height: 33px;
+  margin: auto;
+
+  display: block;
+  background-color: transparent;
+  background-image: url("/components/help/images/help-modal-box-title.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.help-component-modal-box-link:nth-of-type(1) {
+  background-image: url("/components/help/images/help-option-01.png");
+}
+
+.help-component-modal-box-link:nth-of-type(2) {
+  background-image: url("/components/help/images/help-option-02.png");
+}
+
+.help-component-modal-box-link:nth-of-type(3) {
+  background-image: url("/components/help/images/help-option-03.png");
 }

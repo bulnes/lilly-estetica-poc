@@ -1,7 +1,7 @@
-(() => {
+const initHelpComponent = () => {
   const styles = ["keyframes", "help"];
 
-  const scripts = ["_createHelpIcon", "help"];
+  const scripts = ["_createHelpModalBox", "_createHelpIcon", "help"];
 
   styles.forEach((style) => {
     const $link = document.createElement("link");
@@ -15,4 +15,6 @@
     $script.src = `/components/help/scripts/${script}.js`;
     document.body.appendChild($script);
   });
-})();
+};
+
+initHelpComponent();

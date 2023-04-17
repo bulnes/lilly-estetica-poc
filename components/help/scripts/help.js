@@ -1,1 +1,2 @@
-_createHelpIcon();
+const $helpModalBox = _createHelpModalBox();
+_createHelpIcon($helpModalBox);
