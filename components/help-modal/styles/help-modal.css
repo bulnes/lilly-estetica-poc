@@ -35,6 +35,10 @@
   position: relative;
 }
 
+.help-modal-box.help-modal-form-iframe {
+  padding: 0;
+}
+
 .help-modal-box.help-modal-form-response {
   padding: 70px 0;
 }
@@ -52,8 +56,8 @@
 
   display: block;
   position: absolute;
-  right: 12px;
-  top: 8px;
+  right: 0px;
+  top: -32px;
 }
 
 .help-modal-box-link {
@@ -176,4 +180,10 @@
   background-size: contain;
 
   cursor: pointer;
+}
+
+.help-modal-form-iframe {
+  border: 0;
+  border-radius: 16px;
+  width: 304px;
 }

@@ -1,5 +1,6 @@
 const _createHelpModalFormResponse = ($modal, $modalBox) => {
   $modalBox.innerHTML = "";
+  $modalBox.classList.remove("help-modal-form-iframe");
   $modalBox.classList.add("help-modal-form-response");
 
   const $helpModalBoxTitle = document.createElement("div");
