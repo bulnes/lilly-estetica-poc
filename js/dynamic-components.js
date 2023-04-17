@@ -1,5 +1,5 @@
 const initComponents = () => {
-  const globalComponents = ["help"];
+  const globalComponents = ["help", "help-modal"];
 
   // load all global js components
   globalComponents.forEach((component) => {
