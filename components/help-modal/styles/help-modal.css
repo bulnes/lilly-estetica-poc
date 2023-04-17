@@ -185,5 +185,6 @@
 .help-modal-form-iframe {
   border: 0;
   border-radius: 16px;
-  width: 304px;
+  width: 320px;
+  height: 343px;
 }
