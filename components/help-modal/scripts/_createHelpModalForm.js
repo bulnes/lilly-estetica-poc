@@ -1,4 +1,17 @@
 const _createHelpModalForm = ($modal, $modalBox) => {
+  // Load hubspot
+  const $script = document.createElement("script");
+  $script.src = "//js.hsforms.net/forms/embed/v2.js";
+  $script.onload = () => {
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "14506695",
+      formId: "ca6665ba-d56a-4fe3-a1e6-796af3ff8ab8",
+    });
+  };
+
+  document.body.appendChild($script);
+
   $modalBox.innerHTML = "";
 
   const $helpModalBoxTitle = document.createElement("div");
