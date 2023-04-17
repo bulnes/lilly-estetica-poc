@@ -9,4 +9,8 @@ const initComponents = () => {
   });
 };
 
-initComponents();
+if (document.readyState === "complete") {
+  initComponents();
+} else {
+  window.addEventListener("load", initComponents);
+}

@@ -4,7 +4,6 @@ const initHelpModalComponent = () => {
   const scripts = [
     "_createHelpModalFormResponse",
     "_createHelpModalForm",
-    "_createHelpModal",
     "help-modal",
   ];
 

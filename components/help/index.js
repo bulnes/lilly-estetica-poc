@@ -1,7 +1,7 @@
 const initHelpComponent = () => {
   const styles = ["keyframes", "help"];
 
-  const scripts = ["_createHelpModalBox", "_createHelpIcon", "help"];
+  const scripts = ["help"];
 
   styles.forEach((style) => {
     const $link = document.createElement("link");
