@@ -33,13 +33,15 @@ const _createHelpModalBox = function () {
   });
 
   const $helpModalLink2 = document.createElement("a");
-  $helpModalLink2.href = "https://bit.ly/AtendiLillySite";
+  $helpModalLink2.href =
+    "https://lillyestetica.chat.blip.ai/?appKey=bGlsbHlhcHBib3Q6OTliYjZjZTctYWI4NS00Y2Y0LWFmNmEtN2U2MzA3NmUwYjhi";
   $helpModalLink2.title = "Atendimento Lilly";
   $helpModalLink2.target = "_blank";
   $helpModalLink2.classList.add("help-component-modal-box-link");
 
   const $helpModalLink3 = document.createElement("a");
-  $helpModalLink3.href = "https://bit.ly/AtendiLillySite";
+  $helpModalLink3.href =
+    "https://lillyestetica.chat.blip.ai/?appKey=bGlsbHlhcHBib3Q6OTliYjZjZTctYWI4NS00Y2Y0LWFmNmEtN2U2MzA3NmUwYjhi";
   $helpModalLink3.title = "Atendimento Lilly";
   $helpModalLink3.target = "_blank";
   $helpModalLink3.classList.add("help-component-modal-box-link");
