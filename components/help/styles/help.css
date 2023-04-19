@@ -44,12 +44,12 @@
   display: none;
 
   background-color: transparent;
-  background-image: url("/components/help/images/help-modal-box.png");
+  background-image: url("/components/help/images/help-modal-box-big.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 
-  height: 327px;
+  height: 363px;
   width: 332px;
 
   position: fixed;
@@ -60,8 +60,8 @@
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
-  padding-bottom: 56px;
-  padding-top: 20px;
+  padding-bottom: 76px;
+  padding-top: 46px;
 }
 
 .help-component-modal-box.active {
@@ -82,7 +82,7 @@
   display: block;
   position: absolute;
   right: 12px;
-  top: 12px;
+  top: 18px;
 }
 
 .help-component-modal-box-link {
