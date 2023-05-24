@@ -439,7 +439,26 @@
                 App
               </h1>
 
-              <img src="./images/app/banner.png" />
+              <style>
+                .banner-app {
+                  width: auto;
+                  height: auto;
+                  max-width: 330px;
+                  max-height: 175px;
+                }
+                @media screen and (min-width: 768px) {
+                  .banner-app {
+                    max-width: 402px;
+                    max-height: 419px;
+                  }
+                }
+              </style>
+              <img
+                src="./images/app/image-3.png"
+                alt=""
+                class="banner-app"
+                loading="lazy"
+              />
             </div>
 
             <div class="bannerApp__aside-fix app-mobile">
@@ -647,6 +666,7 @@
           </div>
         </div>
 
+        <!-- 
         <div class="sectionApp video">
           <div class="wrapper">
             <div class="sectionApp__container">
@@ -694,6 +714,7 @@
           </div>
           <br /><br />
         </div>
+        -->
 
         <!--div class="sectionApp text">
             <div class="wrapper">
@@ -817,29 +838,19 @@
               </a>
             </li>
             <li>
-              <a href="https://bit.ly/FaleConoscoLilly" target="_blank"
-                >Fale conosco (SAC)</a
-              >
+              <a href="/contato.html">Fale conosco (SAC)</a>
             </li>
             <li>
-              <a href="https://bit.ly/TiredúvidasSacLilly" target="_blank"
-                >Dúvidas</a
-              >
+              <a href="/contato.html">Dúvidas</a>
             </li>
             <li>
-              <a href="https://bit.ly/ReclamaçãoSacLilly" target="_blank"
-                >Reclamações</a
-              >
+              <a href="/contato.html">Reclamações</a>
             </li>
             <li>
-              <a href="https://bit.ly/CancelamentoSacLilly" target="_blank"
-                >Cancelamento</a
-              >
+              <a href="/contato.html">Cancelamento</a>
             </li>
             <li>
-              <a href="https://bit.ly/OuvidoriaSacLilly" target="_blank"
-                >Ouvidoria</a
-              >
+              <a href="/contato.html">Ouvidoria</a>
             </li>
             <li>
               <a href="mailto:atendimento@lillyestetica.com.br" target="_blank"

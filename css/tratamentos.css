@@ -402,22 +402,13 @@
 .product-lp__box {
   background-color: #F7F7F7;
   border-radius: 8px;
-  padding: 28px 27px 21px;
+  padding: 18px 29px;
   display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .product-lp__box>div {
-    max-width: 356px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .product-lp__box {
-    padding-top: 43px;
-    padding-bottom: 44px;
+    padding: 36px 55px;
   }
 }
 
@@ -449,22 +440,22 @@
 .product-lp__box-list {
   color: #55555D;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 15px;
   margin-left: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .product-lp__box-list {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 15px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .product-lp__box-list {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -869,6 +860,267 @@
   }
 }
 
+
+.product-lp__description-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__description-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 646px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__description-section {
+    max-width: 880px;
+  }
+}
+
+.product-lp__description-section__title {
+  font-family: 'Brandon Text';
+  font-style: normal;
+  font-weight: 330;
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__description-section__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__description-section__title {
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 14px;
+  }
+}
+
+.product-lp__description-section__subtitle {
+  font-family: 'Brandon Text';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__description-section__subtitle {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__description-section__subtitle {
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 31px;
+  }
+}
+
+.product-lp__description-section__paragraph {
+  font-family: 'Brandon Text';
+  font-style: normal;
+  font-weight: 330;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 26px;
+}
+
+.product-lp__description-section__paragraph+.product-lp__description-section__paragraph {
+  margin-top: -13px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__description-section__paragraph {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+
+  .product-lp__description-section__paragraph+.product-lp__description-section__paragraph {
+    margin-top: -15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__description-section__paragraph {
+    margin-bottom: 41px;
+  }
+
+  .product-lp__description-section__paragraph+.product-lp__description-section__paragraph {
+    margin-top: -20px;
+  }
+}
+
+.product-lp__faq-section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__faq-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 646px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__faq-section {
+    max-width: 880px;
+  }
+}
+
+.product-lp__faq-section__title {
+  font-family: 'Brandon Text';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__faq-section__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__faq-section__title {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+
+.product-lp__faq-section__content {
+  padding: 0;
+  margin: 0 auto 30px;
+}
+
+.product-lp__faq-section__question {
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+
+  min-height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 11.73px;
+
+  padding: 7.3306px 11.729px;
+  border: 0.73306px solid #C4C4C4;
+  border-radius: 5.86448px;
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__faq-section__question {
+    min-height: 58px;
+    padding: 12px 16px;
+  }
+}
+
+.product-lp__faq-section__question span {
+  font-family: 'Brandon Text';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14.6612px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__faq-section__question span {
+    font-size: 14.6612px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__faq-section__question span {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+
+.product-lp__faq-section__questions:checked~.product-lp__faq-section__question span {
+  color: #569BE8;
+}
+
+.product-lp__faq-section__answers {
+  padding: 0px 15px;
+  margin: 5px 0;
+  width: 100% !important;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  transition: .3s ease;
+
+  font-family: 'Brandon Text';
+  font-style: normal;
+  font-weight: 330;
+  font-size: 14.6612px;
+  line-height: 21px;
+  color: #55555D;
+}
+
+@media screen and (min-width: 768px) {
+  .product-lp__faq-section__answers {
+    font-size: 14.6612px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-lp__faq-section__answers {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.product-lp__faq-section__questions:checked~.product-lp__faq-section__answers {
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+}
+
+.product-lp__faq-section__plus {
+  position: absolute;
+  right: 11.729px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  user-select: none;
+  transition: .3s ease;
+
+  transform: rotate(90deg);
+}
+
+.product-lp__faq-section__questions:checked~.product-lp__faq-section__question .product-lp__faq-section__plus {
+  transform: rotate(270deg);
+}
+
+.product-lp__faq-section__questions {
+  display: none;
+}
+
+
 .product-lp__testimony {
   background-color: #f7f7f7;
 }
@@ -993,7 +1245,7 @@
 @media screen and (min-width: 1024px) {
   .product-lp__empty-header {
     margin-bottom: -80px;
-    height: 78.5px;
+    height: 80px;
   }
 }
 
