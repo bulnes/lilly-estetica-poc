@@ -1,3 +1,5 @@
+@import url("/css/dynamic-components.css");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7020,6 +7022,18 @@ footer.drawer-footer {
   flex-wrap: wrap;
 }
 
+.main-footer .wrapper .footerCol.footerColAddress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.main-footer .wrapper .footerCol.footerColAddress address {
+  display: block;
+  font-style: normal;
+}
+
 .main-footer .wrapper .footerCol h3 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -8217,4 +8231,37 @@ footer.drawer-footer {
   letter-spacing: -0.02em;
 
   color: #000000;
+}
+
+.homeSection--app {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.homeSection--app .homeSection--app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeSection--app .homeSection--app-mobile {
+  display: block;
+  aspect-ratio: 720 / 719;
+}
+
+.homeSection--app .homeSection--app-desk {
+  display: none;
+  aspect-ratio: 1600 / 548;
+}
+
+@media screen and (min-width: 992px) {
+  .homeSection--app .homeSection--app-mobile {
+    display: none;
+  }
+
+  .homeSection--app .homeSection--app-desk {
+    display: block;
+  }
 }

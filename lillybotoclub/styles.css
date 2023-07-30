@@ -1,3 +1,5 @@
+@import url("/css/dynamic-components.css");
+
 .u-section-1 {
   background-image: url("images/banner-LBC.png");
   background-position: 50% 50%;
@@ -2935,6 +2937,18 @@ img[data-image-height="53"]:hover {
   width: calc(100% - 60px);
   max-width: 1060px;
   margin: auto;
+}
+
+.main-footer .wrapper .footerCol.footerColAddress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.main-footer .wrapper .footerCol.footerColAddress address {
+  display: block;
+  font-style: normal;
 }
 
 

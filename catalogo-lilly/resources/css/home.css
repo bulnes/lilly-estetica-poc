@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) and (max-height: 600px) {
+  .content-main-container {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-height: 992px) {
+  .content-main-container {
+    height: 800px;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-height: 2160px) {
+  .content-main-container {
+    height: 1800px;
+  }
+}
+
+@media(min-width: 992px) {
+  .container-display-cover {
+    display: none;
+  }
+
+  .content-main-container {
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-bottom: 1px solid #485568;
+    background-position-x: center;
+    background-position-y: -60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1920px;
+    background-image: url('/catalogo-lilly/resources/images/capa-desktop.jpg');
+  }
+
+  .content-container {
+    margin: 0 auto;
+    max-width: 1360px;
+    padding: 0 60px;
+  }
+
+  .content-container p {
+    color: white;
+    font-family: Brandon-black, Arial, Helvetica, sans-serif;
+    font-size: 58px;
+    line-height: 57px;
+    margin-top: 4vh;
+    width: 600px;
+  }
+
+  .content-container p span {
+    color: #FDD5D4;
+  }
+
+  .content-container p a {
+    color: #fff;
+  }
+
+  .whatsapp-link-container {
+    display: none;
+  }
+
+  .content-container-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 70%;
+  }
+
+  .bg_video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+  }
+
+  .container-display-home footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+  }
+
+  .mini-title {
+    font-size: 20px;
+    letter-spacing: .2rem;
+    font-family: Brandon-Regular, Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    background-color: #735161;
+  }
+
+  .content-container-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 50%;
+  }
+
+  .content-container-title {
+    background-image: linear-gradient(to right, #735161, #D79AA3);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-size: 34px;
+  }
+
+  .content-container-logo {
+    background-color: #4d5567;
+    padding: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-display-home {
+    display: none;
+  }
+
+  .bg_image_tablet {
+    position: fixed;
+    top: 0;
+    width: 120%;
+  }
+
+  .bg_image_mobile {
+    display: none;
+  }
+
+  .container-display-cover {
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+  }
+
+  .content-container {
+    display: none;
+  }
+
+  .content-container-title p {
+    color: white;
+    font-size: 38px;
+    line-height: 37px;
+  }
+
+  .content-container-title p span {
+    color: #FDD5D4;
+  }
+
+  .content-container-title p a {
+    color: #fff;
+  }
+
+  .content-main-mobile-title {
+    color: #FDD5D4;
+    font-family: Brandon-black, Arial, Helvetica, sans-serif;
+    font-size: 58px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .content-main-container-mobile ul {
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+
+  .content-main-container-mobile li {
+    border-radius: 60px;
+    margin: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .content-main-container-mobile p {
+    color: #fff;
+    font-family: Brandon-black, Arial, Helvetica, sans-serif;
+    font-size: 44px;
+  }
+
+  .content-main-container-mobile a {
+    color: #fff;
+    font-family: Brandon-black, Arial, Helvetica, sans-serif;
+    font-size: 44px;
+  }
+
+  .item-clubs-lilly {
+    background-color: #FF7170;
+  }
+
+  .item-pacotes {
+    background-color: #97BADF;
+  }
+
+  .item-tratamentos-avulsos {
+    background-color: #96697F;
+  }
+
+  .item-indique-e-ganhe {
+    background-color: #D998B9;
+  }
+
+  .item-equipamentos {
+    background-color: #FFB9BB;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .whatsapp-link-container {
+    display: none;
+  }
+
+  .mini-title {
+    font-size: 18px;
+    letter-spacing: .2rem;
+    font-family: Brandon-Regular, Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    color: #fff !important;
+  }
+}
+
+@media(min-width: 600px) {
+  .to-buy-btn-desktop {
+    display: block;
+  }
+
+  .to-buy-btn-mobile {
+    display: none;
+  }
+
+  .whatsapp-link-container {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .bg_image_tablet {
+    display: none;
+  }
+
+  .bg_image_mobile {
+    position: fixed;
+    bottom: 0;
+    top: -110px;
+    width: 100%;
+    display: block;
+  }
+
+  .content-main-mobile-title {
+    font-size: 34px;
+    margin: 23px auto;
+  }
+
+  .content-main-container-mobile p {
+    font-size: 34px;
+  }
+
+  .content-main-container-mobile a {
+    font-size: 34px;
+  }
+
+  .content-container-wrapper {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 40%;
+  }
+
+  .content-container-title {
+    background-color: #735161;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 100%;
+  }
+
+  .content-container-logo {
+    background-color: #4d5567;
+    padding: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content-container-title p {
+    color: white;
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  .whatsapp-link-container {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 1%;
+    right: 3%;
+    z-index: 999;
+    display: block;
+  }
+
+  .whatsapp-link-container img {
+    width: 60px;
+  }
+
+  .mini-title {
+    font-size: 14px;
+    letter-spacing: .2rem;
+    font-family: Brandon-Regular, Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    color: #fff !important;
+  }
+}
+
+@media (max-width:400px) {
+  .content-main-mobile-title {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .content-main-container-mobile p {
+    font-size: 30px;
+  }
+
+  .content-main-container-mobile a {
+    font-size: 30px;
+  }
+
+  .content-main-container-mobile li {
+    border-radius: 60px;
+  }
+
+  .whatsapp-link-container img {
+    width: 52px;
+  }
+}
+
+@media (max-width: 396px) {
+  .content-container-title p {
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 320px) {
+  .content-main-mobile-title {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .content-main-container-mobile p {
+    font-size: 24px;
+  }
+
+  .content-main-container-mobile a {
+    font-size: 24px;
+  }
+
+  .content-main-container-mobile li {
+    border-radius: 40px;
+  }
+}
+
+.link-to-play-video-container-mobile {
+  display: none !important;
+}
+
+.link-to-play-video-container {
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+  width: fit-content;
+
+  display: none !important;
+}
+
+.link-to-play-video-container:hover {
+  cursor: pointer;
+}
+
+.link-to-play-video-image {
+  width: 40px;
+}
+
+#link-to-play-video-text {
+  color: #fff !important;
+  font-size: 14px;
+  font-family: Brandon-Black, Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  margin-left: 13px;
+  margin-top: 0;
+  width: 90px;
+}
+
+.video-paolla-container {
+  align-items: flex-start;
+  background-color: black;
+  display: none;
+  /* display: flex; */
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.video-paolla-container video {
+  height: 100%;
+}
+
+.closed-video-paolla-btn {
+  margin-right: 32px;
+  margin-top: 32px;
+  width: 16px;
+}
+
+.closed-video-paolla-btn:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 991px) {
+
+  .link-to-play-video-container {
+    display: none;
+  }
+
+  .link-to-play-video-container-mobile {
+    align-items: flex-start;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    left: 110px;
+    position: absolute;
+  }
+
+  #link-to-play-video-text {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .video-paolla-container {
+    align-items: flex-end;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .closed-video-paolla-btn {
+    margin: 24px;
+  }
+
+  .video-paolla-container video {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 600px) {
+  .link-to-play-video-container-mobile {
+    left: 40px;
+  }
+}
