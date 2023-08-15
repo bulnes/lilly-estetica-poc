@@ -249,6 +249,8 @@
         }
       }
     </style>
+
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
 
   <body>
@@ -270,151 +272,69 @@
       value="CfDJ8LEeL2dmlDFKhK-OP28D27qEAHNTSeC4av3Pd7tP4ZaItZUauAzbprBPK8cgLH6H0RLSwrIsKpTGGuBHpI6PZLXHZCXC6pv6CeZSlrq6jUrbabMKFdOlL5-sZoTpr47RQ3WOeBV2Y2LzKwk1URco9XI"
     />
 
-    <header class="header">
-      <div class="wrapper">
-        <button class="call-menu">
-          <span class="icon icon-menu header-ui--mobile"></span>
-        </button>
+    <header data-lilly class="lilly-header">
+      <div class="lilly-header__wrapper">
+        <h1 class="lilly-header__logo">
+          <a href="/" title="Lilly Estética">Lilly Estética</a>
+        </h1>
 
-        <div class="logo-wrapper-mobile">
-          <a href="/">
-            <img
-              src="images/logo-small.svg"
-              class="logo"
-              alt=""
-              width="82"
-              height="80"
-            />
-          </a>
-        </div>
+        <nav class="lilly-header__nav">
+          <label for="header-toggle-menu" class="lilly-header__burger">
+            Abrir menu
+          </label>
+          <input
+            type="checkbox"
+            id="header-toggle-menu"
+            class="lilly-header__toggle"
+          />
 
-        <div class="logo-wrapper-desktop">
-          <div style="height: 140px; margin-top: -30px">
-            <a href="/">
-              <img
-                src="images/logo-small.svg"
-                class="logo"
-                alt=""
-                width="144"
-                height="140"
-              />
-            </a>
-          </div>
-        </div>
+          <div class="lilly-header__menu">
+            <div class="lilly-header__menu-overlay"></div>
 
-        <nav class="menu">
-          <div class="inner">
-            <img src="/images/logo.svg" class="menu__logo" alt="" />
-            <ul class="menu__nav">
-              <li>
-                <a
-                  class="nav-section"
-                  data-id="tratamentos"
-                  href="/#tratamentos"
-                  >TRATAMENTOS</a
-                >
-              </li>
-              <li class="dropdown-btn">
-                <button onmouseover="myClubes()" class="dropbtn">Clubes</button>
-                <ul class="dropdown-content" id="myClubes">
-                  <li><a href="/lillylaserclub">Lilly Laser Club</a></li>
-                  <li><a href="/lillybotoclub">Lilly Boto Club</a></li>
-                  <li><a href="/lillyclub">Lilly Club</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="nav-section" data-id="conheca" href="/clinicas.html"
-                  >CL&Iacute;NICAS</a
-                >
-              </li>
-              <li>
-                <a
-                  class="nav-section"
-                  data-id="blog"
-                  href="https://blog.lillyestetica.com.br"
-                  target="_blank"
-                  >BLOG</a
-                >
-              </li>
+            <div class="lilly-header__menu-content">
+              <div class="lilly-header__menu-header">
+                <img
+                  src="/assets/images/logo.svg"
+                  alt=""
+                  loading="lazy"
+                  class="lilly-header__menu-logo"
+                />
 
-              <li>
-                <a class="nav-section" data-id="contato" href="/contato.html"
-                  >FALE CONOSCO</a
+                <label
+                  for="header-toggle-menu"
+                  class="lilly-header__menu-close"
                 >
-              </li>
-              <li>
-                <a class="nav-section" data-id="app" href="/app.html"
-                  >Lilly App</a
-                >
-              </li>
-            </ul>
-            <ul class="social header-ui--mobile">
-              <li>
+                  Fechar menu
+                </label>
+              </div>
+
+              <div class="lilly-header__menu-list">
                 <a
-                  href="https://pt-br.facebook.com/esteticalilly"
-                  target="_blank"
+                  href="/sobre-nos"
+                  title="Sobre nós"
+                  class="lilly-header__menu-list-item"
+                  >Sobre nós</a
                 >
-                  <span class="icon icon-facebook"></span>
-                </a>
-              </li>
-              <li>
                 <a
-                  href="https://www.instagram.com/lilly_estetica"
-                  target="_blank"
+                  href="/tratamentos"
+                  title="Tratamentos"
+                  class="lilly-header__menu-list-item"
+                  >Tratamentos</a
                 >
-                  <span class="icon icon-instagram"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://bit.ly/Lp_Contato" target="_blank">
-                  <span class="icon icon-whatsapp"></span>
-                </a>
-              </li>
-              <li>
                 <a
-                  href="https://www.youtube.com/channel/UCPmBSUnFiZDOuLxZFi0Cntw"
-                  target="_blank"
+                  href="/contato"
+                  title="Contato"
+                  class="lilly-header__menu-list-item"
+                  >Contato</a
                 >
-                  <span class="icon icon-youtube"></span>
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </nav>
 
-        <div class="header__last">
-          <ul class="social header-ui--desktop">
-            <li>
-              <a
-                href="https://pt-br.facebook.com/esteticalilly"
-                target="_blank"
-              >
-                <span class="icon icon-facebook"></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/lilly_estetica"
-                target="_blank"
-              >
-                <span class="icon icon-instagram"></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://bit.ly/Lp_Contato" target="_blank">
-                <span class="icon icon-whatsapp"></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCPmBSUnFiZDOuLxZFi0Cntw"
-                target="_blank"
-              >
-                <span class="icon icon-youtube"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <button class="lilly-header__cart" type="button">
+          Carrinho de compras
+        </button>
       </div>
     </header>
 

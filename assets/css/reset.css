@@ -1,0 +1,5 @@
+[data-lilly] *, [data-lilly] *:before, [data-lilly] *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

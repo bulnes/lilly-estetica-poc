@@ -1,0 +1,29 @@
+:root {
+  /* images */
+  --logo-path: url("/assets/images/logo.svg");
+
+  /* icons */
+  --icon-burger: url("/assets/images/icons/burger.svg");
+  --icon-cart: url("/assets/images/icons/cart.svg");
+
+  /* sizes */
+  --width-sm: 480px;
+  --width-md: 768px;
+  --width-lg: 992px;
+
+  /* z-index levels */
+  --z-index-lv0: 0;
+  --z-index-lv1: 1;
+  --z-index-lv2: 2;
+  --z-index-lv3: 3;
+  --z-index-lv4: 4;
+  --z-index-lv5: 5;
+
+  /* animations */
+  --fade-in: fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  --slide-in-left: slide-in-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+body {
+  background-color: #F4F4F4;
+}
