@@ -2075,5 +2075,336 @@
     <!-- End of HubSpot Embed Code -->
 
     <script defer src="/js/dynamic-components.js"></script>
+
+    <style>
+      .newsletter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 9999;
+        transition: all 0.3s ease-in-out;
+      }
+      .newsletter.newsletter--show {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .newsletter__backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.55);
+      }
+
+      .newsletter__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .newsletter__container {
+        position: relative;
+        min-height: 693px;
+        width: 100%;
+        max-width: 427px;
+        padding: 35px 40px;
+        background-color: rgba(226, 165, 176, 255);
+        background-image: linear-gradient(
+            89deg,
+            #e5e5e5 0%,
+            rgba(229, 229, 229, 0) 100%
+          ),
+          linear-gradient(89deg, #e5e5e5 0%, rgba(229, 229, 229, 0) 100%),
+          url("/images/newsletter/background-modal.png");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 16px;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+        margin: 0 23px;
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__container {
+          margin: 0;
+          width: 760px;
+          max-width: 100%;
+          height: 590px;
+
+          background-color: rgba(237, 190, 198, 255);
+          background-image: none;
+          background-image: linear-gradient(
+              89deg,
+              #e5e5e5 0%,
+              rgba(229, 229, 229, 0) 100%
+            ),
+            url("/images/newsletter/background-modal.png");
+          background-position: center right;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .newsletter__title {
+        color: #000;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 107.143% */
+        margin-bottom: 0.8rem;
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__title {
+          max-width: 415px;
+
+          font-size: 32px;
+          line-height: 34px; /* 106.25% */
+        }
+      }
+
+      .newsletter__description {
+        color: #000;
+        font-family: Inter;
+        font-size: 14.667px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17.926px; /* 122.222% */
+        margin-bottom: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__description {
+          max-width: 415px;
+
+          font-size: 18px;
+          line-height: 22px; /* 122.222% */
+        }
+      }
+
+      .newsletter__description strong {
+        color: #cb213f;
+        font-family: Inter;
+        font-size: 14.667px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17.926px;
+      }
+
+      .newsletter__form {
+        width: auto;
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__form {
+          max-width: 415px;
+        }
+      }
+
+      .newsletter__form h1 {
+        display: none;
+      }
+
+      .newsletter__form label[for] {
+        color: #000;
+        font-family: Inter;
+        font-size: 13.037px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17.926px; /* 137.5% */
+        margin-bottom: 0.2rem;
+        display: block;
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__form label[for] {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+
+      .newsletter__form input:not([type="submit"]),
+      .newsletter__form select {
+        border: none;
+        border-radius: 6.519px;
+        background: #fff;
+        height: 50px;
+        margin-bottom: 12px;
+        width: 50%;
+        padding: 0 1rem;
+
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px; /* 212.5% */
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__form input:not([type="submit"]),
+        .newsletter__form select {
+          height: 40px;
+          width: 100%;
+        }
+      }
+
+      .newsletter__form input[name="firstname"] {
+        width: 100%;
+      }
+
+      .newsletter__form input[type="submit"] {
+        border: none;
+        border-radius: 159.434px;
+        background-color: #000;
+        color: #fff;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35.075px; /* 125.27% */
+        cursor: pointer;
+
+        width: 100%;
+        height: 56px;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        gap: 9.566px;
+        flex-shrink: 0;
+
+        margin: 1rem 0 29px;
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__form input[type="submit"] {
+          max-width: 307px;
+          height: 42px;
+          font-size: 20px;
+          line-height: 22px; /* 110% */
+        }
+      }
+
+      .newsletter__form .hs-error-msgs {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 1rem;
+        margin-top: -0.5rem;
+      }
+
+      .newsletter__form .submitted-message {
+        color: #000;
+        font-family: Inter;
+        font-size: 14.667px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17.926px; /* 122.222% */
+        margin-bottom: 1rem;
+      }
+
+      .newsletter__obs {
+        color: #000;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 16px; /* 133.333% */
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__obs {
+          width: 100%;
+          max-width: 296px;
+        }
+      }
+
+      .newsletter__close {
+        display: block;
+        width: 43px;
+        height: 43px;
+        color: transparent;
+        background-image: url(/images/newsletter/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        cursor: pointer;
+      }
+    </style>
+
+    <section class="newsletter">
+      <div class="newsletter__backdrop"></div>
+
+      <div class="newsletter__wrapper">
+        <div class="newsletter__container">
+          <div class="newsletter__close" onclick="closeNewsletterModal();">
+            Fechar
+          </div>
+
+          <h2 class="newsletter__title">
+            Quer ter uma experiência na Lilly Estética?
+          </h2>
+
+          <p class="newsletter__description">
+            Assine nossa newsletter para receber conteúdos exclusivos todo mês e
+            <strong>ganhe uma sessão</strong> de um dos nossos tratamentos mais
+            desejados!
+          </p>
+
+          <div class="newsletter__form">
+            <script
+              charset="utf-8"
+              type="text/javascript"
+              src="//js.hsforms.net/forms/embed/v2.js"
+            ></script>
+            <script>
+              hbspt.forms.create({
+                region: "na1",
+                portalId: "14506695",
+                formId: "fe06da48-4c2e-4b53-82ef-8be3c7d65034",
+              });
+            </script>
+          </div>
+
+          <p class="newsletter__obs">
+            *Tratamentos inclusos no Lilly Experience 1 sessão de Fortalecimento
+            Muscular ou 1 sessão de Depilação a Laser ou 1 sessão de
+            Radiofrequência
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function closeNewsletterModal() {
+        document
+          .querySelector(".newsletter")
+          .classList.remove("newsletter--show");
+      }
+
+      function openNewsletterModal() {
+        document.querySelector(".newsletter").classList.add("newsletter--show");
+      }
+
+      openNewsletterModal();
+    </script>
   </body>
 </html>
