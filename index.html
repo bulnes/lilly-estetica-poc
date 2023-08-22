@@ -2118,6 +2118,9 @@
       .newsletter__container {
         position: relative;
         min-height: 693px;
+        min-height: calc(100% - 2rem);
+        min-height: min(calc(100% - 2rem), 693px);
+        height: auto;
         width: 100%;
         max-width: 427px;
         padding: 35px 40px;
@@ -2142,7 +2145,9 @@
           margin: 0;
           width: 760px;
           max-width: 100%;
-          height: 590px;
+          min-height: 590px;
+          min-height: calc(100% - 2rem);
+          min-height: min(calc(100% - 2rem), 590px);
 
           background-color: rgba(237, 190, 198, 255);
           background-image: none;
@@ -2160,7 +2165,6 @@
 
       .newsletter__title {
         color: #000;
-        font-family: Inter;
         font-size: 28px;
         font-style: normal;
         font-weight: 700;
@@ -2179,7 +2183,6 @@
 
       .newsletter__description {
         color: #000;
-        font-family: Inter;
         font-size: 14.667px;
         font-style: normal;
         font-weight: 400;
@@ -2198,11 +2201,6 @@
 
       .newsletter__description strong {
         color: #cb213f;
-        font-family: Inter;
-        font-size: 14.667px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 17.926px;
       }
 
       .newsletter__form {
@@ -2221,7 +2219,6 @@
 
       .newsletter__form label[for] {
         color: #000;
-        font-family: Inter;
         font-size: 13.037px;
         font-style: normal;
         font-weight: 400;
@@ -2248,7 +2245,6 @@
         padding: 0 1rem;
 
         color: #000;
-        font-family: Inter;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -2272,7 +2268,6 @@
         border-radius: 159.434px;
         background-color: #000;
         color: #fff;
-        font-family: Inter;
         font-size: 1rem;
         font-style: normal;
         font-weight: 700;
@@ -2289,7 +2284,7 @@
         gap: 9.566px;
         flex-shrink: 0;
 
-        margin: 1rem 0 29px;
+        margin: 1rem 0;
       }
 
       @media (min-width: 768px) {
@@ -2306,21 +2301,41 @@
         padding: 0;
         margin-bottom: 1rem;
         margin-top: -0.5rem;
+        font-size: 12px;
       }
 
       .newsletter__form .submitted-message {
         color: #000;
-        font-family: Inter;
-        font-size: 14.667px;
         font-style: normal;
         font-weight: 400;
-        line-height: 17.926px; /* 122.222% */
         margin-bottom: 1rem;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      @media (min-width: 768px) {
+        .newsletter__form .hs_phone,
+        .newsletter__form .hs-phone,
+        .newsletter__form .hs_clinica_lilly,
+        .newsletter__form .hs-clinica_lilly {
+          float: left;
+          width: 48%;
+        }
+
+        .newsletter__form .hs_phone,
+        .newsletter__form .hs-phone {
+          margin-right: 4%;
+          margin-bottom: 1rem;
+        }
+
+        .newsletter__form .hs_submit,
+        .newsletter__form .hs-submit {
+          clear: both;
+        }
       }
 
       .newsletter__obs {
         color: #000;
-        font-family: Inter;
         font-size: 12px;
         font-style: italic;
         font-weight: 400;
