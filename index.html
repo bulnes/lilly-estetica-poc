@@ -2246,6 +2246,11 @@
         line-height: 34px; /* 212.5% */
       }
 
+      .newsletter__form input:not([type="submit"]).error,
+      .newsletter__form select.error {
+        border: 3px solid red;
+      }
+
       @media (min-width: 390px) {
         .newsletter__form input:not([type="submit"]),
         .newsletter__form select {
@@ -2372,9 +2377,65 @@
         right: -1rem;
         cursor: pointer;
       }
+
+      .newsletter__submitted {
+        display: none;
+      }
+
+      .newsletter.newsletter--submitted .newsletter__container {
+        display: none;
+      }
+
+      .newsletter.newsletter--submitted .newsletter__submitted {
+        display: flex;
+        gap: 42px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        position: relative;
+
+        border-radius: 16px;
+        background: #fff;
+        height: 456px;
+        width: 100%;
+        max-width: 427px;
+        margin: 40px 30px;
+      }
+
+      .newsletter__submitted-title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27.704px;
+        text-align: center;
+        width: 200px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 27px;
+      }
+
+      .newsletter__submitted-msg {
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27.704px;
+        width: 267px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        flex-direction: column;
+      }
     </style>
 
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter-modal">
       <div class="newsletter__backdrop"></div>
 
       <div class="newsletter__wrapper" data-close-newsletter>
@@ -2402,6 +2463,11 @@
                 region: "na1",
                 portalId: "14506695",
                 formId: "fe06da48-4c2e-4b53-82ef-8be3c7d65034",
+                onFormSubmit: function ($form) {
+                  document
+                    .querySelector("#newsletter-modal")
+                    .classList.add("newsletter--submitted");
+                },
               });
             </script>
           </div>
@@ -2412,6 +2478,36 @@
             Radiofrequência
           </p>
         </div>
+
+        <div class="newsletter__submitted">
+          <div class="newsletter__close" data-close-newsletter>Fechar</div>
+
+          <div class="newsletter__submitted-title">
+            <img
+              src="/images/newsletter/submitted.png"
+              alt="Dados enviados com sucesso"
+              loading="lazy"
+              width="72"
+              height="72"
+              class="newsletter__submitted-icon"
+            />
+
+            <span>Dados enviados com sucesso!</span>
+          </div>
+
+          <div class="newsletter__submitted-msg">
+            <span>Já, já, uma das nossas consultoras entrará em contato</span>
+
+            <img
+              class="newsletter__submitted-smile"
+              width="53"
+              height="53"
+              loading="lazy"
+              src="/images/newsletter/smile.png"
+              alt=":)"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -2419,12 +2515,14 @@
       function closeNewsletterModal(e) {
         if (e.target !== e.currentTarget) return;
         document
-          .querySelector(".newsletter")
+          .querySelector("#newsletter-modal")
           .classList.remove("newsletter--show");
       }
 
       function openNewsletterModal() {
-        document.querySelector(".newsletter").classList.add("newsletter--show");
+        document
+          .querySelector("#newsletter-modal")
+          .classList.add("newsletter--show");
       }
 
       const closeEls = [
