@@ -26,7 +26,7 @@
       "/tratamento/lilly-fast-laser",
       "/tratamento/lilly-fast-laser/",
     ].includes(window.location.pathname)
-      ? "https://bit.ly/Lp_depilacao_laser_fast"
+      ? "https://bit.ly/WhatsappNovoDepilacaoLaser"
       : href;
 
     href = [

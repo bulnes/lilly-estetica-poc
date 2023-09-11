@@ -5,6 +5,14 @@
   data-n-head="%7B%22lang%22:%7B%22ssr%22:%22pt-br%22%7D%7D"
 >
   <head>
+    <!-- redirect to home using html -->
+    <meta http-equiv="refresh" content="0; url=/" />
+    <style>
+      html {
+        display: none;
+      }
+    </style>
+
     <link
       rel="canonical"
       href="https://www.lillyestetica.com.br/indica/index.html"
@@ -30,45 +38,20 @@
       type="image/x-icon"
       href="/indica/favicon.ico"
     />
-    <script data-n-head="ssr" data-hid="gtm-script">
-      window._gtm_init ||
-        ((window._gtm_init = 1),
-        (function (t, e, n, a, o) {
-          t[n] =
-            1 == t[n] ||
-            "yes" == e[n] ||
-            1 == e[n] ||
-            1 == e.msDoNotTrack ||
-            (t[a] && t[a][o] && t[a][o]())
-              ? 1
-              : 0;
-        })(
-          window,
-          navigator,
-          "doNotTrack",
-          "external",
-          "msTrackingProtectionEnabled"
-        ),
-        (function (a, o, i, g, m) {
-          (a[m] = {}),
-            (a._gtm_inject = function (t) {
-              var e, n;
-              a.doNotTrack ||
-                a[m][t] ||
-                ((a[m][t] = 1),
-                (a[g] = a[g] || []),
-                a[g].push({
-                  "gtm.start": new Date().getTime(),
-                  event: "gtm.js",
-                }),
-                (e = o.getElementsByTagName(i)[0]),
-                ((n = o.createElement(i)).async = !0),
-                (n.src = "https://www.googletagmanager.com/gtm.js?id=" + t),
-                e.parentNode.insertBefore(n, e));
-            }),
-            a._gtm_inject("GTM-5D9ZWC3");
-        })(window, document, "script", "dataLayer", "_gtm_ids"));
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5D9ZWC3");
     </script>
+    <!-- End Google Tag Manager -->
     <link rel="preload" href="/indica/_nuxt/556cffd.js" as="script" />
     <link rel="preload" href="/indica/_nuxt/b0173fb.js" as="script" />
     <link rel="preload" href="/indica/_nuxt/08b5adb.js" as="script" />
@@ -1827,15 +1810,16 @@
     />
   </head>
   <body>
-    <noscript data-n-head="ssr" data-hid="gtm-noscript" data-pbody="true"
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
       ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5D9ZWC3&"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5D9ZWC3"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
-        title="gtm"
       ></iframe
     ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div data-server-rendered="true" id="__nuxt">
       <!---->
       <div id="__layout">

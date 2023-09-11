@@ -1,7 +1,6 @@
 .container-home {
-  background: linear-gradient(transparent 80%, rgba(0, 0, 0, 0.5)),
-    url("/clubs-lilly/images/capa-mobile.jpeg");
-  background-position: top center;
+  background-image: url("/clubs-lilly/images/capa-mobile.png");
+  background-position: center 100%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -10,11 +9,40 @@
   align-items: center;
   justify-content: flex-end;
   padding: 40px 24px;
+  position: relative;
+}
+
+.container-home::after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(transparent 70%, rgba(0, 0, 0, 0.5));
+}
+
+.container-home>* {
+  z-index: 1;
+}
+
+@media screen and (min-width: 576px) {
+  .container-home {
+    background-position: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container-home {
-    background-image: url("/clubs-lilly/images/capa-desktop.jpg");
+    background: linear-gradient(transparent 70%, rgba(0, 0, 0, 0)), url("/clubs-lilly/images/capa-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container-home::after {
+    display: none;
   }
 }
 

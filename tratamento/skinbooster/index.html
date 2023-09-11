@@ -82,10 +82,7 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != "dataLayer" ? "&l=" + l : "";
@@ -98,14 +95,14 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
+    <noscript
+      ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-5D9ZWC3"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <input
       type="hidden"
@@ -248,12 +245,56 @@
 
     <div class="product-lp">
       <div
-        class="product-lp__cover"
+        class="product-lp__cover product-lp__cover--mobile"
         style="
-          background-image: url('/images/tratamentos/cover-skinbooster.jpg');
+          background-image: url('/tratamento/skinbooster/skinbooster-banner-mobile.jpg');
+          aspect-ratio: 414 / 250;
         "
-        id="whatsapp-cover"
-      ></div>
+      >
+        <a
+          href="https://bit.ly/Lp_skinbooster"
+          title="Clique e Saiba Mais"
+          target="_blank"
+          id="whatsapp-cover-mobile"
+        >
+          <span>Clique e Saiba Mais</span>
+        </a>
+      </div>
+
+      <div
+        class="product-lp__cover product-lp__cover--tablet"
+        style="
+          background-image: url('/tratamento/skinbooster/skinbooster-banner-tablet.jpg');
+          aspect-ratio: 834 / 221;
+        "
+      >
+        <a
+          href="https://bit.ly/Lp_skinbooster"
+          title="Clique e Saiba Mais"
+          target="_blank"
+          id="whatsapp-cover-tablet"
+        >
+          <span>Clique e Saiba Mais</span>
+        </a>
+      </div>
+
+      <div
+        class="product-lp__cover product-lp__cover--desktop"
+        style="
+          background-image: url('/tratamento/skinbooster/skinbooster-banner-desktop.jpg');
+          aspect-ratio: 53 / 14;
+          margin-top: 80px;
+        "
+      >
+        <a
+          href="https://bit.ly/Lp_skinbooster"
+          title="Clique e Saiba Mais"
+          target="_blank"
+          id="whatsapp-cover-desktop"
+        >
+          <span>Clique e Saiba Mais</span>
+        </a>
+      </div>
 
       <div class="product-lp__description">
         <!-- tipo do tratamento -->
@@ -273,34 +314,55 @@
         <!-- título do tratamento -->
         <h1 class="product-lp__description-title">Skinbooster</h1>
 
-        <!-- descrição do tratamento -->
-        <p class="product-lp__description-text">
-          O Skinbooster é indicado para todos os tipos de pele que necessitam de
-          hidratação profunda. Rejuvenescimento facial duradouro graças à ação
-          hidratante, intensa e profunda do ácido hialurônico não reticulado.
-          Promove hidratação de dentro para fora. Alisa e firma a pele, melhora
-          a elasticidade e trata sinais de envelhecimento e rugas.
-        </p>
-      </div>
+        <div class="product-lp__desc-columns">
+          <div class="product-lp__desc-column">
+            <video
+              id="video-lp-cover"
+              preload="none"
+              poster="/tratamento/skinbooster/poster.jpg"
+              controlsList="nodownload noremoteplayback"
+            >
+              <source
+                src="/tratamento/skinbooster/video.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
 
-      <!-- cta do tratamento -->
-      <a
-        href="https://bit.ly/Lp_skinbooster"
-        title="Saiba Mais"
-        target="_blank"
-        class="product-lp__cta product-lp__cta-2"
-        id="whatsapp-description"
-      >
-        <img
-          src="/images/tratamentos/icon-small-whats.png"
-          alt="Ícone: Saiba Mais"
-          title="Saiba Mais"
-          width="18"
-          height="18"
-          loading="lazy"
-        />
-        <span>Saiba Mais</span>
-      </a>
+          <div class="product-lp__desc-column">
+            <!-- descrição do tratamento -->
+            <p
+              class="product-lp__description-text product-lp__description-text--small"
+            >
+              O Skinbooster é indicado para todos os tipos de pele que
+              necessitam de hidratação profunda. Rejuvenescimento facial
+              duradouro graças à ação hidratante, intensa e profunda do ácido
+              hialurônico não reticulado. Promove hidratação de dentro para
+              fora. Alisa e firma a pele, melhora a elasticidade e trata sinais
+              de envelhecimento e rugas.
+            </p>
+
+            <!-- cta do tratamento -->
+            <a
+              href="https://bit.ly/Lp_skinbooster"
+              title="Saiba Mais"
+              target="_blank"
+              class="product-lp__cta product-lp__cta-2"
+              id="whatsapp-description"
+            >
+              <img
+                src="/images/tratamentos/icon-small-whats.png"
+                alt="Ícone: Saiba Mais"
+                title="Saiba Mais"
+                width="18"
+                height="18"
+                loading="lazy"
+              />
+              <span>Saiba Mais</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div class="product-lp__columns">
         <div class="product-lp__box">
@@ -412,6 +474,352 @@
           loading="lazy"
         />
         <span class="product-lp__cta--fixed-msg">Saiba mais</span>
+      </a>
+    </div>
+
+    <div class="product-lp__description-section">
+      <h2 class="product-lp__description-section__title">
+        Skinbooster: o que é?
+      </h2>
+      <p class="product-lp__description-section__paragraph">
+        O Skinbooster é um tratamento estético inovador que visa melhorar a
+        saúde da pele. Utilizando ácido hialurônico, ele hidrata profundamente a
+        derme, estimulando a produção de colágeno e elastina. Isso resulta em
+        uma pele mais firme, suave e radiante ao longo do tempo. O procedimento
+        é minimamente invasivo, exigindo várias sessões com recuperação rápida,
+        tornando-o uma opção popular para quem busca um rejuvenescimento natural
+        da pele.
+      </p>
+
+      <h3 class="product-lp__description-section__subtitle">
+        Skinbooster. para que serve?
+      </h3>
+      <p class="product-lp__description-section__paragraph">
+        Esse tratamento é especialmente benéfico para pessoas que desejam
+        melhorar a qualidade da pele, minimizar os sinais de envelhecimento e
+        revitalizar a aparência geral. Ele é frequentemente utilizado para
+        tratar áreas do rosto, pescoço, mãos e outras partes do corpo que podem
+        ter sofrido com a perda de hidratação e elasticidade ao longo do tempo.
+        O Skinbooster oferece uma abordagem mais suave em comparação com
+        procedimentos invasivos, tornando-se uma opção atrativa para aqueles que
+        buscam resultados naturais e duradouros.
+      </p>
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_skinbooster"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-description"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
+      </a>
+
+      <h2 class="product-lp__description-section__title">
+        Skinbooster: como é feito?
+      </h2>
+      <p class="product-lp__description-section__paragraph">
+        O Skinbooster é um tratamento estético que é realizado por um
+        profissional médico treinado, geralmente um dermatologista ou um médico
+        estético. O procedimento envolve a aplicação de ácido hialurônico na
+        derme, a camada mais profunda da pele, para melhorar sua hidratação e
+        qualidade.
+      </p>
+
+      <p>
+        <img src="/tratamento/skinbooster/list.png" alt="" loading="lazy" />
+      </p>
+      <br />
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_skinbooster"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-description"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
+      </a>
+
+      <h2 class="product-lp__description-section__title">
+        Skinbooster no rosto
+      </h2>
+      <p class="product-lp__description-section__paragraph">
+        O Skinbooster pode ter diversos efeitos positivos no rosto, contribuindo
+        para melhorar a aparência e saúde da pele. Alguns dos principais efeitos
+        do Skinbooster no rosto incluem:
+      </p>
+      <p class="product-lp__description-section__paragraph">
+        Hidratação Profunda, Melhoria da Textura, Firmeza e Elasticidade,
+        Luminosidade e Brilho, Minimização de Linhas Finas. Embora o Skinbooster
+        não seja focado exclusivamente em tratar linhas e rugas, a melhoria
+        geral da hidratação e qualidade da pele pode levar a uma redução visível
+        nas linhas finas. O Skinbooster pode ajudar a revitalizar a aparência do
+        rosto, proporcionando um aspecto mais descansado e rejuvenescido.
+      </p>
+
+      <h3 class="product-lp__description-section__subtitle">
+        Skinbooster - Olheiras
+      </h3>
+      <p class="product-lp__description-section__paragraph">
+        O Skinbooster pode ser utilizado para tratar olheiras de maneira eficaz,
+        embora seja importante ter em mente que o tratamento para olheiras pode
+        variar dependendo da causa subjacente das olheiras. O ácido hialurônico
+        atrai e retém a umidade, o que pode ajudar a engrossar a pele, diminuir
+        a aparência das olheiras e melhorar a textura.
+      </p>
+      <p class="product-lp__description-section__paragraph">
+        Além disso, o Skinbooster também pode estimular a produção de colágeno
+        na área sob os olhos, o que pode aumentar a espessura da pele e
+        contribuir para uma aparência mais uniforme e revitalizada.
+      </p>
+
+      <h3 class="product-lp__description-section__subtitle">
+        Skinbooster Labial
+      </h3>
+      <p class="product-lp__description-section__paragraph">
+        O Skinbooster também pode ser aplicado nos lábios para melhorar sua
+        aparência e saúde. O tratamento com Skinbooster nos lábios é geralmente
+        conhecido como "Skinbooster labial" ou "HydraLip".
+      </p>
+      <p class="product-lp__description-section__paragraph">
+        Aqui estão alguns dos efeitos que o Skinbooster pode ter nos lábios:
+        Hidratação Intensa, Aumento Sutil do Volume, Melhoria da Textura, Brilho
+        e Luminosidade, Suavização de Rugas Periorais, Resultado Natural.
+      </p>
+      <p class="product-lp__description-section__paragraph">
+        Uma das vantagens do Skinbooster labial é que ele proporciona resultados
+        sutis e naturais, evitando a aparência exagerada ou artificial.
+      </p>
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_skinbooster"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-description"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
+      </a>
+
+      <h2 class="product-lp__description-section__title">
+        Skinbooster, benefícios
+      </h2>
+      <p class="product-lp__description-section__paragraph">
+        O Skinbooster oferece uma série de benefícios para a pele. Com a
+        aplicação de ácido hialurônico, ele proporciona hidratação profunda,
+        resultando em uma pele mais suave, firme e radiante. Além disso,
+        estimula a produção de colágeno e elastina, melhorando a textura e a
+        elasticidade da pele ao longo do tempo. Com resultados naturais e
+        minimamente invasivos, o Skinbooster é uma opção popular para aqueles
+        que buscam uma melhoria duradoura na qualidade da pele.
+      </p>
+
+      <h3 class="product-lp__description-section__subtitle">
+        Skinbooster, contraindicações
+      </h3>
+      <p class="product-lp__description-section__paragraph">
+        Embora o Skinbooster seja um tratamento estético seguro para muitas
+        pessoas, algumas contraindicações devem ser consideradas. Gestantes,
+        lactantes e pessoas com alergia ao ácido hialurônico devem evitar o
+        procedimento. Além disso, indivíduos com infecções ativas na pele,
+        doenças autoimunes ou histórico de queloides podem não ser candidatos
+        ideais. É crucial discutir seu histórico médico completo com um
+        profissional antes de optar pelo Skinbooster, garantindo que seja uma
+        escolha segura e eficaz para você.
+      </p>
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_skinbooster"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-description"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
+      </a>
+    </div>
+
+    <div class="product-lp__faq-section">
+      <h2 class="product-lp__faq-section__title">
+        Principais perguntas sobre o Skinbooster
+      </h2>
+
+      <div class="product-lp__faq-section__content">
+        <div>
+          <input
+            type="checkbox"
+            id="question1"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question1" class="product-lp__faq-section__question">
+            <span>1. Skinbooster dói?</span>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            O desconforto durante o procedimento de Skinbooster é geralmente
+            mínimo. Muitos profissionais aplicam um creme anestésico tópico
+            antes das injeções para reduzir qualquer sensação de dor. Além
+            disso, as agulhas usadas são finas, o que também contribui para
+            minimizar o desconforto. Algumas pessoas podem sentir uma leve
+            picada ou pressão durante as injeções, mas a maioria acha o
+            procedimento tolerável.
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="question2"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question2" class="product-lp__faq-section__question">
+            <span>2. Qual o efeito do Skinbooster no rosto?</span>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            O Skinbooster tem vários efeitos positivos no rosto. Ele proporciona
+            uma hidratação profunda à pele, melhorando a textura, firmeza e
+            luminosidade. Além disso, estimula a produção de colágeno e
+            elastina, o que pode reduzir a aparência de linhas finas e rugas,
+            resultando em uma aparência mais jovem e revitalizada. O Skinbooster
+            também pode minimizar poros dilatados e contribuir para uma pele
+            mais suave e uniforme. Em resumo, o Skinbooster é uma opção eficaz
+            para melhorar a qualidade e a saúde da pele facial.
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="question3"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question3" class="product-lp__faq-section__question">
+            <span>3. O que é melhor Skinbooster ou botox?</span>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            A escolha entre o Skinbooster e o botox depende dos objetivos
+            individuais, das preocupações específicas com a pele e das
+            preferências pessoais. Ambos os tratamentos têm propósitos
+            diferentes e podem ser usados em conjunto, dependendo das
+            necessidades de cada pessoa.
+
+            <br /><br />
+
+            O Skinbooster é focado principalmente em melhorar a hidratação
+            profunda da pele e estimular a produção de colágeno, resultando em
+            uma pele mais suave, firme e radiante. Ele é uma opção excelente
+            para quem busca melhorar a qualidade geral da pele, suavizar a
+            textura e obter um aspecto rejuvenescido.
+
+            <br /><br />
+
+            Por outro lado, o botox é utilizado para relaxar temporariamente os
+            músculos faciais que causam linhas de expressão, como rugas na testa
+            e pés de galinha ao redor dos olhos. É especialmente eficaz para
+            suavizar rugas dinâmicas causadas por movimentos faciais
+            repetitivos.
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="question4"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question4" class="product-lp__faq-section__question">
+            <span>4. Como fica o rosto depois de fazer Skinbooster?</span>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            Após um tratamento de Skinbooster, é normal observar alguns efeitos
+            temporários na pele do rosto. Isso pode incluir uma leve vermelhidão
+            e inchaço nas áreas onde as injeções foram aplicadas, mas essas
+            reações tendem a diminuir em algumas horas a poucos dias. Pequenos
+            pontos ou marcas de injeção podem ser visíveis brevemente,
+            desaparecendo logo depois. Algumas pessoas também relatam uma
+            sensação de formigamento ou sensibilidade leve nas áreas tratadas,
+            mas isso é transitório.
+
+            <br /><br />
+
+            No entanto, os resultados imediatos incluem uma hidratação notável
+            da pele, deixando-a mais suave e luminosa. Vale lembrar que os
+            resultados finais do Skinbooster se desenvolvem gradualmente ao
+            longo do tempo, uma vez que o ácido hialurônico estimula a produção
+            de colágeno e mantém a pele hidratada. Em geral, a maioria das
+            pessoas pode retomar suas atividades normais logo após o
+            procedimento. Para entender melhor como sua pele reagirá e para
+            esclarecer dúvidas específicas, é recomendável conversar com o
+            profissional médico que realizará o procedimento.
+          </div>
+        </div>
+      </div>
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_skinbooster"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-list"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
       </a>
     </div>
 

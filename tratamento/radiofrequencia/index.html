@@ -91,10 +91,7 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != "dataLayer" ? "&l=" + l : "";
@@ -107,14 +104,14 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
+    <noscript
+      ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-5D9ZWC3"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <input
       type="hidden"
@@ -257,12 +254,56 @@
 
     <div class="product-lp">
       <div
-        class="product-lp__cover"
+        class="product-lp__cover product-lp__cover--mobile"
         style="
-          background-image: url('/images/tratamentos/cover-radiofrequencia.jpg');
+          background-image: url('/tratamento/radiofrequencia/radiofrequencia-banner-mobile.jpg');
+          aspect-ratio: 414 / 250;
         "
-        id="whatsapp-cover"
-      ></div>
+      >
+        <a
+          href="https://bit.ly/Lp_radiofrequencia"
+          title="Clique e Saiba Mais"
+          target="_blank"
+          id="whatsapp-cover-mobile"
+        >
+          <span>Clique e Saiba Mais</span>
+        </a>
+      </div>
+
+      <div
+        class="product-lp__cover product-lp__cover--tablet"
+        style="
+          background-image: url('/tratamento/radiofrequencia/radiofrequencia-banner-tablet.jpg');
+          aspect-ratio: 834 / 221;
+        "
+      >
+        <a
+          href="https://bit.ly/Lp_radiofrequencia"
+          title="Clique e Saiba Mais"
+          target="_blank"
+          id="whatsapp-cover-tablet"
+        >
+          <span>Clique e Saiba Mais</span>
+        </a>
+      </div>
+
+      <div
+        class="product-lp__cover product-lp__cover--desktop"
+        style="
+          background-image: url('/tratamento/radiofrequencia/radiofrequencia-banner-desktop.jpg');
+          aspect-ratio: 53 / 14;
+          margin-top: 80px;
+        "
+      >
+        <a
+          href="https://bit.ly/Lp_radiofrequencia"
+          title="Clique e Saiba Mais"
+          target="_blank"
+          id="whatsapp-cover-desktop"
+        >
+          <span>Clique e Saiba Mais</span>
+        </a>
+      </div>
 
       <div class="product-lp__description">
         <!-- tipo do tratamento -->
@@ -290,37 +331,55 @@
         <!-- título do tratamento -->
         <h2 class="product-lp__description-title">Radiofrequência</h2>
 
-        <!-- descrição do tratamento -->
-        <p class="product-lp__description-text">
-          A radiofrequência é um tratamento estético utilizado no combate à
-          flacidez. Pode ser utilizado no rosto ou do corpo, sendo muito eficaz
-          para eliminação ou redução de rugas e linhas de expressão. No corpo, o
-          tratamento combate a gordura localizada e também a celulite, sendo um
-          método seguro e com efeitos duradouros. A radiofrequência funciona
-          elevando a temperatura da pele e do músculo e promove a contração do
-          colágeno, favorecendo a produção de colágeno e elastina. O resultado é
-          uma pele mais firme e com maior sustentação.
-        </p>
-      </div>
+        <div class="product-lp__desc-columns">
+          <div class="product-lp__desc-column">
+            <video
+              id="video-lp-cover"
+              preload="none"
+              poster="/tratamento/radiofrequencia/poster.jpg"
+              controlsList="nodownload noremoteplayback"
+            >
+              <source
+                src="/tratamento/radiofrequencia/video.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
 
-      <!-- cta do tratamento -->
-      <a
-        href="https://bit.ly/Lp_radiofrequencia"
-        title="Saiba Mais"
-        target="_blank"
-        class="product-lp__cta product-lp__cta-2"
-        id="whatsapp-description"
-      >
-        <img
-          src="/images/tratamentos/icon-small-whats.png"
-          alt="Ícone: Saiba Mais"
-          title="Saiba Mais"
-          width="18"
-          height="18"
-          loading="lazy"
-        />
-        <span>Saiba Mais</span>
-      </a>
+          <div class="product-lp__desc-column">
+            <!-- descrição do tratamento -->
+            <p
+              class="product-lp__description-text product-lp__description-text--small"
+            >
+              Tratamento estético utilizado no combate à flacidez. Pode ser
+              utilizado no rosto ou do corpo. Combate a gordura localizada e
+              também a celulite, sendo um método seguro e com efeitos
+              duradouros. A Radiofrequência promove a produção de colágeno e
+              elastina. O resultado é uma pele mais firme e com maior
+              sustentação.
+            </p>
+
+            <!-- cta do tratamento -->
+            <a
+              href="https://bit.ly/Lp_radiofrequencia"
+              title="Saiba Mais"
+              target="_blank"
+              class="product-lp__cta product-lp__cta-2"
+              id="whatsapp-description"
+            >
+              <img
+                src="/images/tratamentos/icon-small-whats.png"
+                alt="Ícone: Saiba Mais"
+                title="Saiba Mais"
+                width="18"
+                height="18"
+                loading="lazy"
+              />
+              <span>Saiba Mais</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <div class="product-lp__columns">
         <div class="product-lp__box">
@@ -432,6 +491,327 @@
           loading="lazy"
         />
         <span class="product-lp__cta--fixed-msg">Saiba mais</span>
+      </a>
+    </div>
+
+    <div class="product-lp__description-section">
+      <h2 class="product-lp__description-section__title">
+        O que é Radiofrequência e como funciona?
+      </h2>
+      <p class="product-lp__description-section__paragraph">
+        A Radiofrequência é uma tecnologia usada em tratamentos estéticos para
+        melhorar a aparência da pele e combater vários problemas, como flacidez,
+        rugas, celulite e contornos faciais irregulares. É um procedimento não
+        invasivo e geralmente realizado em clínicas de estética por
+        profissionais treinados.
+      </p>
+      <p class="product-lp__description-section__paragraph">
+        O tratamento estético por Radiofrequência envolve o uso de um
+        dispositivo que emite ondas eletromagnéticas de alta frequência na
+        camada superficial da pele. Essas ondas geram calor controlado nos
+        tecidos, estimulando a produção de colágeno e melhorando a circulação
+        sanguínea. O colágeno é uma proteína fundamental para a firmeza e
+        elasticidade da pele, e sua produção diminui naturalmente com o
+        envelhecimento.
+      </p>
+
+      <h3 class="product-lp__description-section__subtitle">
+        O que a Radiofrequência faz?
+      </h3>
+      <p class="product-lp__description-section__paragraph">
+        A Radiofrequência estética é um tratamento não invasivo que utiliza
+        energia eletromagnética de alta frequência para melhorar a aparência da
+        pele e tratar uma variedade de questões estéticas. Aqui estão algumas
+        das principais coisas que a Radiofrequência estética pode fazer:
+        recupera a firmeza da Pele, Redução de Rugas e Linhas Finas, Melhoria na
+        Textura da Pele, Tratamento da Celulite, Modelagem Corporal, Minimização
+        de Poros Dilatados.
+      </p>
+
+      <p>
+        <img
+          src="/tratamento/radiofrequencia/list1.png"
+          alt=""
+          loading="lazy"
+        />
+      </p>
+      <br />
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_radiofrequencia"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-description"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
+      </a>
+
+      <h2 class="product-lp__description-section__title">
+        Benefícios da Radiofrequência
+      </h2>
+      <p class="product-lp__description-section__paragraph">
+        A Radiofrequência estética oferece uma série de benefícios para melhorar
+        a aparência da pele e tratar problemas específicos. A Radiofrequência
+        estimula a produção de colágeno e elastina, proteínas que são essenciais
+        para manter a pele firme e elástica. Isso resulta em uma reafirmação da
+        pele, melhorando a flacidez. Com a produção aumentada de colágeno, as
+        rugas e linhas finas tendem a suavizar, melhorando a aparência das áreas
+        tratadas. A Radiofrequência pode ser aplicada em várias áreas do corpo,
+        incluindo rosto, pescoço, colo, abdômen, coxas e braços. Os tratamentos
+        de Radiofrequência não são invasivos, não envolvem cirurgia nem cortes
+        na pele. Isso resulta em menor tempo de recuperação e riscos reduzidos
+        comparados com procedimentos cirúrgicos.
+      </p>
+
+      <h3 class="product-lp__description-section__subtitle">
+        Radiofrequência para flacidez
+      </h3>
+      <p class="product-lp__description-section__paragraph">
+        A Radiofrequência estética combate a flacidez estimulando a produção de
+        colágeno e elastina na pele. A energia de alta frequência aquece as
+        camadas profundas da pele, estimulando uma resposta de reparo que gera
+        mais colágeno e elastina. Com o tempo, a pele se torna mais firme e
+        elástica, reduzindo a flacidez. São necessárias várias sessões para
+        resultados notáveis, e a Radiofrequência também ajuda a prevenir futura
+        flacidez. É uma abordagem gradual e não invasiva para melhorar a
+        aparência da pele.
+      </p>
+
+      <p>
+        <img
+          src="/tratamento/radiofrequencia/list2.png"
+          alt=""
+          loading="lazy"
+        />
+      </p>
+      <br />
+
+      <p>
+        <img
+          src="/tratamento/radiofrequencia/list3.png"
+          alt=""
+          loading="lazy"
+        />
+      </p>
+      <br />
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_radiofrequencia"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-description"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
+      </a>
+
+      <h2 class="product-lp__description-section__title">
+        Radiofrequência funciona?
+      </h2>
+      <p class="product-lp__description-section__paragraph">
+        Sim, o tratamento com Radiofrequência é conhecido por funcionar e
+        oferecer resultados positivos para melhorar a aparência da pele e tratar
+        diversas preocupações estéticas. No entanto, é importante entender que
+        os resultados podem variar de pessoa para pessoa, e a eficácia do
+        tratamento depende de vários fatores, incluindo o tipo de preocupação
+        estética, a qualidade do equipamento utilizado e a habilidade do
+        profissional que realiza o procedimento.
+      </p>
+
+      <h3 class="product-lp__description-section__subtitle">
+        Radiofrequência - resultados
+      </h3>
+
+      <p class="product-lp__description-section__paragraph">
+        Os resultados do tratamento com Radiofrequência podem ser satisfatórios
+        para muitas pessoas, mas isso pode variar de acordo com diversos
+        fatores, incluindo as expectativas individuais, a condição inicial da
+        pele, a regularidade das sessões e a qualidade do tratamento.
+      </p>
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_radiofrequencia"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-description"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
+      </a>
+    </div>
+
+    <div class="product-lp__faq-section">
+      <h2 class="product-lp__faq-section__title">
+        Principais perguntas sobre Radiofrequência
+      </h2>
+
+      <div class="product-lp__faq-section__content">
+        <div>
+          <input
+            type="checkbox"
+            id="question1"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question1" class="product-lp__faq-section__question">
+            <span>1. Radiofrequência dói?</span>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            O tratamento com Radiofrequência geralmente não é doloroso, mas pode
+            haver um certo nível de desconforto ou sensação de calor durante o
+            procedimento. A experiência pode variar de pessoa para pessoa e
+            também depende da intensidade do tratamento, da área tratada e da
+            sensibilidade individual da pele.
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="question2"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question2" class="product-lp__faq-section__question">
+            <span>2. Como funciona o aparelho de Radiofrequência?</span>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            O aparelho de Radiofrequência funciona através da geração e
+            aplicação de energia eletromagnética de alta frequência na pele.
+            Essa energia é direcionada para as camadas mais profundas da pele,
+            onde estimula uma resposta biológica que resulta em benefícios
+            estéticos, como reafirmação, melhoria da textura e redução de rugas.
+            A Lilly possui aparelhos próprios, Endymed - Radiofrequência 3 Deep.
+            Os melhores do mundo.
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="question3"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question3" class="product-lp__faq-section__question">
+            <span>3. Radiofrequência, para que serve?</span>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            A Radiofrequência é um tratamento estético versátil que serve para
+            uma variedade de propósitos. Ela é principalmente usada para
+            melhorar a aparência da pele, tratando várias preocupações
+            estéticas. Aqui estão algumas das principais finalidades da
+            Radiofrequência: Recuperação da firmeza da pele, redução de rugas e
+            linhas finas, melhoria da textura da pele, tratamento de celulite,
+            edução de gordura localizada, tratamento de papada.
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="question4"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question4" class="product-lp__faq-section__question">
+            <span>4. Radiofrequência ou Criofrequência?</span>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            A escolha entre Radiofrequência e Criofrequência depende das suas
+            necessidades específicas, das preocupações estéticas que deseja
+            tratar e das recomendações de um profissional qualificado. Ambas as
+            tecnologias têm suas próprias vantagens e abordagens para melhorar a
+            aparência da pele. Vou explicar um pouco sobre cada uma:
+
+            <br /><br />
+
+            Radiofrequência: <br />
+            A Radiofrequência aquece as camadas profundas da pele para estimular
+            a produção de colágeno e elastina. É eficaz para reafirmação da
+            pele, redução de rugas, melhoria da textura e tratamento de
+            celulite. Pode ser usada em diferentes áreas do corpo. Pode requerer
+            várias sessões para obter resultados notáveis. É minimamente
+            invasiva e geralmente não causa dor intensa, embora possa haver um
+            desconforto leve devido ao aquecimento.
+
+            <br /><br />
+
+            Criofrequência: <br />
+            A Criofrequência combina Radiofrequência com resfriamento da
+            superfície da pele, usando temperaturas frias e quentes
+            alternadamente. Além de estimular o colágeno e elastina, a
+            Criofrequência promove a contração das fibras de colágeno
+            existentes. É frequentemente usada para reafirmação da pele, redução
+            de celulite e modelagem corporal. O resfriamento da superfície da
+            pele ajuda a minimizar o desconforto durante o tratamento. Também
+            pode requerer várias sessões para resultados visíveis.
+
+            <br /><br />
+
+            A decisão entre Radiofrequência e Criofrequência deve ser tomada
+            após uma consulta com um profissional de saúde ou estética. Eles
+            podem avaliar suas necessidades, discutir suas preocupações e
+            determinar qual tecnologia é mais adequada para você. Cada pessoa é
+            única, portanto, o tratamento mais eficaz pode variar com base nas
+            características individuais da pele e nos objetivos desejados.
+          </div>
+        </div>
+      </div>
+
+      <!-- cta do tratamento -->
+      <a
+        href="https://bit.ly/Lp_radiofrequencia"
+        title="Saiba Mais"
+        target="_blank"
+        class="product-lp__cta product-lp__cta-2"
+        id="whatsapp-list"
+      >
+        <img
+          src="/images/tratamentos/icon-small-whats.png"
+          alt="Ícone: Saiba Mais"
+          title="Saiba Mais"
+          width="18"
+          height="18"
+          loading="lazy"
+        />
+        <span>Saiba Mais</span>
       </a>
     </div>
 
