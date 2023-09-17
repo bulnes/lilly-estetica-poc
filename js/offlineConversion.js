@@ -24,24 +24,26 @@
   const userId = getUserId();
 
   // Save offline conversion
-  fetch(`${apiBaseUrl}/offline-conversion/${userId}`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      search,
-      baseUrl: `${protocol}//${host}`,
-      referrer,
-    }),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("Offline conversion saved", data);
+  const saveOfflineConversion = () => {
+    fetch(`${apiBaseUrl}/offline-conversion/${userId}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        search,
+        baseUrl: `${protocol}//${host}`,
+        referrer,
+      }),
     })
-    .catch((error) => {
-      console.error("Error saving offline conversion", error);
-    });
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Offline conversion saved", data);
+      })
+      .catch((error) => {
+        console.error("Error saving offline conversion", error);
+      });
+  };
 
   // Select all links with href with bit.ly
   const links = document.querySelectorAll("a[href*='bit.ly']");
@@ -49,6 +51,8 @@
     // When user click on link, it will open in a new tab with specific query params
     link.onclick = (event) => {
       event.preventDefault();
+
+      saveOfflineConversion();
 
       const phone = "552140202349";
       const text = `[Ticket ${userId}] Olá gostaria de saber sobre os tratamentos da Lilly, pode me ajudar?`;
