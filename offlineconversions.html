@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lilly Estética - Offline Conversions</title>
+
+    <link rel="icon" href="/images/48x48.png" type="image/gif" sizes="48x48" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h1>Conversões Off-line <small>Lilly Estética</small></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <form id="conversionForm">
+            <div class="form-group">
+              <label for="conversionId">Identificador</label>
+              <input
+                type="text"
+                class="form-control"
+                id="conversionId"
+                placeholder="Identificador"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-loading-text="Pesquisando..."
+              id="searchButton"
+            >
+              Pesquisar
+            </button>
+            <button type="reset" class="btn btn-default">Limpar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 hidden" id="results">
+          <hr />
+
+          <h2>Resultados</h2>
+
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Página</th>
+                <th>Parâmetros</th>
+                <th>Origem</th>
+                <th>Data de registro</th>
+              </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const { hostname } = window.location;
+      const apiBaseUrl = ["localhost", "127.0.0.1"].includes(hostname)
+        ? "http://localhost:3000"
+        : "https://lilly-estetica-offline-conversation.onrender.com";
+
+      $(document).ready(() => {
+        $("#conversionForm").on("submit", function (e) {
+          e.preventDefault();
+
+          const $btn = $("#searchButton").button("loading");
+          const $results = $("#results");
+          const $resultsBody = $("#resultsBody");
+          const conversionId = $("#conversionId").val();
+
+          fetch(`${apiBaseUrl}/offline-conversions/${conversionId}`)
+            .then((response) => response.json())
+            .then((data) => {
+              console.log(data);
+              $resultsBody.empty();
+
+              const { conversions } = data;
+              conversions.forEach((conversion) => {
+                const {
+                  base_url: page,
+                  search,
+                  referrer,
+                  created_at,
+                } = conversion;
+
+                let parameters = "--";
+                if (search) {
+                  parameters = "";
+                  search
+                    .replace("?", "")
+                    .split("&")
+                    .forEach((parameter) => {
+                      const [key, value] = parameter.split("=");
+                      parameters += `${key}: ${value}<br />`;
+                    });
+                }
+
+                const createdAt = new Date(created_at).toLocaleString("pt-BR");
+
+                $resultsBody.append(`
+                  <tr>
+                    <td>${page}</td>
+                    <td>${parameters}</td>
+                    <td>${referrer}</td>
+                    <td>${createdAt}</td>
+                  </tr>
+                `);
+              });
+            })
+            .catch((error) => {
+              $resultsBody.empty();
+              console.error(error);
+            })
+            .finally(() => {
+              $btn.button("reset");
+              $results.removeClass("hidden");
+            });
+        });
+      });
+    </script>
+    <script defer src="/js/offlineConversion.js"></script>
+  </body>
+</html>
