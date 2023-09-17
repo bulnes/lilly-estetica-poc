@@ -34,6 +34,14 @@
         -webkit-hyphens: auto;
         hyphens: auto;
       }
+
+      thead tr th:not(:last-child) {
+        min-width: calc((100% / 4) - 160px);
+      }
+
+      thead tr th:last-child {
+        width: 160px;
+      }
     </style>
   </head>
   <body>
