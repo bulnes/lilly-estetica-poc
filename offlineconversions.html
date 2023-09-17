@@ -15,6 +15,26 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+
+    <style>
+      .dont-break-out {
+        /* These are technically the same, but use both */
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        -ms-word-break: break-all;
+        /* This is the dangerous one in WebKit, as it breaks things wherever */
+        word-break: break-all;
+        /* Instead use this non-standard one: */
+        word-break: break-word;
+
+        /* Adds a hyphen where the word breaks, if supported (No Blink) */
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -131,10 +151,10 @@
 
                 $resultsBody.append(`
                   <tr>
-                    <td>${page}</td>
-                    <td>${parameters}</td>
-                    <td>${referrer}</td>
-                    <td>${createdAt}</td>
+                    <td class="dont-break-out">${page}</td>
+                    <td class="dont-break-out">${parameters}</td>
+                    <td class="dont-break-out">${referrer}</td>
+                    <td class="dont-break-out">${createdAt}</td>
                   </tr>
                 `);
               });
