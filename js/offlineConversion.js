@@ -1,7 +1,7 @@
 (() => {
   const KEY_USER_ID = "lilly-estetica.user.id";
 
-  const { search, host, protocol, hostname } = window.location;
+  const { search, host, protocol, hostname, pathname } = window.location;
   const { referrer } = document;
 
   const apiBaseUrl = ["localhost", "127.0.0.1"].includes(hostname)
@@ -32,7 +32,7 @@
       },
       body: JSON.stringify({
         search,
-        baseUrl: `${protocol}//${host}`,
+        baseUrl: `${protocol}//${host}${pathname}`,
         referrer,
       }),
     })
