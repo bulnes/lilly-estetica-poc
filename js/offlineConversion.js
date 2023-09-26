@@ -8,20 +8,52 @@
     ? "http://localhost:3000"
     : "https://lilly-estetica-offline-conversation.onrender.com";
 
-  const getUserId = () => {
+  const getPrefix = () => {
+    // Must return 'G' when utm_source=google and utm_medium=cpc
+    const utmSource = new URLSearchParams(search).get("utm_source");
+    const utmMedium = new URLSearchParams(search).get("utm_medium");
+
+    if (utmSource === "google" && utmMedium === "cpc") {
+      return "G";
+    }
+
+    // Must return 'F' when utm_source=facebook
+    if (utmSource === "facebook") {
+      return "F";
+    }
+
+    // Must return 'O' when referer is google but with not utm_source
+    if (referrer.includes("google") && !utmSource) {
+      return "O";
+    }
+
+    // Must return 'D' when there is no utm_source and referer is empty
+    if (!utmSource && !referrer) {
+      return "D";
+    }
+
+    return "X";
+  };
+
+  const getUserId = (prefix = "X") => {
     const localUserId = localStorage.getItem(KEY_USER_ID);
 
-    if (localUserId) {
+    if (localUserId && localUserId.startsWith(prefix)) {
       return localUserId;
     }
 
-    const uniqueId = parseInt(Math.random() * Number.MAX_SAFE_INTEGER, 10);
+    let uniqueId =
+      Date.now().toString(36).slice(0, 4) +
+      Math.random().toString(36).slice(2, 5);
+    uniqueId = uniqueId.toUpperCase();
+    uniqueId = `${prefix}${uniqueId}`;
+
     localStorage.setItem(KEY_USER_ID, uniqueId);
 
     return uniqueId;
   };
 
-  const userId = getUserId();
+  const userId = getUserId(getPrefix());
 
   // Save offline conversion
   const saveOfflineConversion = () => {
