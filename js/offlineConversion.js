@@ -6,7 +6,7 @@
 
   const apiBaseUrl = ["localhost", "127.0.0.1"].includes(hostname)
     ? "http://localhost:3000"
-    : "https://lilly-estetica-offline-conversation.onrender.com";
+    : "https://api.venuz.app/lilly-mkt";
 
   const getPrefix = () => {
     // Must return 'G' when utm_source=google and utm_medium=cpc
