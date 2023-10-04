@@ -52,7 +52,7 @@
 
   if (isCloseForever()) return;
 
-  if (isLastAccesLessThanAWeek()) return;
+  // if (isLastAccesLessThanAWeek()) return;
 
   // Open modal after 5 seconds
   setTimeout(openNewsletterModal, 5000);
