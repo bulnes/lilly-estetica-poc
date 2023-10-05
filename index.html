@@ -231,10 +231,17 @@
               <li>
                 <a
                   class="nav-section"
-                  data-id="tratamentos"
-                  href="/#tratamentos"
-                  >TRATAMENTOS</a
+                  data-id="home"
+                  href="/"
+                  title="Ir para Home"
                 >
+                  Página Principal
+                </a>
+              </li>
+              <li>
+                <a class="nav-section" data-id="conheca" href="/clinicas.html">
+                  Clínicas
+                </a>
               </li>
               <li class="dropdown-btn">
                 <button onmouseover="myClubes()" class="dropbtn">Clubes</button>
@@ -244,10 +251,30 @@
                   <li><a href="/lillyclub">Lilly Club</a></li>
                 </ul>
               </li>
+              <li class="dropdown-btn">
+                <button onmouseover="myTratamentos()" class="dropbtn">
+                  Tratamentos
+                </button>
+                <ul class="dropdown-content" id="myTratamentos">
+                  <li><a href="/#maisvendido">Mais Vendido</a></li>
+                  <li><a href="/#tratamentoalaser">Tratamento à Laser</a></li>
+                  <li>
+                    <a href="/#tratamentoscorporais">Tratamentos Corporais</a>
+                  </li>
+                  <li>
+                    <a href="/#tratamentosinjetaveis">Tratamentos Injetáveis</a>
+                  </li>
+                </ul>
+              </li>
               <li>
-                <a class="nav-section" data-id="conheca" href="/clinicas.html"
-                  >CL&Iacute;NICAS</a
-                >
+                <a class="nav-section" data-id="contato" href="/contato.html">
+                  Fale Conosco
+                </a>
+              </li>
+              <li>
+                <a class="nav-section" data-id="app" href="/app.html">
+                  Lilly App
+                </a>
               </li>
               <li>
                 <a
@@ -255,21 +282,12 @@
                   data-id="blog"
                   href="https://blog.lillyestetica.com.br"
                   target="_blank"
-                  >BLOG</a
                 >
-              </li>
-
-              <li>
-                <a class="nav-section" data-id="contato" href="/contato.html"
-                  >FALE CONOSCO</a
-                >
-              </li>
-              <li>
-                <a class="nav-section" data-id="app" href="/app.html"
-                  >Lilly App</a
-                >
+                  Blog
+                </a>
               </li>
             </ul>
+
             <ul class="social header-ui--mobile">
               <li>
                 <a
@@ -305,37 +323,42 @@
         </nav>
 
         <div class="header__last">
-          <ul class="social header-ui--desktop">
-            <li>
-              <a
-                href="https://pt-br.facebook.com/esteticalilly"
-                target="_blank"
-              >
-                <span class="icon icon-facebook"></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/lilly_estetica"
-                target="_blank"
-              >
-                <span class="icon icon-instagram"></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://bit.ly/AtendiLillySite" target="_blank">
-                <span class="icon icon-whatsapp"></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCPmBSUnFiZDOuLxZFi0Cntw"
-                target="_blank"
-              >
-                <span class="icon icon-youtube"></span>
-              </a>
-            </li>
-          </ul>
+          <style>
+            .cta-whats {
+              border-radius: 100px;
+              color: white;
+              font-size: 16px;
+              font-weight: bold;
+              line-height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+              width: 160px;
+              max-width: 340px;
+              height: 44px;
+              background-color: #13c75b;
+              animation: pulse 2s infinite;
+            }
+          </style>
+
+          <a
+            href="https://bit.ly/AtendiLillySite"
+            title="Saiba Mais"
+            target="_blank"
+            class="cta-whats"
+            id="whatsapp-description"
+          >
+            <img
+              src="/images/tratamentos/icon-small-whats.png"
+              alt="Ícone: Saiba Mais"
+              title="Saiba Mais"
+              width="18"
+              height="18"
+              loading="lazy"
+            />
+            <span>Ofertas do mês</span>
+          </a>
         </div>
       </div>
     </header>
@@ -2151,6 +2174,9 @@
       function myCampanhas() {
         document.getElementById("myCampanhas").classList.toggle("show");
         document.getElementById("myClubes").classList.remove("show");
+      }
+      function myTratamentos() {
+        document.getElementById("myTratamentos").classList.toggle("show");
       }
 
       // Close the dropdown if the user clicks outside of it
