@@ -1634,7 +1634,6 @@ label {
   }
 
   .menu__nav .menu__nav-label {
-    font-weight: bold;
     padding: 0 10px 0 0;
 
     position: relative;
@@ -1661,11 +1660,11 @@ label {
     width: 20px;
     height: 20px;
     opacity: 0.7;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
   }
 
   .menu__nav .menu__nav-checkbox:checked~.menu__nav-label .menu__nav-label-icon svg {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
   }
 
   .menu__nav .dropdown-content li>a, .menu__nav .dropdown-content li>label {
