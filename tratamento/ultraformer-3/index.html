@@ -77,7 +77,7 @@
     <meta name="apple-itunes-app" content="app-id=1607382354" />
     <meta name="google-play-app" content="app-id=br.com.lillyestetica.app" />
 
-    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/css/site.css?v=20231022" />
     <link rel="stylesheet" href="/css/tratamentos.css" />
     <link rel="stylesheet" href="/lib/slick/slick.min.css" />
     <link rel="stylesheet" href="/lib/select2/css/select2.min.css" />
@@ -150,129 +150,455 @@
         <button class="call-menu">
           <span class="icon icon-menu header-ui--mobile"></span>
         </button>
+
         <div class="logo-wrapper-mobile">
           <a href="/">
-            <img src="/images/logo-small.svg" class="logo" alt="" />
+            <img src="/images/brand.svg" class="logo" alt="" width="82" />
           </a>
         </div>
+
         <div class="logo-wrapper-desktop">
           <div style="height: 140px; margin-top: -30px">
             <a href="/">
-              <img src="/images/logo-small.svg" class="logo" alt="" />
+              <img src="/images/brand.svg" class="logo" alt="" width="144" />
             </a>
           </div>
         </div>
-        <nav class="menu">
+
+        <nav class="menu" data-close-menu>
           <div class="inner">
-            <img src="/images/logo.svg" class="menu__logo" alt="" />
+            <img src="/images/brand.svg" class="menu__logo" alt="" />
+
+            <div class="menu__close" data-close-menu></div>
+
             <ul class="menu__nav">
               <li>
                 <a
                   class="nav-section"
-                  data-id="tratamentos"
-                  href="/#tratamentos"
-                  >TRATAMENTOS</a
+                  data-id="home"
+                  href="/"
+                  title="Ir para Home"
+                  data-close-menu
                 >
+                  Home
+                </a>
               </li>
+
+              <li>
+                <a class="nav-section" data-id="conheca" href="/clinicas.html">
+                  Clínicas
+                </a>
+              </li>
+
               <li class="dropdown-btn">
-                <button onmouseover="myClubes()" class="dropbtn">Clubes</button>
-                <ul class="dropdown-content" id="myClubes">
+                <input
+                  type="checkbox"
+                  id="menu-clubes"
+                  name="q"
+                  class="menu__nav-checkbox"
+                />
+                <label for="menu-clubes" class="menu__nav-label">
+                  <span>Clubes</span>
+                  <span class="menu__nav-label-icon">
+                    <svg
+                      viewBox="0 0 30 30"
+                      height="30"
+                      width="30"
+                      preserveAspectRatio="xMidYMid meet"
+                      class=""
+                      version="1.1"
+                      x="0px"
+                      y="0px"
+                      enable-background="new 0 0 30 30"
+                      xml:space="preserve"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+
+                <ul class="dropdown-content">
                   <li><a href="/lillylaserclub">Lilly Laser Club</a></li>
                   <li><a href="/lillybotoclub">Lilly Boto Club</a></li>
                   <li><a href="/lillyclub">Lilly Club</a></li>
                 </ul>
               </li>
-              <li>
-                <a class="nav-section" data-id="conheca" href="/clinicas.html"
-                  >CL&Iacute;NICAS</a
-                >
+
+              <li class="dropdown-btn dropdown-btn--tratamentos">
+                <input
+                  type="checkbox"
+                  id="menu-tratamentos"
+                  name="q"
+                  class="menu__nav-checkbox"
+                />
+                <label for="menu-tratamentos" class="menu__nav-label">
+                  <span>Tratamentos</span>
+                  <span class="menu__nav-label-icon">
+                    <svg
+                      viewBox="0 0 30 30"
+                      height="30"
+                      width="30"
+                      preserveAspectRatio="xMidYMid meet"
+                      class=""
+                      version="1.1"
+                      x="0px"
+                      y="0px"
+                      enable-background="new 0 0 30 30"
+                      xml:space="preserve"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="/#tratamentos" data-close-menu>Mais Vendido</a>
+                  </li>
+                  <li>
+                    <a href="/#especiaispravoce" data-close-menu
+                      >Especiais pra Você</a
+                    >
+                  </li>
+
+                  <!-- Tratamentos Faciais -->
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="menu-tratamentos-faciais"
+                      name="q"
+                      class="menu__nav-checkbox"
+                    />
+                    <label
+                      for="menu-tratamentos-faciais"
+                      class="menu__nav-label"
+                    >
+                      <span>Tratamentos Faciais</span>
+                      <span class="menu__nav-label-icon">
+                        <svg
+                          viewBox="0 0 30 30"
+                          height="30"
+                          width="30"
+                          preserveAspectRatio="xMidYMid meet"
+                          class=""
+                          version="1.1"
+                          x="0px"
+                          y="0px"
+                          enable-background="new 0 0 30 30"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul>
+                      <li>
+                        <a href="/tratamento/radiesse-bioestimulador"
+                          >Radiesse Bioestimulador</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/sculptra-bioestimulador"
+                          >Sculptra Bioestimulador</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/ultraformer-3">Ultraformer III</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/cicatrizes-acne"
+                          >Cicatrizes de Acne</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/clareamento-de-melasmas"
+                          >Clareamento de Melasmas</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/hollywood-peel">Hollywood Peel</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/rejuvenescimento-7d"
+                          >Rejuvenescimento 7D</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/tratamento-de-olheiras"
+                          >Tratamento de Olheiras</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Tratamentos Corporais-->
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="menu-tratamentos-corporais"
+                      name="q"
+                      class="menu__nav-checkbox"
+                    />
+                    <label
+                      for="menu-tratamentos-corporais"
+                      class="menu__nav-label"
+                    >
+                      <span>Tratamentos Corporais</span>
+                      <span class="menu__nav-label-icon">
+                        <svg
+                          viewBox="0 0 30 30"
+                          height="30"
+                          width="30"
+                          preserveAspectRatio="xMidYMid meet"
+                          class=""
+                          version="1.1"
+                          x="0px"
+                          y="0px"
+                          enable-background="new 0 0 30 30"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul>
+                      <li>
+                        <a href="/tratamento/tratamento-de-celulite"
+                          >Tratamento de Celulite</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/tratamento-de-estrias"
+                          >Tratamento de Estrias</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/criofrequencia">Criofrequência</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/criolipolise">Criolipólise</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/radiofrequencia"
+                          >Radiofrequência</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/lipo-sem-cortes"
+                          >Lipo sem Cortes</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/ultraformer-3">Ultraformer III</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Tratamento Injetáveis -->
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="menu-tratamentos-injetaveis"
+                      name="q"
+                      class="menu__nav-checkbox"
+                    />
+                    <label
+                      for="menu-tratamentos-injetaveis"
+                      class="menu__nav-label"
+                    >
+                      <span>Tratamentos Injetáveis</span>
+                      <span class="menu__nav-label-icon">
+                        <svg
+                          viewBox="0 0 30 30"
+                          height="30"
+                          width="30"
+                          preserveAspectRatio="xMidYMid meet"
+                          class=""
+                          version="1.1"
+                          x="0px"
+                          y="0px"
+                          enable-background="new 0 0 30 30"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul>
+                      <li>
+                        <a href="/tratamento/radiesse-bioestimulador"
+                          >Radiesse Bioestimulador</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/sculptra-bioestimulador"
+                          >Sculptra Bioestimulador</a
+                        >
+                      </li>
+                      <li><a href="/tratamento/skinbooster">Skinbooster</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Tratamentos a Laser -->
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="menu-tratamentos-laser"
+                      name="q"
+                      class="menu__nav-checkbox"
+                    />
+                    <label for="menu-tratamentos-laser" class="menu__nav-label">
+                      <span>Tratamento à Laser</span>
+                      <span class="menu__nav-label-icon">
+                        <svg
+                          viewBox="0 0 30 30"
+                          height="30"
+                          width="30"
+                          preserveAspectRatio="xMidYMid meet"
+                          class=""
+                          version="1.1"
+                          x="0px"
+                          y="0px"
+                          enable-background="new 0 0 30 30"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul>
+                      <li>
+                        <a href="/tratamento/cicatrizes-acne"
+                          >Cicatrizes de Acne</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/clareamento-de-melasmas"
+                          >Clareamento de Melasmas</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/depilacao-a-laser"
+                          >Depilação a Laser</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/depilacao-a-laser-masculina"
+                          >Depilação a Laser Masculina</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/hollywood-peel">Hollywood Peel</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/rejuvenescimento-7d"
+                          >Rejuvenescimento 7D</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/remocao-de-tatuagens"
+                          >Remoção de Tatuagens</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/tratamento-micose-de-unhas"
+                          >Tratamento de Micose de Unhas</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/tratamento-de-olheiras"
+                          >Tratamento de Olheiras</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+
+              <li>
+                <a class="nav-section" data-id="contato" href="/contato.html">
+                  Fale Conosco
+                </a>
+              </li>
+
+              <li>
+                <a class="nav-section" data-id="app" href="/app.html">
+                  Lilly App
+                </a>
+              </li>
+
               <li>
                 <a
                   class="nav-section"
                   data-id="blog"
                   href="https://blog.lillyestetica.com.br"
                   target="_blank"
-                  >BLOG</a
                 >
+                  Blog
+                </a>
               </li>
+            </ul>
 
-              <li>
-                <a class="nav-section" data-id="contato" href="/contato.html"
-                  >FALE CONOSCO</a
-                >
-              </li>
-              <li>
-                <a class="nav-section" data-id="app" href="/app.html"
-                  >Lilly App</a
-                >
-              </li>
-            </ul>
-            <ul class="social header-ui--mobile">
-              <li>
-                <a
-                  href="https://pt-br.facebook.com/esteticalilly"
-                  target="_blank"
-                >
-                  <span class="icon icon-facebook"></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/lilly_estetica"
-                  target="_blank"
-                >
-                  <span class="icon icon-instagram"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://bit.ly/Lp_Ultraformer_III" target="_blank">
-                  <span class="icon icon-whatsapp"></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCPmBSUnFiZDOuLxZFi0Cntw"
-                  target="_blank"
-                >
-                  <span class="icon icon-youtube"></span>
-                </a>
-              </li>
-            </ul>
+            <div class="header-ui--mobile">
+              <a
+                href="https://bit.ly/AtendiLillySite"
+                title="Saiba Mais"
+                target="_blank"
+                class="menu__cta-whats"
+              >
+                <img
+                  src="/images/tratamentos/icon-small-whats.png"
+                  alt="Ícone: Saiba Mais"
+                  title="Saiba Mais"
+                  width="18"
+                  height="18"
+                  loading="lazy"
+                />
+                <span>Ofertas do mês</span>
+              </a>
+            </div>
           </div>
         </nav>
+
         <div class="header__last">
-          <ul class="social header-ui--desktop">
-            <li>
-              <a
-                href="https://pt-br.facebook.com/esteticalilly"
-                target="_blank"
-              >
-                <span class="icon icon-facebook"></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/lilly_estetica"
-                target="_blank"
-              >
-                <span class="icon icon-instagram"></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://bit.ly/Lp_Ultraformer_III" target="_blank">
-                <span class="icon icon-whatsapp"></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCPmBSUnFiZDOuLxZFi0Cntw"
-                target="_blank"
-              >
-                <span class="icon icon-youtube"></span>
-              </a>
-            </li>
-          </ul>
+          <a
+            href="https://bit.ly/AtendiLillySite"
+            title="Saiba Mais"
+            target="_blank"
+            class="menu__cta-whats"
+          >
+            <img
+              src="/images/tratamentos/icon-small-whats.png"
+              alt="Ícone: Saiba Mais"
+              title="Saiba Mais"
+              width="18"
+              height="18"
+              loading="lazy"
+            />
+            <span>Ofertas do mês</span>
+          </a>
         </div>
       </div>
     </header>
@@ -364,7 +690,7 @@
             <video
               id="video-lp-cover"
               preload="none"
-              poster="/tratamento/ultraformer-3/video-poster.png"
+              poster="/tratamento/ultraformer-3/ultraformer-3-video.jpg"
               controlsList="nodownload noremoteplayback"
             >
               <source
@@ -409,9 +735,9 @@
       <div class="product-lp__columns">
         <div class="product-lp__box">
           <div>
-            <h3 class="product-lp__box-title">
+            <h2 class="product-lp__box-title">
               Vantagens do Tratamento com Ultraformer
-            </h3>
+            </h2>
 
             <ul class="product-lp__box-list">
               <li>Ultrassom de última geração</li>
@@ -519,26 +845,27 @@
 
     <div class="product-lp__description-section">
       <h2 class="product-lp__description-section__title">
-        Tratamento Ultraformer
+        Tratamento Ultraformer III
       </h2>
 
       <p class="product-lp__description-section__paragraph">
         O Ultraformer é um tratamento estético não invasivo que utiliza ondas de
         ultrassom para estimular a produção de colágeno e remodelar a pele. Ele
-        pode ser usado em diferentes áreas do corpo, incluindo rosto, pescoço,
+        pode ser usado em diferentes áreas do corpo, incluindo rosto, papada,
         braços, coxas e abdômen.
       </p>
 
       <h3 class="product-lp__description-section__subtitle">
-        Tratamento Ultraformer 3
+        Ultraformer Antes e Depois
       </h3>
 
       <p class="product-lp__description-section__paragraph">
-        O Ultraformer 3 é uma versão mais recente do tratamento Ultraformer, que
-        oferece ainda mais precisão e eficácia no tratamento de flacidez, rugas
-        e linhas de expressão. Ele utiliza tecnologia de microfoco de ultrassom
-        para atingir camadas mais profundas da pele, estimulando a produção de
-        colágeno e melhorando a aparência da pele.
+        O tratamento com Ultraformer é como um passe de mágica para sua pele.
+        Antes, você pode ter se preocupado com rugas, flacidez e as teimosas
+        linhas de expressão, mas depois de algumas sessões de ultraformer você
+        fica com uma aparência mais jovem e confiante! Sua pele fica mais firme,
+        suave e rejuvenescida. Ultraformer é a melhor tecnologia anti
+        envelhecimento.
       </p>
 
       <h2 class="product-lp__description-section__title">
@@ -552,9 +879,9 @@
         silhueta do corpo, reduzir medidas e melhorar a aparência da pele.
       </p>
 
-      <h2 class="product-lp__description-section__title">
+      <h3 class="product-lp__description-section__title">
         Ultraformer para celulite
-      </h2>
+      </h3>
 
       <p class="product-lp__description-section__paragraph">
         O Ultraformer também pode ser utilizado para tratar a celulite,
@@ -563,19 +890,111 @@
         aparência de celulite e a melhorar a textura da pele.
       </p>
 
-      <h2 class="product-lp__description-section__title">Ultraformer facial</h2>
+      <h3 class="product-lp__description-section__title">
+        Ultraformer abdômen
+      </h3>
+
+      <p class="product-lp__description-section__paragraph">
+        Quer um abdomem mais definido sem precisar fazer cirurgia? Conheça o
+        Ultraformer e diga adeus aos pneuzinhos e flacidez na barriga. O
+        tratamentol pode ser usado tanto por homens quanto mulheres. Entre em
+        contato e conheça como o Ultraformer vai te deixar com um abdômen mais
+        firme e esculpido.
+      </p>
+
+      <h3 class="product-lp__description-section__title">
+        Ultraformer nas coxas
+      </h3>
+
+      <p class="product-lp__description-section__paragraph">
+        Quando utilizado nas coxas, as ondas de ultrassom ajudam a reduzir a
+        flacidez, diminuir as celulites e deixar a textura da pele mais suave.
+        Esqueça o aspecto "casca de laranja" em suas coxas e tenha o contorno
+        das penas mais suave e atraente de forma mais natural possível, sem
+        cirurgia ou injeções.
+      </p>
+
+      <h2 class="product-lp__description-section__title">
+        Ultraformer Full Face
+      </h2>
 
       <p class="product-lp__description-section__paragraph">
         O Ultraformer facial é um tratamento estético não invasivo que utiliza
         ondas de ultrassom para estimular a produção de colágeno, melhorando a
-        aparência da pele do rosto e pescoço. O tratamento pode ser utilizado
+        aparência da pele do rosto e papada. O tratamento pode ser utilizado
         para tratar rugas, linhas de expressão, flacidez e outros sinais de
         envelhecimento.
       </p>
 
+      <h3 class="product-lp__description-section__title">
+        Quanto tempo dura o efeito do ultraformer no rosto?
+      </h3>
+
+      <p class="product-lp__description-section__paragraph">
+        No rosto, os efeitos do Ultraformer apresentam melhorias cada vez mais
+        evidentes e duram entre 1 a 2 anos. No rosto, a estimulação de colágeno
+        fica mais notável com o passar das primeiras semanas. Após os primeiros
+        meses de transformação estética se torna cada vez mais marcante,
+        proporcionando uma renovação facial notável e duradoura.
+      </p>
+
       <h2 class="product-lp__description-section__title">
-        Ultraformer reclamações
+        O que é Ultraformer 3?
       </h2>
+
+      <p class="product-lp__description-section__paragraph">
+        O Ultraformer 3 é uma versão mais recente do tratamento Ultraformer, que
+        oferece ainda mais precisão e eficácia no tratamento de flacidez, rugas
+        e linhas de expressão. Ele utiliza tecnologia de microfoco de ultrassom
+        para atingir camadas mais profundas da pele, estimulando a produção de
+        colágeno e melhorando a aparência da pele.
+      </p>
+
+      <h3 class="product-lp__description-section__title">
+        Ultraformer III Contra Indicações
+      </h3>
+
+      <p class="product-lp__description-section__paragraph">
+        O Ultraformer é um tratamento estético que pode ser indicado para uma
+        variedade de pessoas, independentemente de idade, peso ou sexo. Suas
+        indicações mais comuns estão relacionadas a melhorias na qualidade da
+        pele, firmeza e redução de rugas e linhas finas. Mas, como qualquer
+        procedimento médico ou estético, há algumas contraindicações a serem
+        considerados. Aqui estão algumas das principai contraindicações
+        associados ao Ultraformer:
+      </p>
+
+      <ul
+        class="product-lp__description-section__paragraph product-lp__description-section__paragraph--left"
+      >
+        <li>
+          Gravidez e amamentação: O Ultraformer geralmente não é recomendado
+          para mulheres grávidas ou lactantes devido à falta de dados sobre sua
+          segurança nesses casos.
+        </li>
+        <li>
+          Infecções ativas na pele: O tratamento não deve ser realizado em áreas
+          com infecções ativas, como herpes labial.
+        </li>
+        <li>
+          Histórico de queloides: Pessoas com histórico de cicatrização
+          hipertrófica ou queloides podem não ser candidatas ideais para o
+          tratamento.
+        </li>
+        <li>
+          Alergias ou sensibilidades: Se você é alérgico a algum dos componentes
+          do tratamento, deve evitar o Ultraformer.
+        </li>
+        <li>
+          Doenças autoimunes: Pessoas com doenças autoimunes podem ter um risco
+          aumentado de complicações e, portanto, devem ser avaliadas caso a
+          caso.
+        </li>
+      </ul>
+
+      <h3 class="product-lp__description-section__title">
+        Ultraformer reclamações
+      </h3>
 
       <p class="product-lp__description-section__paragraph">
         Assim como qualquer tratamento estético, algumas pessoas podem
@@ -622,13 +1041,14 @@
           />
 
           <label for="question1" class="product-lp__faq-section__question">
-            <span>O que é o Ultraformer?</span>
+            <h3>O que é Ultraformer Full Face?</h3>
             <span class="product-lp__faq-section__plus">&lt;</span>
           </label>
           <div class="product-lp__faq-section__answers">
-            O Ultraformer é um tratamento estético não invasivo que utiliza
-            ondas de ultrassom para estimular a produção de colágeno na pele,
-            proporcionando um efeito lifting facial.
+            Ultraformer Full Face é um tratamento estético que utiliza o
+            aparelho Ultraformer para proporcionar um efeito lifting facial
+            completo, incluindo a região da testa, sobrancelhas, bochechas,
+            mandíbula e papada.
           </div>
         </div>
 
@@ -641,27 +1061,7 @@
           />
 
           <label for="question2" class="product-lp__faq-section__question">
-            <span>O que é Ultraformer Full Face?</span>
-            <span class="product-lp__faq-section__plus">&lt;</span>
-          </label>
-          <div class="product-lp__faq-section__answers">
-            Ultraformer Full Face é um tratamento estético que utiliza o
-            aparelho Ultraformer para proporcionar um efeito lifting facial
-            completo, incluindo a região da testa, sobrancelhas, bochechas,
-            mandíbula e pescoço.
-          </div>
-        </div>
-
-        <div>
-          <input
-            type="checkbox"
-            id="question3"
-            name="q"
-            class="product-lp__faq-section__questions"
-          />
-
-          <label for="question3" class="product-lp__faq-section__question">
-            <span> O Ultraformer piora o melasma? </span>
+            <h3>O Ultraformer piora o melasma?</h3>
             <span class="product-lp__faq-section__plus">&lt;</span>
           </label>
           <div class="product-lp__faq-section__answers">
@@ -675,13 +1075,13 @@
         <div>
           <input
             type="checkbox"
-            id="question4"
+            id="question3"
             name="q"
             class="product-lp__faq-section__questions"
           />
 
-          <label for="question4" class="product-lp__faq-section__question">
-            <span> Qual é o valor de uma sessão de Ultraformer? </span>
+          <label for="question3" class="product-lp__faq-section__question">
+            <h3>Qual é o valor de uma sessão de Ultraformer?</h3>
             <span class="product-lp__faq-section__plus">&lt;</span>
           </label>
           <div class="product-lp__faq-section__answers">
@@ -695,20 +1095,64 @@
         <div>
           <input
             type="checkbox"
+            id="question4"
+            name="q"
+            class="product-lp__faq-section__questions"
+          />
+
+          <label for="question4" class="product-lp__faq-section__question">
+            <h3>Quanto tempo dura o efeito do Ultraformer?</h3>
+            <span class="product-lp__faq-section__plus">&lt;</span>
+          </label>
+          <div class="product-lp__faq-section__answers">
+            A duração dos efeitos do tratamento com Ultraformer pode variar de
+            pessoa para pessoa, mas, em geral, os resultados se mantêm entre 1 e
+            2 anos. A estimulação do colágeno, característica do Ultraformer, é
+            um processo de médio a longo prazo, com melhorias visíveis que se
+            acentuam gradualmente nas primeiras semanas e meses após o
+            tratamento. Isso significa que, com o tempo, a transformação
+            estética se torna cada vez mais evidente.
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
             id="question5"
             name="q"
             class="product-lp__faq-section__questions"
           />
 
           <label for="question5" class="product-lp__faq-section__question">
-            <span> Quanto tempo dura o efeito do Ultraformer? </span>
+            <h3>Quais os riscos do Ultraformer III?</h3>
             <span class="product-lp__faq-section__plus">&lt;</span>
           </label>
           <div class="product-lp__faq-section__answers">
-            O tempo de duração do efeito do Ultraformer pode variar de acordo
-            com a idade e o tipo de pele de cada paciente, bem como o número de
-            sessões realizadas. Em geral, o efeito dura de seis meses a um ano,
-            mas pode ser prolongado com sessões adicionais de manutenção.
+            O Ultraformer é geralmente considerado um tratamento seguro, mas
+            existem alguns riscos que podem ser considerados. Confira os
+            principais riscos do tratamento com Ultraformer:
+
+            <br /><br />
+
+            <ul>
+              <li>
+                Dor: Algumas pessoas podem sentir desconforto ou dor durante o
+                tratamento, embora seja geralmente tolerável.
+              </li>
+              <li>
+                Inchaço e vermelhidão: Após o tratamento, é comum ocorrer
+                inchaço e vermelhidão temporários na área tratada.
+              </li>
+              <li>Hematomas: Pode haver a formação de hematomas leves.</li>
+              <li>
+                Queimaduras: Raramente, o Ultraformer pode causar queimaduras na
+                pele se não for administrado adequadamente.
+              </li>
+              <li>
+                Mudanças temporárias na sensibilidade: Pode haver alterações
+                temporárias na sensibilidade da pele na área tratada.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -825,12 +1269,12 @@
           <img
             alt="logo Lilly Estética"
             class="footer-logo"
-            src="/images/logo-white.svg"
+            src="/images/logo-white.png"
             width="140"
           />
         </div>
         <div class="footerCol sitemap">
-          <h3>Mapa do site</h3>
+          <p class="footerSectionTitle">Mapa do site</p>
           <ul>
             <li><a href="/">Tratamentos</a></li>
             <li><a href="/">Nossos Clubes</a></li>
@@ -842,7 +1286,7 @@
           </ul>
         </div>
         <div class="footerCol">
-          <h3>Fale Conosco</h3>
+          <p class="footerSectionTitle">Fale Conosco</p>
           <ul>
             <li>
               <a
@@ -900,7 +1344,7 @@
         </div>
         <div class="footerCol footerColAddress">
           <div>
-            <h3>Acompanhe nas redes sociais</h3>
+            <p class="footerSectionTitle">Acompanhe nas redes sociais</p>
             <div class="stack footer-social-icons">
               <a
                 target="_blank"

@@ -275,7 +275,7 @@
 }
 
 .product-lp__cta-2 {
-  background-color: #13C75B;
+  background-color: #0B6530;
 }
 
 .product-lp__cta--fixed {
@@ -336,7 +336,7 @@
     border-radius: 0;
     margin: 0;
 
-    background: #13C75B;
+    background: #0B6530;
     border-radius: 10px 10px 0px 0px;
 
     font-style: normal;
@@ -1382,6 +1382,10 @@
   margin-bottom: 26px;
 }
 
+.product-lp__description-section__paragraph--left {
+  text-align: left;
+}
+
 .product-lp__description-section__paragraph+.product-lp__description-section__paragraph {
   margin-top: -13px;
 }
@@ -1479,7 +1483,8 @@
   }
 }
 
-.product-lp__faq-section__question span {
+.product-lp__faq-section__question span,
+.product-lp__faq-section__question h3 {
   font-family: 'Brandon Text';
   font-style: normal;
   font-weight: 450;
@@ -1487,20 +1492,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  .product-lp__faq-section__question span {
+
+  .product-lp__faq-section__question span,
+  .product-lp__faq-section__question h3 {
     font-size: 14.6612px;
     line-height: 25px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .product-lp__faq-section__question span {
+
+  .product-lp__faq-section__question span,
+  .product-lp__faq-section__question h3 {
     font-size: 20px;
     line-height: 34px;
   }
 }
 
-.product-lp__faq-section__questions:checked~.product-lp__faq-section__question span {
+.product-lp__faq-section__questions:checked~.product-lp__faq-section__question span,
+.product-lp__faq-section__questions:checked~.product-lp__faq-section__question h3 {
   color: #569BE8;
 }
 

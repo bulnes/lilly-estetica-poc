@@ -8,6 +8,34 @@
     ? "http://localhost:3000"
     : "https://api.venuz.app/lilly-mkt";
 
+  const getGAClientIds = () => {
+    const GA_ID = "TJW8Y0WQVD";
+
+    try {
+      const cookie = {};
+
+      document.cookie.split(";").forEach((el) => {
+        const splitCookie = el.split("=");
+        const key = splitCookie[0].trim();
+        const value = splitCookie[1];
+        cookie[key] = value;
+      });
+
+      const clientId = cookie["_ga"].substring(6);
+      const sessionId = cookie[`_ga_${GA_ID}`].substring(6).split(".")[0];
+
+      return {
+        clientId,
+        sessionId,
+      };
+    } catch (error) {
+      return {
+        clientId: "",
+        sessionId: "",
+      };
+    }
+  };
+
   const getPrefix = () => {
     // Must return 'G' when utm_source=google and utm_medium=cpc
     const utmSource = new URLSearchParams(search).get("utm_source");
@@ -66,6 +94,7 @@
         search,
         baseUrl: `${protocol}//${host}${pathname}`,
         referrer,
+        ...getGAClientIds(),
       }),
     })
       .then((response) => response.json())

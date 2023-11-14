@@ -3041,10 +3041,10 @@ img[data-image-height="53"]:hover {
   margin-inline-start: 0;
 }
 
-@media (min-width: 768px) {
-  .footer-logo {
-    height: 120px;
-  }
+.footer-logo {
+  height: auto;
+  margin-bottom: 1rem;
+  max-width: 140px;
 }
 
 
@@ -3087,5 +3087,15 @@ img[data-image-height="53"]:hover {
 
   .main-footer .wrapper .footerCol .btn-outline {
     margin: 10px auto;
+  }
+}
+
+.u-body {
+  padding-top: 50px;
+}
+
+@media (min-width: 1024px) {
+  .u-body {
+    padding-top: 80px;
   }
 }

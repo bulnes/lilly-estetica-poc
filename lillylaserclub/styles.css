@@ -2156,10 +2156,10 @@ img[data-image-height="140"]:hover {
   margin-inline-start: 0;
 }
 
-@media (min-width: 768px) {
-  .footer-logo {
-    height: 120px;
-  }
+.footer-logo {
+  height: auto;
+  margin-bottom: 1rem;
+  max-width: 140px;
 }
 
 @media (max-width: 765px) {
@@ -2969,5 +2969,15 @@ img[data-image-height="140"]:hover {
     font-size: 28px;
     font-weight: bold;
     font-family: BrandonText-Bold !important;
+  }
+}
+
+.u-body {
+  padding-top: 50px;
+}
+
+@media (min-width: 1024px) {
+  .u-body {
+    padding-top: 80px;
   }
 }

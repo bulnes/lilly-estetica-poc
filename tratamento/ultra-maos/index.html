@@ -126,129 +126,455 @@
         <button class="call-menu">
           <span class="icon icon-menu header-ui--mobile"></span>
         </button>
+
         <div class="logo-wrapper-mobile">
           <a href="/">
-            <img src="/images/logo-small.svg" class="logo" alt="" />
+            <img src="/images/brand.svg" class="logo" alt="" width="82" />
           </a>
         </div>
+
         <div class="logo-wrapper-desktop">
           <div style="height: 140px; margin-top: -30px">
             <a href="/">
-              <img src="/images/logo-small.svg" class="logo" alt="" />
+              <img src="/images/brand.svg" class="logo" alt="" width="144" />
             </a>
           </div>
         </div>
-        <nav class="menu">
+
+        <nav class="menu" data-close-menu>
           <div class="inner">
-            <img src="/images/logo.svg" class="menu__logo" alt="" />
+            <img src="/images/brand.svg" class="menu__logo" alt="" />
+
+            <div class="menu__close" data-close-menu></div>
+
             <ul class="menu__nav">
               <li>
                 <a
                   class="nav-section"
-                  data-id="tratamentos"
-                  href="/#tratamentos"
-                  >TRATAMENTOS</a
+                  data-id="home"
+                  href="/"
+                  title="Ir para Home"
+                  data-close-menu
                 >
+                  Home
+                </a>
               </li>
+
+              <li>
+                <a class="nav-section" data-id="conheca" href="/clinicas.html">
+                  Clínicas
+                </a>
+              </li>
+
               <li class="dropdown-btn">
-                <button onmouseover="myClubes()" class="dropbtn">Clubes</button>
-                <ul class="dropdown-content" id="myClubes">
+                <input
+                  type="checkbox"
+                  id="menu-clubes"
+                  name="q"
+                  class="menu__nav-checkbox"
+                />
+                <label for="menu-clubes" class="menu__nav-label">
+                  <span>Clubes</span>
+                  <span class="menu__nav-label-icon">
+                    <svg
+                      viewBox="0 0 30 30"
+                      height="30"
+                      width="30"
+                      preserveAspectRatio="xMidYMid meet"
+                      class=""
+                      version="1.1"
+                      x="0px"
+                      y="0px"
+                      enable-background="new 0 0 30 30"
+                      xml:space="preserve"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+
+                <ul class="dropdown-content">
                   <li><a href="/lillylaserclub">Lilly Laser Club</a></li>
                   <li><a href="/lillybotoclub">Lilly Boto Club</a></li>
                   <li><a href="/lillyclub">Lilly Club</a></li>
                 </ul>
               </li>
-              <li>
-                <a class="nav-section" data-id="conheca" href="/clinicas.html"
-                  >CL&Iacute;NICAS</a
-                >
+
+              <li class="dropdown-btn dropdown-btn--tratamentos">
+                <input
+                  type="checkbox"
+                  id="menu-tratamentos"
+                  name="q"
+                  class="menu__nav-checkbox"
+                />
+                <label for="menu-tratamentos" class="menu__nav-label">
+                  <span>Tratamentos</span>
+                  <span class="menu__nav-label-icon">
+                    <svg
+                      viewBox="0 0 30 30"
+                      height="30"
+                      width="30"
+                      preserveAspectRatio="xMidYMid meet"
+                      class=""
+                      version="1.1"
+                      x="0px"
+                      y="0px"
+                      enable-background="new 0 0 30 30"
+                      xml:space="preserve"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+
+                <ul class="dropdown-content">
+                  <li>
+                    <a href="/#tratamentos" data-close-menu>Mais Vendido</a>
+                  </li>
+                  <li>
+                    <a href="/#especiaispravoce" data-close-menu
+                      >Especiais pra Você</a
+                    >
+                  </li>
+
+                  <!-- Tratamentos Faciais -->
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="menu-tratamentos-faciais"
+                      name="q"
+                      class="menu__nav-checkbox"
+                    />
+                    <label
+                      for="menu-tratamentos-faciais"
+                      class="menu__nav-label"
+                    >
+                      <span>Tratamentos Faciais</span>
+                      <span class="menu__nav-label-icon">
+                        <svg
+                          viewBox="0 0 30 30"
+                          height="30"
+                          width="30"
+                          preserveAspectRatio="xMidYMid meet"
+                          class=""
+                          version="1.1"
+                          x="0px"
+                          y="0px"
+                          enable-background="new 0 0 30 30"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul>
+                      <li>
+                        <a href="/tratamento/radiesse-bioestimulador"
+                          >Radiesse Bioestimulador</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/sculptra-bioestimulador"
+                          >Sculptra Bioestimulador</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/ultraformer-3">Ultraformer III</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/cicatrizes-acne"
+                          >Cicatrizes de Acne</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/clareamento-de-melasmas"
+                          >Clareamento de Melasmas</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/hollywood-peel">Hollywood Peel</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/rejuvenescimento-7d"
+                          >Rejuvenescimento 7D</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/tratamento-de-olheiras"
+                          >Tratamento de Olheiras</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Tratamentos Corporais-->
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="menu-tratamentos-corporais"
+                      name="q"
+                      class="menu__nav-checkbox"
+                    />
+                    <label
+                      for="menu-tratamentos-corporais"
+                      class="menu__nav-label"
+                    >
+                      <span>Tratamentos Corporais</span>
+                      <span class="menu__nav-label-icon">
+                        <svg
+                          viewBox="0 0 30 30"
+                          height="30"
+                          width="30"
+                          preserveAspectRatio="xMidYMid meet"
+                          class=""
+                          version="1.1"
+                          x="0px"
+                          y="0px"
+                          enable-background="new 0 0 30 30"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul>
+                      <li>
+                        <a href="/tratamento/tratamento-de-celulite"
+                          >Tratamento de Celulite</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/tratamento-de-estrias"
+                          >Tratamento de Estrias</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/criofrequencia">Criofrequência</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/criolipolise">Criolipólise</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/radiofrequencia"
+                          >Radiofrequência</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/lipo-sem-cortes"
+                          >Lipo sem Cortes</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/ultraformer-3">Ultraformer III</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Tratamento Injetáveis -->
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="menu-tratamentos-injetaveis"
+                      name="q"
+                      class="menu__nav-checkbox"
+                    />
+                    <label
+                      for="menu-tratamentos-injetaveis"
+                      class="menu__nav-label"
+                    >
+                      <span>Tratamentos Injetáveis</span>
+                      <span class="menu__nav-label-icon">
+                        <svg
+                          viewBox="0 0 30 30"
+                          height="30"
+                          width="30"
+                          preserveAspectRatio="xMidYMid meet"
+                          class=""
+                          version="1.1"
+                          x="0px"
+                          y="0px"
+                          enable-background="new 0 0 30 30"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul>
+                      <li>
+                        <a href="/tratamento/radiesse-bioestimulador"
+                          >Radiesse Bioestimulador</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/sculptra-bioestimulador"
+                          >Sculptra Bioestimulador</a
+                        >
+                      </li>
+                      <li><a href="/tratamento/skinbooster">Skinbooster</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Tratamentos a Laser -->
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="menu-tratamentos-laser"
+                      name="q"
+                      class="menu__nav-checkbox"
+                    />
+                    <label for="menu-tratamentos-laser" class="menu__nav-label">
+                      <span>Tratamento à Laser</span>
+                      <span class="menu__nav-label-icon">
+                        <svg
+                          viewBox="0 0 30 30"
+                          height="30"
+                          width="30"
+                          preserveAspectRatio="xMidYMid meet"
+                          class=""
+                          version="1.1"
+                          x="0px"
+                          y="0px"
+                          enable-background="new 0 0 30 30"
+                          xml:space="preserve"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11,21.212L17.35,15L11,8.65l1.932-1.932L21.215,15l-8.282,8.282L11,21.212z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </label>
+
+                    <ul>
+                      <li>
+                        <a href="/tratamento/cicatrizes-acne"
+                          >Cicatrizes de Acne</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/clareamento-de-melasmas"
+                          >Clareamento de Melasmas</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/depilacao-a-laser"
+                          >Depilação a Laser</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/depilacao-a-laser-masculina"
+                          >Depilação a Laser Masculina</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/hollywood-peel">Hollywood Peel</a>
+                      </li>
+                      <li>
+                        <a href="/tratamento/rejuvenescimento-7d"
+                          >Rejuvenescimento 7D</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/remocao-de-tatuagens"
+                          >Remoção de Tatuagens</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/tratamento-micose-de-unhas"
+                          >Tratamento de Micose de Unhas</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/tratamento/tratamento-de-olheiras"
+                          >Tratamento de Olheiras</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+
+              <li>
+                <a class="nav-section" data-id="contato" href="/contato.html">
+                  Fale Conosco
+                </a>
+              </li>
+
+              <li>
+                <a class="nav-section" data-id="app" href="/app.html">
+                  Lilly App
+                </a>
+              </li>
+
               <li>
                 <a
                   class="nav-section"
                   data-id="blog"
                   href="https://blog.lillyestetica.com.br"
                   target="_blank"
-                  >BLOG</a
                 >
+                  Blog
+                </a>
               </li>
+            </ul>
 
-              <li>
-                <a class="nav-section" data-id="contato" href="/contato.html"
-                  >FALE CONOSCO</a
-                >
-              </li>
-              <li>
-                <a class="nav-section" data-id="app" href="/app.html"
-                  >Lilly App</a
-                >
-              </li>
-            </ul>
-            <ul class="social header-ui--mobile">
-              <li>
-                <a
-                  href="https://pt-br.facebook.com/esteticalilly"
-                  target="_blank"
-                >
-                  <span class="icon icon-facebook"></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/lilly_estetica"
-                  target="_blank"
-                >
-                  <span class="icon icon-instagram"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://bit.ly/AtendiLillySite" target="_blank">
-                  <span class="icon icon-whatsapp"></span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCPmBSUnFiZDOuLxZFi0Cntw"
-                  target="_blank"
-                >
-                  <span class="icon icon-youtube"></span>
-                </a>
-              </li>
-            </ul>
+            <div class="header-ui--mobile">
+              <a
+                href="https://bit.ly/AtendiLillySite"
+                title="Saiba Mais"
+                target="_blank"
+                class="menu__cta-whats"
+              >
+                <img
+                  src="/images/tratamentos/icon-small-whats.png"
+                  alt="Ícone: Saiba Mais"
+                  title="Saiba Mais"
+                  width="18"
+                  height="18"
+                  loading="lazy"
+                />
+                <span>Ofertas do mês</span>
+              </a>
+            </div>
           </div>
         </nav>
+
         <div class="header__last">
-          <ul class="social header-ui--desktop">
-            <li>
-              <a
-                href="https://pt-br.facebook.com/esteticalilly"
-                target="_blank"
-              >
-                <span class="icon icon-facebook"></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/lilly_estetica"
-                target="_blank"
-              >
-                <span class="icon icon-instagram"></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://bit.ly/AtendiLillySite" target="_blank">
-                <span class="icon icon-whatsapp"></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCPmBSUnFiZDOuLxZFi0Cntw"
-                target="_blank"
-              >
-                <span class="icon icon-youtube"></span>
-              </a>
-            </li>
-          </ul>
+          <a
+            href="https://bit.ly/AtendiLillySite"
+            title="Saiba Mais"
+            target="_blank"
+            class="menu__cta-whats"
+          >
+            <img
+              src="/images/tratamentos/icon-small-whats.png"
+              alt="Ícone: Saiba Mais"
+              title="Saiba Mais"
+              width="18"
+              height="18"
+              loading="lazy"
+            />
+            <span>Ofertas do mês</span>
+          </a>
         </div>
       </div>
     </header>
@@ -388,7 +714,7 @@
           <img
             alt="logo Lilly Estética"
             class="footer-logo"
-            src="/images/logo-white.svg"
+            src="/images/logo-white.png"
           />
           <a class="footer-site-link" href="/">lillyestetica.com.br</a>
           <p class="footer-texto">Acompanhe a gente nas redes</p>
