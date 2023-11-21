@@ -113,42 +113,10 @@
     <!-- End Google Tag Manager -->
   </head>
   <body>
-    <div class="container">
+    <div id="page-elements" class="container">
       <header>
         <section id="topper" class="section">
           <div class="header-on-top">
-            <picture class="header-on-top__bg">
-              <source
-                srcset="/images/depilacaoalaser/topper-bg-desktop.png"
-                width="1440"
-                height="200"
-                media="(min-width: 1024px)"
-              />
-              <img
-                src="/images/depilacaoalaser/topper-bg-mobile.png"
-                alt=""
-                width="390"
-                height="440"
-                loading="lazy"
-              />
-            </picture>
-
-            <picture class="header-on-top__fade">
-              <source
-                srcset="/images/depilacaoalaser/fade-desktop.png"
-                width="1440"
-                height="200"
-                media="(min-width: 1024px)"
-              />
-              <img
-                src="/images/depilacaoalaser/fade-mobile.png"
-                alt=""
-                width="390"
-                height="440"
-                loading="lazy"
-              />
-            </picture>
-
             <div class="header-on-top__content">
               <picture>
                 <source
@@ -170,14 +138,17 @@
                 <span>Você ganhou</span>
                 <span>1 sessão grátis de</span>
                 <span>depilação a laser na</span>
-                <span>clínica mais moderna</span>
+                <span
+                  >clínica mais <span id="changing-words">moderna</span></span
+                >
                 <span>da Barra da Tijuca</span>
               </h1>
 
               <a
                 href="https://bit.ly/AtendiLillySite"
-                title="Agende agora sua sessão grátis "
+                title="Agende agora sua sessão grátis"
                 class="cta cta--rose cta--small cta--full-width"
+                target="_blank"
                 id="cta-top"
               >
                 <span>Agende agora sua sessão</span>
@@ -200,8 +171,9 @@
 
               <a
                 href="https://bit.ly/AtendiLillySite"
-                title="Agende agora sua sessão grátis "
+                title="Agende agora sua sessão grátis"
                 class="cta cta--transparent cta--full-width cta--type2"
+                target="_blank"
               >
                 <span>Saiba mais sobre Depilação a Laser na Lilly</span>
                 <img
@@ -217,8 +189,9 @@
 
           <a
             href="https://bit.ly/AtendiLillySite"
-            title="Agende agora sua sessão grátis "
+            title="Agende agora sua sessão grátis"
             class="cta cta--transparent cta--full-width"
+            target="_blank"
             id="cta-bottom"
           >
             <span>Saiba mais sobre Depilação a Laser na Lilly</span>
@@ -242,22 +215,38 @@
           </div>
 
           <div class="colunar colunar--rosa-forete colunar--full-width">
-            <div class="colunar__image colunar__image--no-scale">
+            <div
+              class="colunar__image colunar__image--no-scale hide-on-desktop-with-aside"
+            >
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/method-desktop.png"
+                  srcset="/images/depilacaoalaser/metodo-desktop.jpg"
                   width="739"
                   height="422"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/method-desktop.png"
+                  src="/images/depilacaoalaser/metodo-mobile.jpg"
                   alt=""
                   width="340"
                   height="200"
                   loading="lazy"
+                  id="method-image"
                 />
               </picture>
+            </div>
+
+            <div
+              class="colunar__image colunar__image--no-scale hide-on-mobile hide-on-desktop-without-aside"
+            >
+              <img
+                src="/images/depilacaoalaser/metodo-mobile.jpg"
+                alt=""
+                width="739"
+                height="422"
+                loading="lazy"
+                id="method-image"
+              />
             </div>
 
             <div class="colunar__text">
@@ -298,23 +287,18 @@
           <div class="section__container section__container--with-aside">
             <a
               href="https://bit.ly/AtendiLillySite"
-              title="Agende agora sua sessão grátis "
+              title="Agende agora sua sessão grátis"
+              target="_blank"
               class="cta cta--black"
             >
               <span>Agende agora sua sessão grátis </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="18"
-                viewBox="0 0 11 18"
-                fill="none"
-              >
-                <path
-                  d="M1.46875 2L8.46875 9L1.46875 16"
-                  stroke="white"
-                  stroke-width="3"
-                />
-              </svg>
+              <img
+                src="/images/depilacaoalaser/arrow.png"
+                alt=""
+                width="6"
+                height="14"
+                loading="lazy"
+              />
             </a>
           </div>
         </section>
@@ -348,23 +332,18 @@
 
             <a
               href="https://bit.ly/AtendiLillySite"
-              title="Agende agora sua sessão grátis "
+              title="Agende agora sua sessão grátis"
+              target="_blank"
               class="cta cta--black"
             >
               <span>Agende agora sua sessão</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="18"
-                viewBox="0 0 11 18"
-                fill="none"
-              >
-                <path
-                  d="M1.46875 2L8.46875 9L1.46875 16"
-                  stroke="white"
-                  stroke-width="3"
-                />
-              </svg>
+              <img
+                src="/images/depilacaoalaser/arrow.png"
+                alt=""
+                width="6"
+                height="14"
+                loading="lazy"
+              />
             </a>
           </div>
         </section>
@@ -379,13 +358,13 @@
             <div class="colunar__image colunar__image--no-scale">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/masculina-desktop.png"
+                  srcset="/images/depilacaoalaser/bg-masculina-desktop.jpg"
                   width="526"
                   height="526"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/masculina-mobile.png"
+                  src="/images/depilacaoalaser/bg-masculina-mobile.jpg"
                   alt=""
                   width="340"
                   height="200"
@@ -443,23 +422,18 @@
           <div class="section__container">
             <a
               href="https://bit.ly/AtendiLillySite"
-              title="Agende agora sua sessão grátis "
+              title="Agende agora sua sessão grátis"
+              target="_blank"
               class="cta cta--black"
             >
               <span>Agende agora sua sessão grátis </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="18"
-                viewBox="0 0 11 18"
-                fill="none"
-              >
-                <path
-                  d="M1.46875 2L8.46875 9L1.46875 16"
-                  stroke="white"
-                  stroke-width="3"
-                />
-              </svg>
+              <img
+                src="/images/depilacaoalaser/arrow.png"
+                alt=""
+                width="6"
+                height="14"
+                loading="lazy"
+              />
             </a>
           </div>
         </section>
@@ -471,16 +445,16 @@
           </div>
 
           <div class="colunar colunar--rosa-forete">
-            <div class="colunar__image colunar__image--no-scale">
+            <div class="colunar__image colunar__image--no-scale album-photos">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/clinic-desktop.png"
+                  srcset="/images/depilacaoalaser/clinic1-desktop.jpg"
                   width="526"
                   height="526"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/clinic-desktop.png"
+                  src="/images/depilacaoalaser/clinic1-mobile.jpg"
                   alt=""
                   width="340"
                   height="200"
@@ -521,23 +495,18 @@
           <div class="section__container">
             <a
               href="https://bit.ly/AtendiLillySite"
-              title="Agende agora sua sessão grátis "
+              title="Agende agora sua sessão grátis"
               class="cta cta--black"
+              target="_blank"
             >
               <span>Agende agora sua sessão grátis </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="18"
-                viewBox="0 0 11 18"
-                fill="none"
-              >
-                <path
-                  d="M1.46875 2L8.46875 9L1.46875 16"
-                  stroke="white"
-                  stroke-width="3"
-                />
-              </svg>
+              <img
+                src="/images/depilacaoalaser/arrow.png"
+                alt=""
+                width="6"
+                height="14"
+                loading="lazy"
+              />
             </a>
           </div>
         </section>
@@ -554,13 +523,13 @@
             <div class="colunar__image">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/equipamentos-desktop.jpg"
+                  srcset="/images/depilacaoalaser/tool-desktop.jpg"
                   width="526"
                   height="526"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/equipamentos-mobile.png"
+                  src="/images/depilacaoalaser/tool-mobile.jpg"
                   alt=""
                   width="340"
                   height="200"
@@ -595,23 +564,18 @@
           <div class="section__container">
             <a
               href="https://bit.ly/AtendiLillySite"
-              title="Agende agora sua sessão grátis "
+              title="Agende agora sua sessão grátis"
               class="cta cta--black"
+              target="_blank"
             >
               <span>Agende agora sua sessão grátis </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="18"
-                viewBox="0 0 11 18"
-                fill="none"
-              >
-                <path
-                  d="M1.46875 2L8.46875 9L1.46875 16"
-                  stroke="white"
-                  stroke-width="3"
-                />
-              </svg>
+              <img
+                src="/images/depilacaoalaser/arrow.png"
+                alt=""
+                width="6"
+                height="14"
+                loading="lazy"
+              />
             </a>
           </div>
         </section>
@@ -628,13 +592,13 @@
             <div class="colunar__image">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/profissionais-desktop.png"
+                  srcset="/images/depilacaoalaser/prof-desktop.jpg"
                   width="526"
                   height="526"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/profissionais-desktop.png"
+                  src="/images/depilacaoalaser/prof-mobile.jpg"
                   alt=""
                   width="340"
                   height="200"
@@ -672,23 +636,18 @@
           <div class="section__container">
             <a
               href="https://bit.ly/AtendiLillySite"
-              title="Agende agora sua sessão grátis "
+              title="Agende agora sua sessão grátis"
               class="cta cta--black"
+              target="_blank"
             >
               <span>Agende agora sua sessão grátis </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="18"
-                viewBox="0 0 11 18"
-                fill="none"
-              >
-                <path
-                  d="M1.46875 2L8.46875 9L1.46875 16"
-                  stroke="white"
-                  stroke-width="3"
-                />
-              </svg>
+              <img
+                src="/images/depilacaoalaser/arrow.png"
+                alt=""
+                width="6"
+                height="14"
+                loading="lazy"
+              />
             </a>
           </div>
         </section>
@@ -714,14 +673,17 @@
               />
 
               <div class="horizontal-list__item__description">
-                “Acho que demorei muito pra fazer o laser porque as matérias que
-                eu lia em revistas e os depoimentos que as amigas me davam,
-                sempre me confundiam. Cada lugar e pessoa falava de um aparelho
-                diferente, de reações diferentes… Acabei fazendo o Laser Q-Plus,
-                na Lilly, apenas pela indicação de uma amiga, sem saber nada
-                sobre ele. Foi muito tranquilo e confortavel”
+                "A palavra que melhor resume o que senti no meu primeiro contato
+                com a depilação a laser é: SURPREENDENTE! Foi tudo diferente do
+                que eu imaginei, principalmente em relação a dor (que não
+                existiu). O jato de ar frio deixou tudo tão confortável, sem
+                falar na rapidez e praticidade. O maior diferencial, que me fez
+                querer fechar o pacote com vocês, foi a flexibilidade de poder
+                alterar e intercalar diferentes áreas do corpo em uma única
+                sessão. Superou minhas expectativas. E nota mil para as
+                profissionais que realizam o procedimento. Muito obrigada!"
 
-                <span>Lidia Amarante - SP</span>
+                <span>Maria Eduarda Andrade Silva - SP</span>
               </div>
             </div>
 
@@ -737,15 +699,16 @@
               />
 
               <div class="horizontal-list__item__description">
-                Quanto maior esse contraste de cor de pele e de pêlo e, quanto
-                mais grosso o pêlo, mais eficiente é o resultado. Como meus
-                pêlos são mais finos, o resultado não foi perfeito, como foi na
-                parte debaixo da perna onde eles eram mais grossos. Por esse
-                motivo também, nem todo laser é permitido para peles negras:
-                eles agem em cima da melanina e queimariam a pele (mas existem
-                opções seguras!).
+                “Realizei o procedimento de depilação a laser na Lilly Estética
+                e fiquei impressionado com a qualidade do atendimento (as
+                técnicas são muito atenciosas e cuidadosas), e a avançada
+                tecnologia dos equipamento utilizado. O resfriamento do laser
+                torna a sessão muito confortável. Todas as sessões foram
+                conduzidas de maneira profissional, e estou muito satisfeita com
+                os resultados, pois agora estou livre dos pelos. Minha
+                experiência foi incrível e recomendo muito!”
 
-                <span>Ana Cláudia - RJ</span>
+                <span>Bruna Soares - RJ</span>
               </div>
             </div>
 
@@ -761,14 +724,15 @@
               />
 
               <div class="horizontal-list__item__description">
-                Pois é, escrevo esse post com 2 anos de atraso pra falar eu
-                ainda considero a depilação a laser na perna inteira, que fiz na
-                época, um dos melhores investimentos da vida. Foi caro, não
-                senti desconforto, foi um longo processo, mas valeu a pena.
-                Nunca é tarde pra compartilhar uma boa experiência! Também estou
-                fazendo faixa de barba e peito. Estou muito satisfeito.
+                “Gostaria de compartilhar minha experiência com vocês. Há dois
+                anos, realizei o procedimento de depilação nas costas. Desde o
+                início, fui muito bem recebido pela equipe que demonstrou um
+                profissionalismo excepcional. Os resultados foram surpreendentes
+                e duradouros. A eficácia do procedimento superou minhas
+                expectativas, e estou muito feliz com a qualidade do serviço
+                prestado pela Lilly Estética.”
 
-                <span>Jorge Aguiar - MG</span>
+                <span>Matheus Goi Gonçalves - SP</span>
               </div>
             </div>
           </div>
@@ -778,21 +742,16 @@
               hre="https://bit.ly/AtendiLillySite"
               title="Agende agora sua sessão grátis"
               class="cta cta--black"
+              target="_blank"
             >
               <span>Agende agora sua sessão grátis</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="18"
-                viewBox="0 0 11 18"
-                fill="none"
-              >
-                <path
-                  d="M1.46875 2L8.46875 9L1.46875 16"
-                  stroke="white"
-                  stroke-width="3"
-                />
-              </svg>
+              <img
+                src="/images/depilacaoalaser/arrow.png"
+                alt=""
+                width="6"
+                height="14"
+                loading="lazy"
+              />
             </a>
           </div>
         </section>
@@ -1019,7 +978,11 @@
         </div>
 
         <div class="aside__input-area">
-          <input type="text" placeholder="Digite sua mensagem..." />
+          <input
+            type="text"
+            placeholder="Digite sua mensagem..."
+            id="newmessage"
+          />
 
           <button type="submit">
             <img

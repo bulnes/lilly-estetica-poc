@@ -14,6 +14,8 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+
+  transition: all ease-in-out 0.25s;
 }
 
 .container header *,
@@ -29,6 +31,12 @@
       "header header"
       "main aside";
     grid-template-columns: 1fr 530px;
+  }
+
+  .container.withfullaside {
+    grid-template-areas:
+      "header aside"
+      "main aside";
   }
 
   header {
@@ -66,6 +74,22 @@
   border-width: 0;
 }
 
+@media (min-width: 1024px) {
+  .container.withfullaside .hide-on-desktop-without-aside {
+    display: none;
+  }
+
+  .container:not(.withfullaside) .hide-on-desktop-with-aside {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
 main > *:not(.main-footer) {
   font-family: "Inter", sans-serif;
 }
@@ -89,6 +113,10 @@ main > *:not(.main-footer) {
   .section__container--with-aside {
     position: relative;
     left: -256px;
+  }
+
+  .container.withfullaside .section__container--with-aside {
+    left: 0;
   }
 }
 
@@ -144,6 +172,39 @@ main > *:not(.main-footer) {
     line-height: 24px; /* 120% */
     letter-spacing: -0.4px;
     max-width: 612px;
+  }
+}
+
+#changing-words {
+  color: transparent;
+  position: relative;
+}
+#changing-words:after {
+  content: "";
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  animation: changingwords 5s linear infinite;
+}
+@keyframes changingwords {
+  0%,
+  100% {
+    content: "moderna";
+  }
+  25% {
+    content: "atual";
+  }
+  50% {
+    content: "bonita";
+  }
+  75% {
+    content: "diferente";
+  }
+}
+
+@media (min-width: 1024px) {
+  .container.withfullaside #method-image {
+    height: 420px;
   }
 }
 
@@ -248,6 +309,10 @@ main > *:not(.main-footer) {
   transform: rotate(90deg);
 }
 
+.cta.cta--visited {
+  background-color: #3beb82 !important;
+}
+
 #cta-bottom {
   display: flex;
   flex-direction: column;
@@ -281,19 +346,20 @@ main > *:not(.main-footer) {
 .header-on-top {
   position: relative;
   overflow: hidden;
-}
-.header-on-top__bg {
   aspect-ratio: 390 / 440;
-  display: block;
-}
-.header-on-top__bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+  background-image: url("/images/depilacaoalaser/bg-header-mobile.png");
+  background-size: cover;
 }
 @media (min-width: 1024px) {
-  .header-on-top__bg {
+  .header-on-top {
     aspect-ratio: 1440 / 677;
+    background-image: url("/images/depilacaoalaser/bg-header-desktop.png");
+  }
+
+  .container.withfullaside .header-on-top {
+    aspect-ratio: unset;
+    height: 677px;
   }
 }
 .header-on-top__fade {
@@ -558,10 +624,12 @@ ul.colunar__text-content li:last-child {
   }
 }
 .horizontal-list__item {
+  align-self: stretch;
+
   display: flex;
   width: 266.318px;
   min-height: 307px;
-  padding: 15.218px;
+  padding: 15.218px 15.218px 30px;
   flex-direction: column;
   align-items: center;
   gap: 15.218px;
@@ -620,6 +688,21 @@ ul.colunar__text-content li:last-child {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.container.withfullaside .aside {
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -684,6 +767,34 @@ ul.colunar__text-content li:last-child {
   align-items: center;
   gap: 10px;
 }
+.aside__input-area.aside__input-area-shake-horizontal {
+  animation: input-area-shake-horizontal 0.8s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+@keyframes input-area-shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
 .aside__input-area input {
   border: none;
   outline: none;
@@ -720,5 +831,53 @@ ul.colunar__text-content li:last-child {
   }
   .main-footer .wrapper .footerCol {
     min-width: 140px;
+  }
+}
+
+/*********************
+ * Header component
+ *********************/
+.album-photos {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  animation-name: album-photos-mobile;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@media (min-width: 1024px) {
+  .album-photos {
+    background-size: cover;
+    animation-name: album-photos-desktop;
+  }
+}
+.album-photos picture {
+  visibility: hidden;
+}
+
+@keyframes album-photos-mobile {
+  0%,
+  100% {
+    background-image: url(/images/depilacaoalaser/clinic1-mobile.jpg);
+  }
+  35% {
+    background-image: url(/images/depilacaoalaser/clinic2-mobile.jpg);
+  }
+  65% {
+    background-image: url(/images/depilacaoalaser/clinic3-mobile.jpg);
+  }
+}
+
+@keyframes album-photos-desktop {
+  0%,
+  100% {
+    background-image: url(/images/depilacaoalaser/clinic1-desktop.jpg);
+  }
+  35% {
+    background-image: url(/images/depilacaoalaser/clinic2-desktop.jpg);
+  }
+  65% {
+    background-image: url(/images/depilacaoalaser/clinic3-desktop.jpg);
   }
 }
