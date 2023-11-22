@@ -216,7 +216,7 @@
 
           <div class="colunar colunar--rosa-forete colunar--full-width">
             <div
-              class="colunar__image colunar__image--no-scale hide-on-desktop-with-aside"
+              class="colunar__image colunar__image--no-scale hide-on-desktop-with-aside hide-on-desktop-without-aside"
             >
               <picture>
                 <source
@@ -236,9 +236,7 @@
               </picture>
             </div>
 
-            <div
-              class="colunar__image colunar__image--no-scale hide-on-mobile hide-on-desktop-without-aside"
-            >
+            <div class="colunar__image colunar__image--no-scale hide-on-mobile">
               <img
                 src="/images/depilacaoalaser/metodo-mobile.jpg"
                 alt=""
@@ -945,59 +943,37 @@
           </div>
         </footer>
       </main>
-
-      <aside class="aside">
-        <h2 class="aside__title">
-          Agende aqui sua avaliação grátis com uma de nossas especialistas
-        </h2>
-
-        <div class="aside__chat">
-          <div class="aside__chat-item">
-            <p>
-              Olá! Seja bem-vinda(o) à <strong>Lilly</strong>, o maior clube de
-              estética do Brasil
-            </p>
-            <small>11:12 AM</small>
-          </div>
-
-          <div class="aside__chat-item">
-            <p>
-              Você é <strong>nossa(o) convidada(o)</strong> para fazer uma
-              <strong>
-                avaliação presencial e 1 sessão de depilação a laser gratuita
-              </strong>
-              em uma de nossas unidades.
-            </p>
-            <small>11:12 AM</small>
-          </div>
-
-          <div class="aside__chat-item">
-            <p>Qual o <strong>seu nome?</strong></p>
-            <small>11:12 AM</small>
-          </div>
-        </div>
-
-        <div class="aside__input-area">
-          <input
-            type="text"
-            placeholder="Digite sua mensagem..."
-            id="newmessage"
-          />
-
-          <button type="submit">
-            <img
-              src="/images/depilacaoalaser/union.svg"
-              alt=""
-              width="19"
-              height="19"
-              loading="lazy"
-            />
-            <span class="sr-only">Enviar mensagem</span>
-          </button>
-        </div>
-      </aside>
     </div>
 
     <script src="/js/depilacaoalaser.js"></script>
+    <script>
+      (() => {
+        const isDesktop = window.innerWidth > 768;
+
+        const $page = document.querySelector("#page-elements");
+        const $inputArea = document.querySelector(".aside__input-area");
+        const $input = document.querySelector("#newmessage");
+
+        if (isDesktop) {
+          const allCtas = document.querySelectorAll(".cta");
+
+          [...allCtas].forEach((cta) => {
+            cta.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+
+              const ctas = document.querySelectorAll(
+                ".cta:not(.cta--transparent)"
+              );
+              [...ctas].forEach((cta) => cta.classList.add("cta--visited"));
+
+              window.botmaker.iframe.contentDocument
+                .getElementsByTagName("textarea")[0]
+                .focus();
+            });
+          });
+        }
+      })();
+    </script>
   </body>
 </html>

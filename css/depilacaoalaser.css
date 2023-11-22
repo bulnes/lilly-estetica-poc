@@ -12,7 +12,7 @@
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
 
   transition: all ease-in-out 0.25s;
@@ -29,14 +29,14 @@
     display: grid;
     grid-template-areas:
       "header header"
-      "main aside";
-    grid-template-columns: 1fr 530px;
+      "main main";
+    grid-template-columns: 1fr 500px;
   }
 
   .container.withfullaside {
     grid-template-areas:
-      "header aside"
-      "main aside";
+      "header ."
+      "main .";
   }
 
   header {
@@ -192,19 +192,13 @@ main > *:not(.main-footer) {
     content: "moderna";
   }
   25% {
-    content: "atual";
-  }
-  50% {
     content: "bonita";
   }
-  75% {
-    content: "diferente";
+  50% {
+    content: "tecnológica";
   }
-}
-
-@media (min-width: 1024px) {
-  .container.withfullaside #method-image {
-    height: 420px;
+  75% {
+    content: "inovadora";
   }
 }
 
@@ -549,6 +543,9 @@ div.colunar__text-content p {
     margin-bottom: 16px;
   }
 }
+.colunar__text-title + .colunar__text-content p {
+  font-weight: 400;
+}
 ul.colunar__text-content li:last-child {
   margin-bottom: 0;
 }
@@ -573,8 +570,8 @@ ul.colunar__text-content li:last-child {
 }
 @media (min-width: 1024px) {
   .colunas__float-price {
-    top: auto;
-    bottom: 41px;
+    top: 45px;
+    right: 17px;
   }
 }
 
@@ -835,7 +832,7 @@ ul.colunar__text-content li:last-child {
 }
 
 /*********************
- * Header component
+ * Slideshow component
  *********************/
 .album-photos {
   background-size: contain;
