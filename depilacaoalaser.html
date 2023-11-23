@@ -111,6 +111,21 @@
       })(window, document, "script", "dataLayer", "GTM-5D9ZWC3");
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11420344456"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11420344456");
+    </script>
   </head>
   <body>
     <div id="page-elements" class="container">
@@ -138,9 +153,9 @@
                 <span>Você ganhou</span>
                 <span>1 sessão grátis de</span>
                 <span>depilação a laser na</span>
-                <span
-                  >clínica mais <span id="changing-words">moderna</span></span
-                >
+                <span>
+                  clínica mais <span id="changing-words">moderna</span>
+                </span>
                 <span>da Barra da Tijuca</span>
               </h1>
 
@@ -953,6 +968,31 @@
         const $page = document.querySelector("#page-elements");
         const $inputArea = document.querySelector(".aside__input-area");
         const $input = document.querySelector("#newmessage");
+        const words = document.querySelector("#changing-words");
+
+        let wordsList = ["bonita", "tecnológica", "inovadora", "moderna"];
+        let wordIndex = 0;
+
+        function typeWrite(elemento) {
+          const textoArray = elemento.innerHTML.split("");
+          elemento.innerHTML = " ";
+          textoArray.forEach(function (letra, i) {
+            setTimeout(function () {
+              elemento.innerHTML += letra;
+            }, 100 * i);
+          });
+        }
+
+        setInterval(() => {
+          words.innerHTML = wordsList[wordIndex];
+          typeWrite(words);
+
+          if (wordIndex === wordsList.length - 1) {
+            wordIndex = 0;
+          } else {
+            wordIndex++;
+          }
+        }, 3000);
 
         if (isDesktop) {
           const allCtas = document.querySelectorAll(".cta");
@@ -966,6 +1006,19 @@
                 ".cta:not(.cta--transparent)"
               );
               [...ctas].forEach((cta) => cta.classList.add("cta--visited"));
+
+              var s =
+                window.botmaker.iframe.contentDocument.createElement("style");
+              s.setAttribute("type", "text/css");
+              s.innerHTML = `
+                .zoss-container .bm-webchat-entries .bm-webchat-entries-ul .bm-webchat-entries-li .bm-webchat-text-entry-left {
+                  background-color: #3BEB82;
+                }
+              `;
+
+              window.botmaker.iframe.contentDocument
+                .getElementsByTagName("head")[0]
+                .appendChild(s);
 
               window.botmaker.iframe.contentDocument
                 .getElementsByTagName("textarea")[0]

@@ -24,7 +24,6 @@ window.bmFocus = function () {
 })();
 
 function initWpp() {
-  console.log("initWpp");
   insertWppCss();
   renderWppButton();
 }
@@ -61,7 +60,8 @@ function waitForBotmaker() {
           "wc-botname"
         );
       if (bmName && bmName[0]) {
-        bmName[0].innerHTML = "Agende aqui sua avaliação com um especialista";
+        bmName[0].innerHTML =
+          "Agende aqui sua avaliação <strong>grátis</strong> com uma de nossas especialistas";
       }
 
       if (!window.botmaker.isHidden && window.botmaker.isMinimized) {
@@ -231,9 +231,13 @@ function insertFrameCss() {
 	}
 	
 	.zoss-container .wc-header .wc-header-middle .wc-botname {
-		font-size: 30px;
-		font-weight: 900;
 		color: #FF6074;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 106.25% */
+    letter-spacing: -0.64px;
 	}
 	
 	.zoss-container .wc-footer {
@@ -263,7 +267,13 @@ function insertFrameCss() {
 	}
 
   .zoss-container .bm-webchat-entries .bm-webchat-entries-ul .bm-webchat-entries-li .bm-webchat-text-entry-left {
-    background-color: #3BEB82;
+    background-color: #dfe4ea;
+
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 	
 	.zoss-container .bm-webchat-entries .bm-webchat-sent-tildes {
