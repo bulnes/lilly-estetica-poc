@@ -203,7 +203,9 @@ main>*:not(.main-footer) {
 }
 
 @keyframes pisca {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
 
@@ -927,9 +929,7 @@ ul.colunar__text-content li:last-child {
   background-repeat: no-repeat;
   overflow: hidden;
 
-  animation-name: album-photos-mobile;
-  animation-duration: 18s;
-  animation-iteration-count: infinite;
+  animation: album-photos-mobile 15s infinite;
 }
 
 @media (min-width: 1024px) {
@@ -945,7 +945,8 @@ ul.colunar__text-content li:last-child {
 
 @keyframes album-photos-mobile {
 
-  0% {
+  0%,
+  100% {
     background-image: url(/images/depilacaoalaser/clinic1-mobile.jpg);
     margin-left: 0px;
   }
@@ -960,8 +961,7 @@ ul.colunar__text-content li:last-child {
 }
 
 @keyframes album-photos-desktop {
-
-  0% {
+  0%, 100% {
     background-image: url(/images/depilacaoalaser/clinic1-desktop.jpg);
     margin-left: 0px;
   }
