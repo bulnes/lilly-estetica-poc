@@ -59,17 +59,26 @@ function waitForBotmaker() {
         window.botmaker.iframe.contentDocument.getElementsByClassName(
           "wc-botname"
         );
+
+      if (!window.botmaker.isHidden && window.botmaker.isMinimized) {
+        window.bmMaximize();
+      }
+
       if (bmName && bmName[0]) {
         bmName[0].innerHTML =
           "Agende aqui sua avaliação <strong>grátis</strong> com uma de nossas especialistas";
       }
 
-      if (!window.botmaker.isHidden && window.botmaker.isMinimized) {
-        window.bmMaximize();
-      }
       if (window.onBmLoad) {
         window.onBmLoad();
       }
+
+      var wcTextarea =
+        window.botmaker.iframe.contentDocument.querySelector("#wc-textarea");
+      if (wcTextarea) {
+        wcTextarea.placeholder = "Digite aqui sua mensagem";
+      }
+
       applyClasses();
       listenForFocus();
 

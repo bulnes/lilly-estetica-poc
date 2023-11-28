@@ -333,6 +333,17 @@ main>*:not(.main-footer) {
 
 .cta.cta--visited {
   background-color: #3beb82 !important;
+  color: #000 !important;
+}
+
+.cta.cta--visited span {
+  color: #000 !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48.522px;
+  /* 242.609% */
+  letter-spacing: -0.4px;
 }
 
 #cta-bottom {
@@ -499,7 +510,9 @@ main>*:not(.main-footer) {
   .colunar--full-width .colunar__image {
     width: 80%;
     max-width: none;
-    margin-left: -3px;
+    margin-left: -10px;
+    max-height: 370px;
+    overflow: hidden;
   }
 }
 
@@ -947,30 +960,30 @@ ul.colunar__text-content li:last-child {
 
   0%,
   100% {
-    background-image: url(/images/depilacaoalaser/clinic1-mobile.jpg);
+    background-image: url(/images/depilacaoalaser/img03-desktop.jpeg);
     margin-left: 0px;
   }
 
   35% {
-    background-image: url(/images/depilacaoalaser/clinic2-mobile.jpg);
+    background-image: url(/images/depilacaoalaser/img04-desktop.jpeg);
   }
 
   70% {
-    background-image: url(/images/depilacaoalaser/clinic3-mobile.jpg);
+    background-image: url(/images/depilacaoalaser/img05-desktop.jpeg);
   }
 }
 
 @keyframes album-photos-desktop {
   0%, 100% {
-    background-image: url(/images/depilacaoalaser/clinic1-desktop.jpg);
+    background-image: url(/images/depilacaoalaser/img03-mobile.jpeg);
     margin-left: 0px;
   }
 
   35% {
-    background-image: url(/images/depilacaoalaser/clinic2-desktop.jpg);
+    background-image: url(/images/depilacaoalaser/img04-mobile.jpeg);
   }
 
   70% {
-    background-image: url(/images/depilacaoalaser/clinic3-desktop.jpg);
+    background-image: url(/images/depilacaoalaser/img05-mobile.jpeg);
   }
 }
