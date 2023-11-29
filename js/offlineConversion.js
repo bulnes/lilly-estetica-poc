@@ -106,6 +106,8 @@
       });
   };
 
+  window.saveOfflineConversion = saveOfflineConversion;
+
   // Select all links with href with bit.ly
   const links = document.querySelectorAll("a[href*='bit.ly']");
   [...links].forEach((link) => {

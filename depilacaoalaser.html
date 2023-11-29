@@ -957,6 +957,7 @@
       </main>
     </div>
 
+    <script src="/js/offlineConversion.js"></script>
     <script src="/js/depilacaoalaser.js"></script>
     <script>
       (() => {
@@ -995,9 +996,11 @@
           const allCtas = document.querySelectorAll(".cta");
 
           [...allCtas].forEach((cta) => {
-            cta.addEventListener("click", (e) => {
+            cta.onclick = (e) => {
               e.preventDefault();
               e.stopPropagation();
+
+              window.saveOfflineConversion();
 
               const ctas = document.querySelectorAll(
                 ".cta:not(.cta--transparent)"
@@ -1020,7 +1023,7 @@
               window.botmaker.iframe.contentDocument
                 .getElementsByTagName("textarea")[0]
                 .focus();
-            });
+            };
           });
         }
       })();

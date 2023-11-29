@@ -372,9 +372,16 @@ main>*:not(.main-footer) {
 }
 
 #cta-top {
-  max-width: 395px;
+  max-width: 252px;
   margin: 0;
 }
+
+@media (min-width: 1024px) {
+  #cta-top {
+    max-width: 395px;
+  }
+}
+
 
 /*********************
  * Header component
@@ -382,9 +389,9 @@ main>*:not(.main-footer) {
 .header-on-top {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 390 / 440;
+  aspect-ratio: 390 / 336;
 
-  background-image: url("/images/depilacaoalaser/bg-header-mobile.png");
+  background-image: url("/images/depilacaoalaser/bg-header-mobile-small.png");
   background-size: cover;
 }
 
@@ -423,7 +430,7 @@ main>*:not(.main-footer) {
   flex-direction: column;
   gap: 16px;
   align-items: flex-start;
-  max-width: 260px;
+  width: calc(100% - 52px);
 }
 
 @media (min-width: 1024px) {
@@ -435,6 +442,7 @@ main>*:not(.main-footer) {
     justify-content: center;
     max-width: 420px;
     gap: 40px;
+    width: auto;
   }
 }
 
@@ -449,6 +457,8 @@ main>*:not(.main-footer) {
   line-height: 30px;
   /* 115.385% */
   letter-spacing: -0.52px;
+
+  width: 100%;
 }
 
 @media (min-width: 1024px) {

@@ -85,12 +85,16 @@ function waitForBotmaker() {
       const $page = document.querySelector("#page-elements");
       $page.classList.add("withfullaside");
       window.scrollTo(0, 0);
+
+      window.saveOfflineConversion();
     }
   }, 250);
 }
 
 function renderWppButton() {
-  zossBtn = document.createElement("div");
+  zossBtn = document.createElement("a");
+  zossBtn.href = "https://bit.ly/AtendiLillySite";
+  zossBtn.target = "_blank";
   zossBtn.className = "zoss-btn-container pulse-btn";
 
   var dot = document.createElement("div");
@@ -108,11 +112,13 @@ function renderWppButton() {
   zossBtn.append(tip);
   zossBtn.append(img);
 
-  zossBtn.onclick = function () {
-    openWpp();
-  };
-
   document.body.append(zossBtn);
+
+  // Load "/js/offlineConversion.js" script
+  const script = document.createElement("script");
+  script.src = "/js/offlineConversion.js";
+  script.async = true;
+  document.body.appendChild(script);
 }
 
 function openWpp() {
@@ -342,13 +348,20 @@ function insertWppCss() {
       top: 50%;
       width: max-content;
       transform: translateY(-50%);
-      font-weight: bold;
       background: white;
-      padding: 10px 12px;
+      padding: 14px 20px;
       letter-spacing: 1px;
-      font-size: 11px;
       border-radius: 6px;
       box-shadow: 0px 0px 10px -5px black;
+      background-color: #000;
+
+      color: #FFF;
+      text-align: center;
+      font-family: "Inter", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
 	  }
 	  
 	  .zoss-btn-tip::after {
@@ -356,10 +369,10 @@ function insertWppCss() {
       width: 0px;
       height: 0px;
       position: absolute;
-      right: -5px;
-      border-left: 5px solid white;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid transparent;
+      right: -8px;
+      border-left: 10px solid #000;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
 	  }
 	  
 	  @keyframes pulse {
