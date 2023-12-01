@@ -156,7 +156,7 @@
                 <span>
                   clínica mais <span id="changing-words">moderna</span>
                 </span>
-                <span>da Barra da Tijuca</span>
+                <span id="lc"></span>
               </h1>
 
               <a
@@ -991,6 +991,29 @@
             wordIndex++;
           }
         }, 3000);
+
+        // Get lc parameter from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const lc = urlParams.get("lc");
+        const $lc = document.querySelector("#lc");
+
+        switch (lc) {
+          case "barr":
+            $lc.textContent = "da Barra da Tijuca";
+            break;
+          case "zsrio":
+            $lc.textContent = "da Zona Sul do Rio";
+            break;
+          case "tjk":
+            $lc.textContent = "da Tijuca";
+            break;
+          case "igjk":
+            $lc.textContent = "de São Paulo";
+            break;
+          default:
+            $lc.textContent = "";
+            break;
+        }
 
         if (isDesktop) {
           const allCtas = document.querySelectorAll(".cta");

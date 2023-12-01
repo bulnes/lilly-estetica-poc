@@ -117,7 +117,8 @@
 
       saveOfflineConversion();
 
-      const phone = "552140202349";
+      // const phone = "552140202349";
+      const phone = "5521967409201";
       const text = `[Ticket ${userId}] Olá gostaria de saber sobre os tratamentos da Lilly, pode me ajudar?`;
       const url = encodeURI(
         `https://api.whatsapp.com/send?phone=${phone}&text=${text}`
