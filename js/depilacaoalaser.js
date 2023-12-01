@@ -36,8 +36,11 @@ function initBotmaker() {
   let js = document.createElement("script");
   js.type = "text/javascript";
   js.async = 1;
-  js.src = "https://go.botmaker.com/rest/webchat/p/MNWSL8HZMU/init.js";
+  js.src =
+    "https://go.botmaker.com/rest/webchat/p/GWFZ3RMYHN/init.js?_=" + Date.now();
   document.body.appendChild(js);
+
+  // https://storage.googleapis.com/botmaker/webchat2/50471/GWFZ3RMYHN/index.js
 
   waitForBotmaker();
 }
