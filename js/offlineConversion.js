@@ -83,6 +83,8 @@
 
   const userId = getUserId(getPrefix());
 
+  window.userId = userId;
+
   // Save offline conversion
   const saveOfflineConversion = () => {
     fetch(`${apiBaseUrl}/offline-conversion/${userId}`, {
@@ -117,9 +119,15 @@
 
       saveOfflineConversion();
 
+      const { pathname } = window.location;
+
       // const phone = "552140202349";
-      const phone = "5521967409201";
-      const text = `[Ticket ${userId}] Olá gostaria de saber sobre os tratamentos da Lilly, pode me ajudar?`;
+      const phone = pathname.includes("depilacaoalaser")
+        ? "5521967409201"
+        : "552140202349";
+      const text = pathname.includes("depilacaoalaser")
+        ? `[Ticket ${userId}] Olá gostaria de saber sobre os tratamentos de depilação a laser da Lilly, pode me ajudar?`
+        : `[Ticket ${userId}] Olá gostaria de saber sobre os tratamentos da Lilly, pode me ajudar?`;
       const url = encodeURI(
         `https://api.whatsapp.com/send?phone=${phone}&text=${text}`
       );

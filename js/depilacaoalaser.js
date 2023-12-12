@@ -30,15 +30,17 @@ function initWpp() {
 
 function initBotmaker() {
   BOTMAKER_VAR = {
-    _idmedia: window.protocol,
+    _idmedia: window.userId,
   };
 
   let js = document.createElement("script");
   js.type = "text/javascript";
   js.async = 1;
-  js.src =
-    "https://go.botmaker.com/rest/webchat/p/MNWSL8HZMU/init.js?_=" + Date.now();
+  js.src = "https://go.botmaker.com/rest/webchat/p/MNWSL8HZMU/init.js?";
   document.body.appendChild(js);
+
+  // Yappy: GWFZ3RMYHN
+  // Lilly: MNWSL8HZMU
 
   waitForBotmaker();
 }

@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <style>
+      body {
+        opacity: 0;
+      }
+    </style>
+    <script>
+      // Get all parameters and queries from URL
+      const urlParams = window.location.href.split("?")[1];
+
+      window.location.href = "/depilacaoalaser/index.html" + "?" + urlParams;
+    </script>
+
     <link rel="canonical" href="https://www.lillyestetica.com.br" />
 
     <meta name="p:domain_verify" content="d05755a8836d70784fd0af4daf55071d" />
@@ -23,6 +35,7 @@
       content="lilly estética, clínica de estética, alta tecnologia, tratamentos estéticos, preços acessíveis, atendimento personalizado, depilação a laser"
     />
     <meta name="referrer" content="always" />
+    <meta name="robots" content="noindex, nofollow" />
 
     <!-- Robots -->
     <meta name="robots" content="index, follow, max-image-preview:large" />

@@ -6207,7 +6207,7 @@ footer.drawer-footer {
   letter-spacing: 3px;
 }
 
-.hero-text-container h2 {
+.hero-text-container h1, .hero-text-container h2 {
   color: white;
   font-size: 48px;
 }
