@@ -90,11 +90,11 @@
           url: "https://cdn.datatables.net/plug-ins/1.10.21/i18n/Portuguese-Brasil.json",
         },
         order: [[4, "desc"]],
-        // Reloading the table every 30 seconds
+        // Reloading the table every 10 minutes
         initComplete: function () {
           setInterval(function () {
             table.ajax.reload(null, false);
-          }, 30000);
+          }, 600000);
         },
         // Format the date to dd/mm/yyyy hh:mm
         columnDefs: [
