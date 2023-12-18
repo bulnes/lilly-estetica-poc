@@ -4,6 +4,51 @@
   const lastaccessStorageKey = "lilly-newsletter-last-access";
   const closeForeverStorageKey = "lilly-newsletter-close-forever";
 
+  const { hostname } = window.location;
+  const apiBaseUrl = ["localhost", "127.0.0.1"].includes(hostname)
+    ? "http://localhost:3000"
+    : "https://api.venuz.app/lilly-mkt";
+
+  document.querySelector("#newsletter-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const email = form.querySelector("#newsletter-email").value;
+    const name = form.querySelector("#newsletter-name").value;
+    const phone = form.querySelector("#newsletter-phone").value;
+    const clinic = form.querySelector("#newsletter-clinic").value;
+
+    document
+      .querySelector(".newsletter__container")
+      .classList.add("newsletter__container--submitted");
+
+    document
+      .querySelector(".newsletter__form")
+      .classList.add("newsletter__form--submitted");
+
+    document
+      .querySelector(".newsletter__description")
+      .classList.add("newsletter__description--hidden");
+
+    console.log();
+
+    fetch(`${apiBaseUrl}/newsletter-conversion`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, name, phone, clinic }),
+    });
+
+    window.setCloseForever();
+  });
+
+  document.querySelector("#newsletter-cta").addEventListener("click", () => {
+    document
+      .querySelector("#newsletter-modal")
+      .classList.add("newsletter--submitted");
+  });
+
   // It's necessary to stay visible for hubspot form submitted
   window.setCloseForever = () => {
     localStorage.setItem(closeForeverStorageKey, true);

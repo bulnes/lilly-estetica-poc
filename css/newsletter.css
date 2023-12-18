@@ -10,6 +10,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.newsletter--submitted {
+  display: none;
+}
+
 .newsletter.newsletter--show {
   visibility: visible;
   opacity: 1;
@@ -79,6 +83,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  .newsletter__container.newsletter__container--submitted {
+    min-height: 0;
+    background-position: top center;
   }
 }
 
@@ -156,6 +167,10 @@
   margin-bottom: 1rem;
 }
 
+.newsletter__description.newsletter__description--hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .newsletter__description {
     max-width: 415px;
@@ -178,6 +193,51 @@
 @media (min-width: 768px) {
   .newsletter__form {
     max-width: 415px;
+  }
+}
+
+.newsletter__form.newsletter__form--submitted {
+  min-height: 0;
+  margin-top: 27px;
+}
+
+.newsletter__final {
+  display: none;
+}
+
+.newsletter__form.newsletter__form--submitted .hbspt-form {
+  display: none;
+}
+
+.newsletter__form.newsletter__form--submitted .newsletter__final {
+  display: block;
+}
+
+.newsletter__final__text {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 27px;
+  max-width: 184px;
+}
+
+@media (min-width: 768px) {
+  .newsletter__final__text {
+    max-width: 399px;
+  }
+}
+
+.newsletter__final__cta {
+  display: block;
+  max-height: 47.5px;
+  margin-bottom: 27px;
+}
+
+@media (min-width: 768px) {
+  .newsletter__final__cta {
+    max-height: 42px;
   }
 }
 
@@ -227,7 +287,6 @@
 }
 
 @media (min-width: 390px) {
-
   .newsletter__form input:not([type="submit"]),
   .newsletter__form select {
     height: 50px;
@@ -235,7 +294,6 @@
 }
 
 @media (min-width: 768px) {
-
   .newsletter__form input:not([type="submit"]),
   .newsletter__form select {
     height: 40px;
@@ -307,7 +365,6 @@
 }
 
 @media (min-width: 768px) {
-
   .newsletter__form .hs_phone,
   .newsletter__form .hs-phone,
   .newsletter__form .hs_clinica_lilly,
