@@ -30,8 +30,6 @@
       .querySelector(".newsletter__description")
       .classList.add("newsletter__description--hidden");
 
-    console.log();
-
     fetch(`${apiBaseUrl}/newsletter-conversion`, {
       method: "POST",
       headers: {
