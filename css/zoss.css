@@ -990,31 +990,31 @@ ul.colunar__text-content li:last-child {
 @keyframes album-photos-mobile {
   0%,
   100% {
-    background-image: url(/images/zoss/img03-desktop.jpeg);
+    background-image: url(/images/zoss/img03-desktop.jpg);
     margin-left: 0px;
   }
 
   35% {
-    background-image: url(/images/zoss/img04-desktop.jpeg);
+    background-image: url(/images/zoss/img04-desktop.jpg);
   }
 
   70% {
-    background-image: url(/images/zoss/img05-desktop.jpeg);
+    background-image: url(/images/zoss/img05-desktop.jpg);
   }
 }
 
 @keyframes album-photos-desktop {
   0%,
   100% {
-    background-image: url(/images/zoss/img03-mobile.jpeg);
+    background-image: url(/images/zoss/img03-mobile.jpg);
     margin-left: 0px;
   }
 
   35% {
-    background-image: url(/images/zoss/img04-mobile.jpeg);
+    background-image: url(/images/zoss/img04-mobile.jpg);
   }
 
   70% {
-    background-image: url(/images/zoss/img05-mobile.jpeg);
+    background-image: url(/images/zoss/img05-mobile.jpg);
   }
 }
