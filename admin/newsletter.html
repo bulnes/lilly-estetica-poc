@@ -14,9 +14,17 @@
 
     <!-- ask for a password to see the page or will be redirect to previous page -->
     <script>
-      var password = prompt("Digite a senha para acessar a página");
-      if (password != "lilly123") {
-        window.history.back();
+      var logged = sessionStorage.getItem("logged");
+
+      if (!logged) {
+        var password = prompt("Digite a senha para acessar a página");
+        var cryptoPassword = btoa(password);
+
+        if (cryptoPassword != "bGlsbHkxMjNAMjAyNA==") {
+          window.history.back();
+        } else {
+          sessionStorage.setItem("logged", true);
+        }
       }
     </script>
 
@@ -34,6 +42,41 @@
     />
   </head>
   <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">
+            <strong>Lilly Estética</strong>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="/admin/newsletter.html">Newsletter</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
