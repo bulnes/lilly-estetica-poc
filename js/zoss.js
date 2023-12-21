@@ -109,7 +109,7 @@ function renderWppButton() {
   tip.innerHTML = "Agende aqui sua avaliação!";
 
   var img = document.createElement("img");
-  img.src = "/images/depilacaoalaser/whatsapp.png";
+  img.src = "/images/zoss/whatsapp.png";
 
   zossBtn.append(dot);
   zossBtn.append(tip);
@@ -396,3 +396,115 @@ function insertWppCss() {
     `;
   document.getElementsByTagName("head")[0].appendChild(s);
 }
+
+// Extra configs
+(() => {
+  const isDesktop = window.innerWidth > 768;
+  const words = document.querySelector("#changing-words");
+
+  let wordsList = ["bonita", "tecnológica", "inovadora", "moderna"];
+  let wordIndex = 0;
+
+  function typeWrite(elemento) {
+    const textoArray = elemento.innerHTML.split("");
+    elemento.innerHTML = " ";
+    textoArray.forEach(function (letra, i) {
+      setTimeout(function () {
+        elemento.innerHTML += letra;
+      }, 100 * i);
+    });
+  }
+
+  setInterval(() => {
+    words.innerHTML = wordsList[wordIndex];
+    typeWrite(words);
+
+    if (wordIndex === wordsList.length - 1) {
+      wordIndex = 0;
+    } else {
+      wordIndex++;
+    }
+  }, 3000);
+
+  // Get lc parameter from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const lc = urlParams.get("lc");
+  const $lc = document.querySelector("#lc");
+
+  switch (lc) {
+    case "barr":
+      $lc.textContent = "da Barra da Tijuca";
+      break;
+    case "zsrio":
+      $lc.textContent = "da Zona Sul do Rio";
+      break;
+    case "tjk":
+      $lc.textContent = "da Tijuca";
+      break;
+    case "igjk":
+      $lc.textContent = "de São Paulo";
+      break;
+    case "jnd":
+      $lc.textContent = "de Jundiaí";
+      break;
+    case "src":
+      $lc.textContent = "de Sorocaba";
+      break;
+    case "rbp":
+      $lc.textContent = "de Ribeirão Preto";
+      break;
+    case "cmp":
+      $lc.textContent = "de Campinas";
+      break;
+    case "frnc":
+      $lc.textContent = "de Franca";
+      break;
+    case "sjrp":
+      $lc.textContent = "de São José do Rio Preto";
+      break;
+    case "bh":
+      $lc.textContent = "de Belo Horizonte";
+      break;
+    case "bsb":
+      $lc.textContent = "de Brasília";
+      break;
+    case "go":
+      $lc.textContent = "de Goiania";
+      break;
+    default:
+      $lc.textContent = "";
+      break;
+  }
+
+  if (isDesktop) {
+    const allCtas = document.querySelectorAll(".cta");
+
+    [...allCtas].forEach((cta) => {
+      cta.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        window.saveOfflineConversion();
+
+        const ctas = document.querySelectorAll(".cta:not(.cta--transparent)");
+        [...ctas].forEach((cta) => cta.classList.add("cta--visited"));
+
+        var s = window.botmaker.iframe.contentDocument.createElement("style");
+        s.setAttribute("type", "text/css");
+        s.innerHTML = `
+          .zoss-container .bm-webchat-entries .bm-webchat-entries-ul .bm-webchat-entries-li .bm-webchat-text-entry-left {
+            background-color: #3BEB82;
+          }
+        `;
+
+        window.botmaker.iframe.contentDocument
+          .getElementsByTagName("head")[0]
+          .appendChild(s);
+
+        window.botmaker.iframe.contentDocument
+          .getElementsByTagName("textarea")[0]
+          .focus();
+      };
+    });
+  }
+})();

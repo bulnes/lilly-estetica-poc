@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <style>
-      body {
-        opacity: 0;
-      }
-    </style>
-    <script>
-      // Get all parameters and queries from URL
-      const urlParams = window.location.href.split("?")[1];
-
-      window.location.href = "/depilacaoalaser/index.html" + "?" + urlParams;
-    </script>
-
     <link rel="canonical" href="https://www.lillyestetica.com.br" />
 
     <meta name="p:domain_verify" content="d05755a8836d70784fd0af4daf55071d" />
@@ -107,8 +95,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/site.css?v=20231022" />
-    <link rel="stylesheet" href="css/depilacaoalaser.css?v=20231022" />
+    <link rel="stylesheet" href="/css/site.css?v=20231022" />
+    <link rel="stylesheet" href="/css/zoss.css" />
 
     <!-- Google Tag Manager -->
     <script>
@@ -144,17 +132,17 @@
     <div id="page-elements" class="container">
       <header>
         <section id="topper" class="section">
-          <div class="header-on-top">
+          <div class="header-on-top header-on-top--manchaemelasmas">
             <div class="header-on-top__content">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/lilly-on-top-desktop.png"
+                  srcset="/images/zoss/lilly-on-top-desktop.png"
                   width="172"
                   height="81"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/lilly-on-top-mobile.png"
+                  src="/images/zoss/lilly-on-top-mobile.png"
                   alt=""
                   width="85"
                   height="37"
@@ -163,11 +151,12 @@
               </picture>
 
               <h1 class="header-on-top__title">
-                <span>Você ganhou</span>
-                <span>1 sessão grátis de</span>
-                <span>depilação a laser na</span>
+                <span>Você ganhou 1 sessão</span>
+                <span>grátis de remoção de</span>
+                <span>manchas e melasmas</span>
                 <span>
-                  clínica mais <span id="changing-words">moderna</span>
+                  na clínica mais
+                  <span id="changing-words">moderna</span>
                 </span>
                 <span id="lc"></span>
               </h1>
@@ -182,13 +171,13 @@
                 <span>Agende agora sua sessão</span>
                 <picture>
                   <source
-                    srcset="/images/depilacaoalaser/arrow.png"
+                    srcset="/images/zoss/arrow.png"
                     width="10"
                     height="20"
                     media="(min-width: 1024px)"
                   />
                   <img
-                    src="/images/depilacaoalaser/arrow.png"
+                    src="/images/zoss/arrow.png"
                     alt=""
                     width="6"
                     height="14"
@@ -203,9 +192,9 @@
                 class="cta cta--transparent cta--full-width cta--type2"
                 target="_blank"
               >
-                <span>Saiba mais sobre Depilação a Laser na Lilly</span>
+                <span>Saiba mais sobre remoção de manchas na Lilly</span>
                 <img
-                  src="/images/depilacaoalaser/arrow.png"
+                  src="/images/zoss/arrow.png"
                   alt=""
                   width="28"
                   height="13"
@@ -222,9 +211,9 @@
             target="_blank"
             id="cta-bottom"
           >
-            <span>Saiba mais sobre Depilação a Laser na Lilly</span>
+            <span>Saiba mais sobre remoção de manchas</span>
             <img
-              src="/images/depilacaoalaser/arrow-down.png"
+              src="/images/zoss/arrow-down.png"
               alt=""
               width="28"
               height="13"
@@ -237,8 +226,7 @@
         <section id="method" class="section">
           <div class="section__container">
             <h2 class="section__title-2 section__title-2--bigger-bottom">
-              Por que depilação a laser na Lilly é o melhor método para se
-              livrar dos pelos?
+              Por que tratar manchas de pele e melasmas na Lilly é melhor?
             </h2>
           </div>
 
@@ -246,13 +234,13 @@
             <div class="colunar__image colunar__image--no-scale">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/img01-mobile.jpeg"
+                  srcset="/images/zoss/manchasemelasmas/img01-desktop.png"
                   width="739"
                   height="422"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/img01-desktop.jpeg"
+                  src="/images/zoss/manchasemelasmas/img01-mobile.png"
                   alt=""
                   width="340"
                   height="200"
@@ -262,44 +250,34 @@
               </picture>
             </div>
 
-            <!-- <div class="colunar__image colunar__image--no-scale hide-on-mobile">
-              <img
-                src="/images/depilacaoalaser/img01-desktop.jpeg"
-                alt=""
-                width="739"
-                height="422"
-                loading="lazy"
-                id="method-image"
-              />
-            </div> -->
-
             <div class="colunar__text">
               <ul class="colunar__text-content">
-                <li>Método definitivo;</li>
-                <li>Mais tecnológico e super higiênico;</li>
+                <li>Tratamento de alta tecnologia</li>
+                <li>Equipe altamente qualificada</li>
                 <li>
-                  Na Lilly, os equipamentos de última geração tornam o
-                  procedimento praticamente indolor;
+                  O Laser acerta a mancha com mais precisão poupando a área ao
+                  redor
                 </li>
-                <li>Não deixa pelos encravados;</li>
-                <li>Na Lilly, você faz mais de uma área numa mesma sessão;</li>
-                <li>Escolha as regiões quer fazer em 30 minutos de sessão;</li>
+                <li>Indicado para diferentes tipos de manchas</li>
                 <li>
-                  Você pode fazer meia perna + virilha completa + axila + buço
-                  numa mesma sessão.
+                  Estimula a produção de colágeno, elastina e fechamento de
+                  poros
                 </li>
+                <li>Tempo de recuperação curto</li>
+                <li>Tratamento indolor</li>
+                <li>Eficácia comprovada</li>
               </ul>
             </div>
 
             <picture class="colunas__float-price">
               <source
-                srcset="/images/depilacaoalaser/price-ball-black.png"
+                srcset="/images/zoss/manchasemelasmas/price-ball-black.png"
                 width="169"
                 height="169"
                 media="(min-width: 1024px)"
               />
               <img
-                src="/images/depilacaoalaser/price-ball-black.png"
+                src="/images/zoss/manchasemelasmas/price-ball-black.png"
                 alt=""
                 width="90"
                 height="90"
@@ -317,7 +295,7 @@
             >
               <span>Agende agora sua sessão grátis </span>
               <img
-                src="/images/depilacaoalaser/arrow.png"
+                src="/images/zoss/arrow.png"
                 alt=""
                 width="6"
                 height="14"
@@ -333,19 +311,19 @@
         <section id="video" class="section">
           <div class="section__container">
             <h2 class="section__title-2">
-              Depilação a laser dói?
+              Remoção de manchas na pele, dói?
               <span class="section__title-2__rose">Na Lilly, não!</span>
             </h2>
 
             <p class="section__subtitle">
-              Conheça o Alex Light • EVO - o laser de Alexandrite com sistema de
-              resfriamento que é praticamente indolor
+              Conheça o Q-Plus EVO - Laser Q-Switched. Especialmente eficaz para
+              tratar manchas escuras, como melasmas e manchas de idade
             </p>
 
             <div class="video-embed">
               <iframe
                 class="video-embed__iframe"
-                src="https://www.youtube.com/embed/dHYbwmklohQ?rel=0&amp;modestbranding=1&amp;mute=0&amp;showinfo=0&amp;controls=0&amp;start=0"
+                src="https://www.youtube.com/embed/Qmw-sloknLI?rel=0&amp;modestbranding=1&amp;mute=0&amp;showinfo=0&amp;controls=0&amp;start=0"
                 frameborder="0"
                 allowfullscreen=""
                 name="video"
@@ -362,97 +340,7 @@
             >
               <span>Agende agora sua sessão</span>
               <img
-                src="/images/depilacaoalaser/arrow.png"
-                alt=""
-                width="6"
-                height="14"
-                loading="lazy"
-              />
-            </a>
-          </div>
-        </section>
-
-        <!-- Male -->
-        <section id="male" class="section">
-          <div class="section__container">
-            <h2 class="section__title-2">Depilação a Laser Masculina</h2>
-          </div>
-
-          <div class="colunar colunar--quartz">
-            <div class="colunar__image">
-              <picture>
-                <source
-                  srcset="/images/depilacaoalaser/img02-mobile.jpeg"
-                  width="526"
-                  height="526"
-                  media="(min-width: 1024px)"
-                />
-                <img
-                  src="/images/depilacaoalaser/img02-desktop.jpeg"
-                  alt=""
-                  width="340"
-                  height="200"
-                  loading="lazy"
-                />
-              </picture>
-            </div>
-
-            <div class="colunar__text">
-              <h3 class="colunar__text-title">
-                Na Lilly você faz várias áreas masculinas numa mesma sessão
-              </h3>
-
-              <div class="colunar__text-content">
-                <p>
-                  45% dos homens considera fazer uso de algum método de
-                  depilação e 37% pensa em fazer uso da depilação a laser.
-                </p>
-
-                <div class="colunar__text-content__row">
-                  <ul>
-                    <li>Peito</li>
-                    <li>Costas</li>
-                    <li>Faixa de barba</li>
-                    <li>Axilas</li>
-                    <li>Perna</li>
-                    <li>Corpo todo</li>
-                  </ul>
-
-                  <picture>
-                    <source
-                      srcset="/images/depilacaoalaser/price-ball.png"
-                      width="134"
-                      height="134"
-                      media="(min-width: 1024px)"
-                    />
-                    <img
-                      src="/images/depilacaoalaser/price-ball.png"
-                      alt=""
-                      width="114"
-                      height="114"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-
-                <p>
-                  Informe-se com nossas especialistas sobre as combinações de
-                  áreas que você pode fazer numa mesma sessão.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="section__container">
-            <a
-              href="https://bit.ly/AtendiLillySite"
-              title="Agende agora sua sessão grátis"
-              target="_blank"
-              class="cta cta--black"
-            >
-              <span>Agende agora sua sessão grátis </span>
-              <img
-                src="/images/depilacaoalaser/arrow.png"
+                src="/images/zoss/arrow.png"
                 alt=""
                 width="6"
                 height="14"
@@ -468,17 +356,17 @@
             <h2 class="section__title-2">Você conhece a Lilly Estética?</h2>
           </div>
 
-          <div class="colunar colunar--rosa-forete">
+          <div class="colunar">
             <div class="colunar__image album-photos">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/img03-mobile.jpeg"
+                  srcset="/images/zoss/img03-mobile.jpeg"
                   width="526"
                   height="526"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/img03-desktop.jpeg"
+                  src="/images/zoss/img03-desktop.jpeg"
                   alt=""
                   width="340"
                   height="200"
@@ -524,7 +412,7 @@
             >
               <span>Agende agora sua sessão grátis </span>
               <img
-                src="/images/depilacaoalaser/arrow.png"
+                src="/images/zoss/arrow.png"
                 alt=""
                 width="6"
                 height="14"
@@ -542,17 +430,17 @@
             </h2>
           </div>
 
-          <div class="colunar">
+          <div class="colunar colunar--verde">
             <div class="colunar__image">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/img06-mobile.jpeg"
+                  srcset="/images/zoss/manchasemelasmas/img06-mobile.png"
                   width="526"
                   height="526"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/img06-desktop.jpeg"
+                  src="/images/zoss/manchasemelasmas/img06-desktop.png"
                   alt=""
                   width="340"
                   height="200"
@@ -593,7 +481,7 @@
             >
               <span>Agende agora sua sessão grátis </span>
               <img
-                src="/images/depilacaoalaser/arrow.png"
+                src="/images/zoss/arrow.png"
                 alt=""
                 width="6"
                 height="14"
@@ -615,13 +503,13 @@
             <div class="colunar__image">
               <picture>
                 <source
-                  srcset="/images/depilacaoalaser/img07-mobile.jpeg"
+                  srcset="/images/zoss/img07-mobile.jpeg"
                   width="526"
                   height="526"
                   media="(min-width: 1024px)"
                 />
                 <img
-                  src="/images/depilacaoalaser/img07-desktop.jpeg"
+                  src="/images/zoss/img07-desktop.jpeg"
                   alt=""
                   width="340"
                   height="200"
@@ -665,7 +553,7 @@
             >
               <span>Agende agora sua sessão grátis </span>
               <img
-                src="/images/depilacaoalaser/arrow.png"
+                src="/images/zoss/arrow.png"
                 alt=""
                 width="6"
                 height="14"
@@ -678,8 +566,9 @@
         <!-- Opinions -->
         <section id="opinions" class="section">
           <div class="section__container">
-            <h2 class="section__title-2 section__title-2--shorter">
-              Veja as opiniões de quem fez depilação a laser na Lilly
+            <h2 class="section__title-2">
+              Veja as opiniões de quem tratou manchas de pele ou melasmas na
+              Lilly
             </h2>
           </div>
 
@@ -687,89 +576,94 @@
             <!-- First item -->
             <div class="horizontal-list__item">
               <img
-                src="/images/depilacaoalaser/person1.jpg"
+                src="/images/zoss/manchasemelasmas/person1.png"
                 alt=""
                 width="85"
                 height="85"
                 loading="lazy"
-                class="horizontal-list__item__image"
+                class="horizontal-list__item__image horizontal-list__item__image--square"
               />
 
               <div class="horizontal-list__item__description">
-                “A palavra que melhor resume o meu primeiro contato com a
-                depilação a laser é: SURPREENDENTE! Foi tudo diferente do que eu
-                imaginei, principalmente em relação a dor (que não existiu). O
-                jato de ar frio deixou tudo tão confortável, sem falar na
-                rapidez e praticidade. O maior diferencial da Lilly é a
-                flexibilidade de poder alterar e intercalar diferentes áreas do
-                corpo em uma única sessão. Superou minhas expectativas. E nota
-                mil para as profissionais que realizam o procedimento. Muito
-                obrigada!"
+                “A minha experiência com a Lilly foi surpreendente pois estava
+                procurando tratamentos para manchas e melasmas e já havia feito
+                alguns, como peeling e outros que não sei nem falar o nome.
+                Estava com medo, porque sei que melasma não tem cura e sim,
+                tratamentos paliativos. Eu vi uma promoção da Lilly no Google e
+                me interessei. Procurei a clínica, fui muito bem atendida e só
+                tenho que agradecer à empresa. Desde a recepção até a menina da
+                limpeza, todos me trataram muito bem. A biomédica que me atendeu
+                foi a Samille. Gente, o que é isso?! Que menina boa demais de
+                serviço. Hoje eu me sinto renovada com minha pele, me sinto mais
+                feliz e a minha autoestima melhorou bastante. Agradeço à Lilly
+                por cuidar de mim e por conhecer o trabalho de vocês. Estão
+                todos de parabéns.”
 
-                <span>Maria Eduarda Andrade Silva - SP</span>
+                <span>Sandra Gama de Almeida - RJ</span>
               </div>
             </div>
 
             <!-- Second item -->
             <div class="horizontal-list__item">
               <img
-                src="/images/depilacaoalaser/person2.jpg"
+                src="/images/zoss/manchasemelasmas/person2.png"
                 alt=""
                 width="85"
                 height="85"
                 loading="lazy"
-                class="horizontal-list__item__image"
+                class="horizontal-list__item__image horizontal-list__item__image--square"
               />
 
               <div class="horizontal-list__item__description">
-                “Realizei o procedimento de depilação a laser na Lilly Estética
-                e fiquei impressionado com a qualidade do atendimento (as
-                técnicas são muito atenciosas e cuidadosas), e a avançada
-                tecnologia dos equipamento utilizado. O resfriamento do laser
-                torna a sessão muito confortável. Todas as sessões foram
-                conduzidas de maneira profissional, e estou muito satisfeita com
-                os resultados, pois agora estou livre dos pelos. Minha
-                experiência foi incrível e recomendo muito!”
+                “Eu quero dizer o quanto estou satisfeita com a evolução do meu
+                tratamento contra o melasma. Minhas manchas estão bem
+                controladas e eu me sinto mais satisfeita comigo mesma. Não
+                preciso mais encher o rosto de base para disfarçar. Eu me olho
+                no espelho o tempo todo para admirar os resultados e outras
+                pessoas também já perceberam a melhora. Vocês brilharam!
+                Obrigada”
 
-                <span>Bruna Soares - RJ</span>
+                <span>Rilma Justino Barbosa - RJ</span>
               </div>
             </div>
 
             <!-- Third item -->
             <div class="horizontal-list__item">
               <img
-                src="/images/depilacaoalaser/person3.jpg"
+                src="/images/zoss/manchasemelasmas/person3.png"
                 alt=""
                 width="85"
                 height="85"
                 loading="lazy"
-                class="horizontal-list__item__image"
+                class="horizontal-list__item__image horizontal-list__item__image--square"
               />
 
               <div class="horizontal-list__item__description">
-                “Gostaria de compartilhar minha experiência com vocês. Há dois
-                anos, realizei o procedimento de depilação nas costas. Desde o
-                início, fui muito bem recebido pela equipe que demonstrou um
-                profissionalismo excepcional. Os resultados foram surpreendentes
-                e duradouros. A eficácia do procedimento superou minhas
-                expectativas, e estou muito feliz com a qualidade do serviço
-                prestado pela Lilly Estética.”
+                “Boa tarde, gostaria de deixar meus sinceros agradecimentos por
+                poder contar com profissionais tão competentes e dedicados na
+                Lilly, em especial à Samille Ornelas. Não há palavras para
+                descrever a gratidão que estou sentindo pela atenção, o ótimo
+                trabalho realizado e pela presteza. Obrigada Samille por cuidar
+                tão bem de mim. Pude, ao longo do ano de 2023, notar resultados
+                muito satisfatórios. Continue assim, sendo uma excelente
+                profissional, atenciosa, que se preocupa com tudo e com todos.
+                🥰”
 
-                <span>Matheus Goi Gonçalves - SP</span>
+                <span>Francyele de Oliveira - RJ</span>
               </div>
             </div>
           </div>
 
           <div class="section__container">
             <a
-              hre="https://bit.ly/AtendiLillySite"
+              href="https://bit.ly/AtendiLillySite"
               title="Agende agora sua sessão grátis"
               class="cta cta--black"
               target="_blank"
             >
-              <span>Agende agora sua sessão grátis</span>
+              <span>Agende agora sua sessão grátis </span>
               <img
-                src="/images/depilacaoalaser/arrow.png"
+                src="/images/zoss/arrow.png"
                 alt=""
                 width="6"
                 height="14"
@@ -786,7 +680,7 @@
               <img
                 alt="logo Lilly Estética"
                 class="footer-logo"
-                src="images/logo-white.png"
+                src="/images/logo-white.png"
                 width="140"
               />
             </div>
@@ -971,98 +865,6 @@
     </div>
 
     <script src="/js/offlineConversion.js"></script>
-    <script src="/js/depilacaoalaser.js"></script>
-    <script>
-      (() => {
-        const isDesktop = window.innerWidth > 768;
-
-        const $page = document.querySelector("#page-elements");
-        const $inputArea = document.querySelector(".aside__input-area");
-        const $input = document.querySelector("#newmessage");
-        const words = document.querySelector("#changing-words");
-
-        let wordsList = ["bonita", "tecnológica", "inovadora", "moderna"];
-        let wordIndex = 0;
-
-        function typeWrite(elemento) {
-          const textoArray = elemento.innerHTML.split("");
-          elemento.innerHTML = " ";
-          textoArray.forEach(function (letra, i) {
-            setTimeout(function () {
-              elemento.innerHTML += letra;
-            }, 100 * i);
-          });
-        }
-
-        setInterval(() => {
-          words.innerHTML = wordsList[wordIndex];
-          typeWrite(words);
-
-          if (wordIndex === wordsList.length - 1) {
-            wordIndex = 0;
-          } else {
-            wordIndex++;
-          }
-        }, 3000);
-
-        // Get lc parameter from URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const lc = urlParams.get("lc");
-        const $lc = document.querySelector("#lc");
-
-        switch (lc) {
-          case "barr":
-            $lc.textContent = "da Barra da Tijuca";
-            break;
-          case "zsrio":
-            $lc.textContent = "da Zona Sul do Rio";
-            break;
-          case "tjk":
-            $lc.textContent = "da Tijuca";
-            break;
-          case "igjk":
-            $lc.textContent = "de São Paulo";
-            break;
-          default:
-            $lc.textContent = "";
-            break;
-        }
-
-        if (isDesktop) {
-          const allCtas = document.querySelectorAll(".cta");
-
-          [...allCtas].forEach((cta) => {
-            cta.onclick = (e) => {
-              e.preventDefault();
-              e.stopPropagation();
-
-              window.saveOfflineConversion();
-
-              const ctas = document.querySelectorAll(
-                ".cta:not(.cta--transparent)"
-              );
-              [...ctas].forEach((cta) => cta.classList.add("cta--visited"));
-
-              var s =
-                window.botmaker.iframe.contentDocument.createElement("style");
-              s.setAttribute("type", "text/css");
-              s.innerHTML = `
-                .zoss-container .bm-webchat-entries .bm-webchat-entries-ul .bm-webchat-entries-li .bm-webchat-text-entry-left {
-                  background-color: #3BEB82;
-                }
-              `;
-
-              window.botmaker.iframe.contentDocument
-                .getElementsByTagName("head")[0]
-                .appendChild(s);
-
-              window.botmaker.iframe.contentDocument
-                .getElementsByTagName("textarea")[0]
-                .focus();
-            };
-          });
-        }
-      })();
-    </script>
+    <script src="/js/zoss.js"></script>
   </body>
 </html>

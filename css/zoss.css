@@ -90,7 +90,7 @@
   }
 }
 
-main>*:not(.main-footer) {
+main > *:not(.main-footer) {
   font-family: "Inter", sans-serif;
 }
 
@@ -203,7 +203,6 @@ main>*:not(.main-footer) {
 }
 
 @keyframes pisca {
-
   0%,
   100% {
     opacity: 1;
@@ -236,15 +235,15 @@ main>*:not(.main-footer) {
   }
 }
 
-.cta>span {
+.cta > span {
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
 }
 
-.cta>svg,
-.cta>img {
+.cta > svg,
+.cta > img {
   width: 7px;
   height: 14px;
   flex-shrink: 0;
@@ -255,11 +254,11 @@ main>*:not(.main-footer) {
   background: #000;
 }
 
-.cta.cta--black>span {
+.cta.cta--black > span {
   color: #fff;
 }
 
-.cta.cta--black>svg {
+.cta.cta--black > svg {
   stroke: #fff;
 }
 
@@ -267,11 +266,11 @@ main>*:not(.main-footer) {
   background: #ff6074;
 }
 
-.cta.cta--rose>span {
+.cta.cta--rose > span {
   color: #fff;
 }
 
-.cta.cta--rose>svg {
+.cta.cta--rose > svg {
   stroke: #fff;
 }
 
@@ -279,11 +278,11 @@ main>*:not(.main-footer) {
   background: transparent;
 }
 
-.cta.cta--transparent>span {
+.cta.cta--transparent > span {
   color: #000;
 }
 
-.cta.cta--transparent>svg {
+.cta.cta--transparent > svg {
   stroke: #000;
 }
 
@@ -321,13 +320,13 @@ main>*:not(.main-footer) {
   }
 }
 
-.cta.cta--type2>span {
+.cta.cta--type2 > span {
   color: white;
   font-size: 18px;
   font-weight: 400;
 }
 
-.cta.cta--type2>img {
+.cta.cta--type2 > img {
   transform: rotate(90deg);
 }
 
@@ -382,7 +381,6 @@ main>*:not(.main-footer) {
   }
 }
 
-
 /*********************
  * Header component
  *********************/
@@ -391,14 +389,20 @@ main>*:not(.main-footer) {
   overflow: hidden;
   aspect-ratio: 390 / 336;
 
-  background-image: url("/images/depilacaoalaser/bg-header-mobile-small.png");
+  background-image: url("/images/zoss/depilacaoalaser/bg-header-mobile-small.png");
   background-size: cover;
+}
+.header-on-top--manchaemelasmas {
+  background-image: url("/images/zoss/manchasemelasmas/bg-header-mobile-small.png");
 }
 
 @media (min-width: 1024px) {
   .header-on-top {
     aspect-ratio: 1440 / 677;
-    background-image: url("/images/depilacaoalaser/bg-header-desktop.png");
+    background-image: url("/images/zoss/depilacaoalaser/bg-header-desktop.png");
+  }
+  .header-on-top--manchaemelasmas {
+    background-image: url("/images/zoss/manchasemelasmas/bg-header-desktop.png");
   }
 
   .container.withfullaside .header-on-top {
@@ -440,7 +444,7 @@ main>*:not(.main-footer) {
     left: 77px;
     align-items: flex-start;
     justify-content: center;
-    max-width: 420px;
+    max-width: 450px;
     gap: 40px;
     width: auto;
   }
@@ -539,6 +543,10 @@ main>*:not(.main-footer) {
   background-color: #48495a;
 }
 
+.colunar--verde .colunar__text {
+  background-color: #6a8fa1;
+}
+
 @media (min-width: 1024px) {
   .colunar__text {
     padding: 24px;
@@ -573,6 +581,10 @@ main>*:not(.main-footer) {
   color: #fff;
 }
 
+.colunar--verde .colunar__text-title {
+  color: #ffe6e4;
+}
+
 @media (min-width: 1024px) {
   .colunar__text-title {
     font-size: 28px;
@@ -601,6 +613,10 @@ main>*:not(.main-footer) {
   color: #fff;
 }
 
+.colunar--verde .colunar__text-content {
+  color: #fff;
+}
+
 @media (min-width: 1024px) {
   .colunar__text-content {
     font-size: 22px;
@@ -620,14 +636,13 @@ div.colunar__text-content p {
 }
 
 @media (min-width: 1024px) {
-
   ul.colunar__text-content li,
   div.colunar__text-content p {
     margin-bottom: 16px;
   }
 }
 
-.colunar__text-title+.colunar__text-content p {
+.colunar__text-title + .colunar__text-content p {
   font-weight: 400;
 }
 
@@ -644,7 +659,7 @@ ul.colunar__text-content li:last-child {
   margin-bottom: 16px;
 }
 
-.colunar__text-content__row>ul {
+.colunar__text-content__row > ul {
   padding-left: 25px;
 }
 
@@ -756,7 +771,7 @@ ul.colunar__text-content li:last-child {
   letter-spacing: -0.228px;
 }
 
-.horizontal-list__item__description>span {
+.horizontal-list__item__description > span {
   font-size: 15.218px;
   display: block;
   margin-top: 1rem;
@@ -767,6 +782,11 @@ ul.colunar__text-content li:last-child {
   height: 85.602px;
   flex-shrink: 0;
   border-radius: 431.491px;
+}
+.horizontal-list__item__image--square {
+  width: 210px;
+  height: 150px;
+  border-radius: 12px;
 }
 
 /*********************
@@ -870,11 +890,11 @@ ul.colunar__text-content li:last-child {
 }
 
 .aside__input-area.aside__input-area-shake-horizontal {
-  animation: input-area-shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: input-area-shake-horizontal 0.8s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 @keyframes input-area-shake-horizontal {
-
   0%,
   100% {
     transform: translateX(0);
@@ -936,7 +956,8 @@ ul.colunar__text-content li:last-child {
   }
 
   .main-footer .wrapper .footerCol h3,
-  .main-footer .wrapper .footerCol .footerSectionTitle {}
+  .main-footer .wrapper .footerCol .footerSectionTitle {
+  }
 
   .main-footer .wrapper .footerCol {
     min-width: 140px;
@@ -967,33 +988,33 @@ ul.colunar__text-content li:last-child {
 }
 
 @keyframes album-photos-mobile {
-
   0%,
   100% {
-    background-image: url(/images/depilacaoalaser/img03-desktop.jpeg);
+    background-image: url(/images/zoss/img03-desktop.jpeg);
     margin-left: 0px;
   }
 
   35% {
-    background-image: url(/images/depilacaoalaser/img04-desktop.jpeg);
+    background-image: url(/images/zoss/img04-desktop.jpeg);
   }
 
   70% {
-    background-image: url(/images/depilacaoalaser/img05-desktop.jpeg);
+    background-image: url(/images/zoss/img05-desktop.jpeg);
   }
 }
 
 @keyframes album-photos-desktop {
-  0%, 100% {
-    background-image: url(/images/depilacaoalaser/img03-mobile.jpeg);
+  0%,
+  100% {
+    background-image: url(/images/zoss/img03-mobile.jpeg);
     margin-left: 0px;
   }
 
   35% {
-    background-image: url(/images/depilacaoalaser/img04-mobile.jpeg);
+    background-image: url(/images/zoss/img04-mobile.jpeg);
   }
 
   70% {
-    background-image: url(/images/depilacaoalaser/img05-mobile.jpeg);
+    background-image: url(/images/zoss/img05-mobile.jpeg);
   }
 }
