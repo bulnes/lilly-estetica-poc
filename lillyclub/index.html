@@ -85,6 +85,92 @@
     <link rel="stylesheet" href="/lillyclub/styles.css" media="screen" />
 
     <style>
+      /*********************
+ * Horizontal List component
+ *********************/
+      .horizontal-list {
+        display: flex;
+        min-height: 307px;
+
+        align-items: center;
+        gap: 19.023px;
+
+        max-width: 837px;
+        margin: 0 auto 23px;
+        overflow-y: hidden;
+        overflow-x: auto;
+      }
+
+      @media (min-width: 1024px) {
+        .horizontal-list {
+          margin-bottom: 40px;
+        }
+      }
+
+      .horizontal-list__item {
+        align-self: stretch;
+
+        display: flex;
+        width: 266.318px;
+        min-height: 307px;
+        padding: 15.218px 15.218px 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15.218px;
+        flex-shrink: 0;
+        border-radius: 15.218px;
+        background: #efefef;
+      }
+
+      .horizontal-list__item:first-child {
+        margin-left: 25px;
+      }
+
+      .horizontal-list__item:last-child {
+        margin-right: 25px;
+      }
+
+      @media (min-width: 1024px) {
+        .horizontal-list__item:first-child {
+          margin-left: 0;
+        }
+
+        .horizontal-list__item:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .horizontal-list__item__description {
+        color: #000;
+        text-align: center;
+        font-size: 11.414px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15.218px;
+        /* 133.333% */
+        letter-spacing: -0.228px;
+      }
+
+      .horizontal-list__item__description > span {
+        font-size: 15.218px;
+        display: block;
+        margin-top: 1rem;
+      }
+
+      .horizontal-list__item__image {
+        width: 85.602px;
+        height: 85.602px;
+        flex-shrink: 0;
+        border-radius: 431.491px;
+      }
+      .horizontal-list__item__image--square {
+        width: 210px;
+        height: 150px;
+        border-radius: 12px;
+      }
+    </style>
+
+    <style>
       @font-face {
         font-family: Brandon Text Black;
         src: url(/fonts/BrandonText-Black.woff);
@@ -865,7 +951,7 @@
         <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row treatment-types">
-              <div
+              <!-- <div
                 class="u-container-style u-layout-cell u-shape-rectangle u-size-15 u-size-30-md u-layout-cell-1"
                 style=""
               >
@@ -890,7 +976,7 @@
                     Depilação a Laser
                   </p>
                 </div>
-              </div>
+              </div> -->
 
               <div
                 class="u-container-style u-layout-cell u-shape-rectangle u-size-15 u-size-30-md u-layout-cell-2"
@@ -1084,7 +1170,7 @@
             </span>
           </a>
 
-          <div class="section">
+          <!-- <div class="section">
             <div
               class="u-container-style u-image u-list-item u-repeater-item u-shading u-image-1"
               data-image-width="600"
@@ -1113,7 +1199,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="section">
             <div
               class="u-container-style u-image u-list-item u-repeater-item u-shading u-image-3"
@@ -1661,16 +1747,15 @@
       id="sec-3623"
       style="background-color: #f2f2f2"
     >
-      <div class="u-clearfix u-sheet u-valign-top-xs u-sheet-1">
+      <div class="u-clearfix u-sheet u-valign-top-xs">
         <h2
           class="u-align-center u-custom-font u-text u-text-palette-5-dark-2 u-text-1"
         >
           O que dizem nossos clientes
         </h2>
-        <div
-          class="u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-expanded-width-xs u-list u-repeater u-list-1"
-        >
-          <div class="u-container-style u-list-item u-repeater-item">
+
+        <div class="">
+          <!-- <div class="u-container-style u-list-item u-repeater-item">
             <div
               class="u-container-layout u-similar-container u-valign-top-lg u-valign-top-md u-valign-top-xl u-valign-top-xs u-container-layout-1"
             >
@@ -1762,6 +1847,88 @@
               >
                 Matheus Goi Gonçalves - SP
               </h5>
+            </div>
+          </div> -->
+
+          <div class="horizontal-list no-scrollbar">
+            <!-- First item -->
+            <div class="horizontal-list__item">
+              <img
+                src="/images/zoss/manchasemelasmas/person1.png"
+                alt=""
+                width="85"
+                height="85"
+                loading="lazy"
+                class="horizontal-list__item__image horizontal-list__item__image--square"
+              />
+
+              <div class="horizontal-list__item__description">
+                “A minha experiência com a Lilly foi surpreendente pois estava
+                procurando tratamentos para manchas e melasmas e já havia feito
+                alguns, como peeling e outros que não sei nem falar o nome.
+                Estava com medo, porque sei que melasma não tem cura e sim,
+                tratamentos paliativos. Eu vi uma promoção da Lilly no Google e
+                me interessei. Procurei a clínica, fui muito bem atendida e só
+                tenho que agradecer à empresa. Desde a recepção até a menina da
+                limpeza, todos me trataram muito bem. A biomédica que me atendeu
+                foi a Samille. Gente, o que é isso?! Que menina boa demais de
+                serviço. Hoje eu me sinto renovada com minha pele, me sinto mais
+                feliz e a minha autoestima melhorou bastante. Agradeço à Lilly
+                por cuidar de mim e por conhecer o trabalho de vocês. Estão
+                todos de parabéns.”
+
+                <span>Sandra Gama de Almeida - RJ</span>
+              </div>
+            </div>
+
+            <!-- Second item -->
+            <div class="horizontal-list__item">
+              <img
+                src="/images/zoss/manchasemelasmas/person2.png"
+                alt=""
+                width="85"
+                height="85"
+                loading="lazy"
+                class="horizontal-list__item__image horizontal-list__item__image--square"
+              />
+
+              <div class="horizontal-list__item__description">
+                “Eu quero dizer o quanto estou satisfeita com a evolução do meu
+                tratamento contra o melasma. Minhas manchas estão bem
+                controladas e eu me sinto mais satisfeita comigo mesma. Não
+                preciso mais encher o rosto de base para disfarçar. Eu me olho
+                no espelho o tempo todo para admirar os resultados e outras
+                pessoas também já perceberam a melhora. Vocês brilharam!
+                Obrigada”
+
+                <span>Rilma Justino Barbosa - RJ</span>
+              </div>
+            </div>
+
+            <!-- Third item -->
+            <div class="horizontal-list__item">
+              <img
+                src="/images/zoss/manchasemelasmas/person3.png"
+                alt=""
+                width="85"
+                height="85"
+                loading="lazy"
+                class="horizontal-list__item__image horizontal-list__item__image--square"
+              />
+
+              <div class="horizontal-list__item__description">
+                “Boa tarde, gostaria de deixar meus sinceros agradecimentos por
+                poder contar com profissionais tão competentes e dedicados na
+                Lilly, em especial à Samille Ornelas. Não há palavras para
+                descrever a gratidão que estou sentindo pela atenção, o ótimo
+                trabalho realizado e pela presteza. Obrigada Samille por cuidar
+                tão bem de mim. Pude, ao longo do ano de 2023, notar resultados
+                muito satisfatórios. Continue assim, sendo uma excelente
+                profissional, atenciosa, que se preocupa com tudo e com todos.
+                🥰”
+
+                <span>Francyele de Oliveira - RJ</span>
+              </div>
             </div>
           </div>
         </div>

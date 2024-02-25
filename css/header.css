@@ -177,17 +177,17 @@
   }
 }
 
-.header__last>* {
+.header__last > * {
   margin-left: 15px;
 }
 
 @media (min-width: 768px) {
-  .header__last>* {
+  .header__last > * {
     margin-left: 30px;
   }
 }
 
-.header__last> :first-child {
+.header__last > :first-child {
   margin-left: 0;
 }
 
@@ -248,7 +248,7 @@
   width: 23px;
   height: 23px;
   color: transparent;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAMAAADWg4HyAAAAP1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADf398gICD///9wcHBAQEAY/dtEAAAAD3RSTlMAIN/PYBDvgJCPv6+fcFCyB3YGAAAA+klEQVQ4y5WUW67DIAxEBwx5J9M89r/We1W1VmJoIOeLj6PRAJZhcPMknqQfxuBwQ2yFZ7zqqdkwoc/ai5omOw3t+YveXkn4G3EX1fMOf5aF90hUVbuWOweWWbRsmSZqgzLtO5ZKMTiQ1cHXtvuqx3XnGbEV9u21ftXXdpWdVlDhI+tJmTEylbMqJwzMyDmVAs+MfGRUepAZeVP1DJhy/LsHU57kPuor1e8wYKp+3xFz9b+FR/MAqZwzD6BlHQFAbFiFQ3VwB5jg4upZqtp+6CoafInFffZkTz7fv+XOXYQl5Hs0CzK4LmO2Gmptky3WtPo4eJJeptle6Q9lWFTF/R//zQAAAABJRU5ErkJggg==');
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAMAAADWg4HyAAAAP1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADf398gICD///9wcHBAQEAY/dtEAAAAD3RSTlMAIN/PYBDvgJCPv6+fcFCyB3YGAAAA+klEQVQ4y5WUW67DIAxEBwx5J9M89r/We1W1VmJoIOeLj6PRAJZhcPMknqQfxuBwQ2yFZ7zqqdkwoc/ai5omOw3t+YveXkn4G3EX1fMOf5aF90hUVbuWOweWWbRsmSZqgzLtO5ZKMTiQ1cHXtvuqx3XnGbEV9u21ftXXdpWdVlDhI+tJmTEylbMqJwzMyDmVAs+MfGRUepAZeVP1DJhy/LsHU57kPuor1e8wYKp+3xFz9b+FR/MAqZwzD6BlHQFAbFiFQ3VwB5jg4upZqtp+6CoafInFffZkTz7fv+XOXYQl5Hs0CzK4LmO2Gmptky3WtPo4eJJeptle6Q9lWFTF/R//zQAAAABJRU5ErkJggg==");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -313,10 +313,11 @@
   display: inline-block;
   position: relative;
   padding: 14px 0;
-  border-top: 1px solid #D9D9D9;
+  border-top: 1px solid #d9d9d9;
 }
 
-.menu__nav-checkbox, .menu__nav-label-icon {
+.menu__nav-checkbox,
+.menu__nav-label-icon {
   display: none;
 }
 
@@ -335,7 +336,7 @@
     justify-content: space-between;
   }
 
-  .menu__nav .menu__nav-checkbox:checked+.menu__nav-label {
+  .menu__nav .menu__nav-checkbox:checked + .menu__nav-label {
     padding-bottom: 14px;
   }
 
@@ -355,20 +356,27 @@
     transform: rotate(90deg);
   }
 
-  .menu__nav .menu__nav-checkbox:checked~.menu__nav-label .menu__nav-label-icon svg {
+  .menu__nav
+    .menu__nav-checkbox:checked
+    ~ .menu__nav-label
+    .menu__nav-label-icon
+    svg {
     transform: rotate(-90deg);
   }
 
-  .menu__nav .dropdown-content li>a, .menu__nav .dropdown-content li>label {
+  .menu__nav .dropdown-content li > a,
+  .menu__nav .dropdown-content li > label {
     padding-left: 18px;
   }
 
-  .menu__nav .dropdown-content li>ul>li>a, .menu__nav .dropdown-content li>ul>li>label {
+  .menu__nav .dropdown-content li > ul > li > a,
+  .menu__nav .dropdown-content li > ul > li > label {
     padding-left: 36px;
   }
 }
 
-.menu__nav li a svg, .dropdown-content .menu__nav-label-icon svg {
+.menu__nav li a svg,
+.dropdown-content .menu__nav-label-icon svg {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -378,7 +386,11 @@
   opacity: 0.7;
 }
 
-.dropdown-content .menu__nav-checkbox:checked+.menu__nav-label .menu__nav-label-icon svg {
+.dropdown-content
+  .menu__nav-checkbox:checked
+  + .menu__nav-label
+  .menu__nav-label-icon
+  svg {
   top: unset;
 }
 
@@ -386,9 +398,8 @@
   padding-bottom: 0;
 }
 
-
 @media (min-width: 1024px) {
-  .menu__nav li:hover>ul {
+  .menu__nav li:hover > ul {
     display: block;
     overflow: unset;
     border-radius: 4px;
@@ -400,15 +411,15 @@
 }
 
 @media (max-width: 1023px) {
-  .menu__nav .menu__nav-checkbox:checked~ul {
+  .menu__nav .menu__nav-checkbox:checked ~ ul {
     display: block !important;
     width: 100%;
     position: static !important;
   }
 }
 
-.menu__nav>li:hover:after {
-  content: '';
+.menu__nav > li:hover:after {
+  content: "";
   height: 20px;
   width: 100%;
   display: block;
@@ -416,12 +427,13 @@
 }
 
 @media (max-width: 1023px) {
-  .menu__nav>li:hover:after {
+  .menu__nav > li:hover:after {
     display: none;
   }
 }
 
-ul.menu__nav, ul.menu__nav ul {
+ul.menu__nav,
+ul.menu__nav ul {
   padding: 0;
 }
 
@@ -441,7 +453,8 @@ ul.menu__nav ul ul {
   left: 100%;
 }
 
-.menu__cta-whats, .menu__cta-whats:hover {
+.menu__cta-whats,
+.menu__cta-whats:hover {
   font-family: "Brandon Text", sans-serif;
   border-radius: 100px;
   color: white;
@@ -455,7 +468,7 @@ ul.menu__nav ul ul {
   width: 160px;
   max-width: 340px;
   height: 44px;
-  background-color: #0B6530;
+  background-color: #0b6530;
   animation: pulse 2s infinite;
 }
 
@@ -518,7 +531,8 @@ button.dropbtn {
     border: 0;
   }
 
-  .dropdown-content a, .dropdown-content .menu__nav-label {
+  .dropdown-content a,
+  .dropdown-content .menu__nav-label {
     color: #2d2748;
     padding: 12px 16px;
     text-decoration: none;
@@ -529,7 +543,8 @@ button.dropbtn {
     display: inline-block;
   }
 
-  .dropdown-content a:hover, .dropdown-content .menu__nav-label:hover {
+  .dropdown-content a:hover,
+  .dropdown-content .menu__nav-label:hover {
     color: black;
     background: #d8d8d8;
   }
@@ -593,4 +608,9 @@ button.dropbtn {
 
 .icon-menu {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 16'%3E%3Cpath fill='%237B7B7B' d='M1 0h20c.6 0 1 .4 1 1s-.4 1-1 1H1c-.6 0-1-.4-1-1s.4-1 1-1zM1 7h20c.6 0 1 .4 1 1s-.4 1-1 1H1c-.6 0-1-.4-1-1s.4-1 1-1zM1 14h20c.6 0 1 .4 1 1s-.4 1-1 1H1c-.6 0-1-.4-1-1s.4-1 1-1z'/%3E%3C/svg%3E");
+}
+
+/* HIDDEN LILLY LASER CLUB FROM MENU */
+body > header > div > nav > div > ul > li:nth-child(3) > ul > li:nth-child(1) {
+  display: none;
 }

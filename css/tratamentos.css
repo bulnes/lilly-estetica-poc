@@ -17,7 +17,8 @@
   aspect-ratio: 414 / 350;
 }
 
-.product-lp__cover--tablet, .product-lp__cover--desktop {
+.product-lp__cover--tablet,
+.product-lp__cover--desktop {
   display: none;
 }
 
@@ -46,7 +47,8 @@
     aspect-ratio: 834 / 230;
   }
 
-  .product-lp__cover--mobile, .product-lp__cover--desktop {
+  .product-lp__cover--mobile,
+  .product-lp__cover--desktop {
     display: none;
   }
 }
@@ -68,7 +70,8 @@
     aspect-ratio: 1060 / 300;
   }
 
-  .product-lp__cover--mobile, .product-lp__cover--tablet {
+  .product-lp__cover--mobile,
+  .product-lp__cover--tablet {
     display: none;
   }
 }
@@ -271,11 +274,11 @@
 }
 
 .product-lp__cta-1 {
-  background-color: #96697F;
+  background-color: #96697f;
 }
 
 .product-lp__cta-2 {
-  background-color: #0B6530;
+  background-color: #0b6530;
 }
 
 .product-lp__cta--fixed {
@@ -291,7 +294,7 @@
   line-height: 27px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   gap: 7px;
 }
 
@@ -313,13 +316,13 @@
 }
 
 .product-lp__cta--dark.product-lp__cta--fixed {
-  background-color: #FF6074;
+  background-color: #ff6074;
   border-radius: 10px 10px 0px 0px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -336,7 +339,7 @@
     border-radius: 0;
     margin: 0;
 
-    background: #0B6530;
+    background: #0b6530;
     border-radius: 10px 10px 0px 0px;
 
     font-style: normal;
@@ -400,14 +403,14 @@
 }
 
 .product-lp__box {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-radius: 8px;
   padding: 28px 27px 21px;
   display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .product-lp__box>div {
+  .product-lp__box > div {
     max-width: 356px;
     margin-left: auto;
     margin-right: auto;
@@ -422,7 +425,7 @@
 }
 
 .product-lp__box-title {
-  color: #96697F;
+  color: #96697f;
   font-weight: bold;
   font-size: 22px;
   line-height: 32px;
@@ -447,7 +450,7 @@
 }
 
 .product-lp__box-list {
-  color: #55555D;
+  color: #55555d;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -463,7 +466,7 @@
 
 @media screen and (min-width: 1024px) {
   .product-lp__box-list {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
 }
@@ -499,8 +502,8 @@
 }
 
 .product-lp__box-list--stringed li {
-  border-top: 1px solid #C4C4C4;
-  border-bottom: 1px solid #C4C4C4;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
   height: 43px;
   display: flex;
   align-items: center;
@@ -514,12 +517,12 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .product-lp__box-list--stringed li div+div {
+  .product-lp__box-list--stringed li div + div {
     font-weight: bold;
   }
 }
 
-.product-lp__box-list--stringed li+li {
+.product-lp__box-list--stringed li + li {
   border-top: none;
 }
 
@@ -549,7 +552,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #55555D;
+  color: #55555d;
 }
 
 @media screen and (min-width: 768px) {
@@ -566,14 +569,13 @@
   }
 }
 
-
 .product-lp__comparative {
   display: block;
   margin: 0 36px;
 }
 
 .product-lp__comparative-warning {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -583,7 +585,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
 
-  color: #FE7170;
+  color: #fe7170;
 
   margin: 0 auto 7px;
   max-width: 257px;
@@ -658,7 +660,7 @@
   line-height: 32px;
   text-align: center;
 
-  color: #48495B;
+  color: #48495b;
 
   margin: 0 auto 19px;
   max-width: 257px;
@@ -703,7 +705,7 @@
 }
 
 .product-lp__comparative-table table {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-weight: 300;
   margin: 0 auto;
 }
@@ -742,7 +744,7 @@
 }
 
 .product-lp__comparative-table table tbody tr td {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   color: #44455a;
   font-size: 18px;
   line-height: 22px;
@@ -771,7 +773,7 @@
 } */
 
 .product-lp__comparative-table table tbody tr td:first-child span {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-weight: bold;
   font-size: 18px;
   line-height: 60px;
@@ -840,17 +842,17 @@
 }
 
 .product-lp__comparative-table--v2 table tbody tr.llc td:first-child {
-  background-color: #48495B;
+  background-color: #48495b;
 }
 
 .product-lp__comparative-description {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-style: normal;
   font-weight: 330;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #55555D;
+  color: #55555d;
   margin: 0 auto 33px;
   max-width: 1051px;
 }
@@ -860,7 +862,6 @@
 }
 
 @media (max-width: 1160px) {
-
   .product-lp__comparative-description {
     font-weight: 330;
     font-size: 20px;
@@ -889,7 +890,8 @@
     line-height: 48px;
   }
 
-  .product-lp__comparative-table table tbody tr.llc td:first-child, .product-lp__comparative-table table tbody tr.concorrente td:first-child {
+  .product-lp__comparative-table table tbody tr.llc td:first-child,
+  .product-lp__comparative-table table tbody tr.concorrente td:first-child {
     padding: 0px 10px;
   }
 
@@ -897,7 +899,8 @@
     font-size: 22px;
   }
 
-  .product-lp__comparative-table table tbody tr.llc td:first-child, .product-lp__comparative-table table tbody tr.concorrente td:first-child {
+  .product-lp__comparative-table table tbody tr.llc td:first-child,
+  .product-lp__comparative-table table tbody tr.concorrente td:first-child {
     padding: 0px 10px;
   }
 }
@@ -926,7 +929,12 @@
 
   .product-lp__comparative-table table tbody tr td,
   .product-lp__comparative-table table tbody tr td:nth-child(3),
-  .product-lp__comparative-table table tbody tr td:nth-child(4) span.table-price,
+  .product-lp__comparative-table
+    table
+    tbody
+    tr
+    td:nth-child(4)
+    span.table-price,
   .product-lp__comparative-table table tbody tr td.small {
     font-weight: bold;
     font-size: 14px;
@@ -954,11 +962,21 @@
     font-size: 18px;
   }
 
-  .product-lp__comparative-table table tbody tr td:nth-child(4) span:first-child {
+  .product-lp__comparative-table
+    table
+    tbody
+    tr
+    td:nth-child(4)
+    span:first-child {
     font-size: 14px;
   }
 
-  .product-lp__comparative-table table tbody tr td:nth-child(4) span.table-price {
+  .product-lp__comparative-table
+    table
+    tbody
+    tr
+    td:nth-child(4)
+    span.table-price {
     font-size: 20px;
   }
 
@@ -1021,12 +1039,18 @@
 
   .product-lp__comparative-table table tbody tr td,
   .product-lp__comparative-table table tbody tr td:nth-child(3),
-  .product-lp__comparative-table table tbody tr td:nth-child(4) span.table-price,
+  .product-lp__comparative-table
+    table
+    tbody
+    tr
+    td:nth-child(4)
+    span.table-price,
   .product-lp__comparative-table table tbody tr td.small {
     height: 53px;
   }
 
-  .product-lp__comparative-table table tbody tr.llc td:first-child, .product-lp__comparative-table table tbody tr.concorrente td:first-child {
+  .product-lp__comparative-table table tbody tr.llc td:first-child,
+  .product-lp__comparative-table table tbody tr.concorrente td:first-child {
     border-radius: 12px 12px 0 0;
   }
 
@@ -1034,7 +1058,8 @@
     border-radius: 0px 0px 12px 12px;
   }
 
-  .product-lp__comparative-table table tbody tr.llc td:first-child, .product-lp__comparative-table table tbody tr.concorrente td:first-child {
+  .product-lp__comparative-table table tbody tr.llc td:first-child,
+  .product-lp__comparative-table table tbody tr.concorrente td:first-child {
     border-radius: 12px 12px 0 0;
   }
 
@@ -1126,7 +1151,7 @@
 }
 
 .product-lp__empty-footer {
-  background-color: #48546C;
+  background-color: #48546c;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1230,10 +1255,10 @@
 .product-lp__empty-header__cta {
   display: none;
   margin: 0;
-  border: 1px solid #48495B;
+  border: 1px solid #48495b;
   font-size: 16px;
   height: 36px;
-  color: #48495B;
+  color: #48495b;
   max-width: 300px;
 }
 
@@ -1251,7 +1276,7 @@
 }
 
 .product-lp__alert {
-  background-color: #FF6074;
+  background-color: #ff6074;
   padding: 14px 32.5px;
 
   display: flex;
@@ -1263,7 +1288,7 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   min-height: 60px;
 }
@@ -1302,7 +1327,6 @@
   border: 0;
 }
 
-
 /* FAQ + Description */
 .product-lp__description-section {
   margin-left: 20px;
@@ -1325,7 +1349,7 @@
 }
 
 .product-lp__description-section__title {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-style: normal;
   font-weight: 330;
   font-size: 28px;
@@ -1349,7 +1373,7 @@
 }
 
 .product-lp__description-section__subtitle {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-style: normal;
   font-weight: 450;
   font-size: 22px;
@@ -1374,7 +1398,7 @@
 }
 
 .product-lp__description-section__paragraph {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-style: normal;
   font-weight: 330;
   font-size: 16px;
@@ -1386,7 +1410,8 @@
   text-align: left;
 }
 
-.product-lp__description-section__paragraph+.product-lp__description-section__paragraph {
+.product-lp__description-section__paragraph
+  + .product-lp__description-section__paragraph {
   margin-top: -13px;
 }
 
@@ -1397,7 +1422,8 @@
     margin-bottom: 30px;
   }
 
-  .product-lp__description-section__paragraph+.product-lp__description-section__paragraph {
+  .product-lp__description-section__paragraph
+    + .product-lp__description-section__paragraph {
     margin-top: -15px;
   }
 }
@@ -1407,7 +1433,8 @@
     margin-bottom: 41px;
   }
 
-  .product-lp__description-section__paragraph+.product-lp__description-section__paragraph {
+  .product-lp__description-section__paragraph
+    + .product-lp__description-section__paragraph {
     margin-top: -20px;
   }
 }
@@ -1432,7 +1459,7 @@
 }
 
 .product-lp__faq-section__title {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-style: normal;
   font-weight: 450;
   font-size: 22px;
@@ -1472,7 +1499,7 @@
   gap: 11.73px;
 
   padding: 7.3306px 11.729px;
-  border: 0.73306px solid #C4C4C4;
+  border: 0.73306px solid #c4c4c4;
   border-radius: 5.86448px;
 }
 
@@ -1485,14 +1512,13 @@
 
 .product-lp__faq-section__question span,
 .product-lp__faq-section__question h3 {
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-style: normal;
   font-weight: 450;
   font-size: 14.6612px;
 }
 
 @media screen and (min-width: 768px) {
-
   .product-lp__faq-section__question span,
   .product-lp__faq-section__question h3 {
     font-size: 14.6612px;
@@ -1501,7 +1527,6 @@
 }
 
 @media screen and (min-width: 992px) {
-
   .product-lp__faq-section__question span,
   .product-lp__faq-section__question h3 {
     font-size: 20px;
@@ -1509,9 +1534,13 @@
   }
 }
 
-.product-lp__faq-section__questions:checked~.product-lp__faq-section__question span,
-.product-lp__faq-section__questions:checked~.product-lp__faq-section__question h3 {
-  color: #569BE8;
+.product-lp__faq-section__questions:checked
+  ~ .product-lp__faq-section__question
+  span,
+.product-lp__faq-section__questions:checked
+  ~ .product-lp__faq-section__question
+  h3 {
+  color: #569be8;
 }
 
 .product-lp__faq-section__answers {
@@ -1523,14 +1552,14 @@
   z-index: -1;
   position: relative;
   opacity: 0;
-  transition: .3s ease;
+  transition: 0.3s ease;
 
-  font-family: 'Brandon Text';
+  font-family: "Brandon Text";
   font-style: normal;
   font-weight: 330;
   font-size: 14.6612px;
   line-height: 21px;
-  color: #55555D;
+  color: #55555d;
 }
 
 @media screen and (min-width: 768px) {
@@ -1547,7 +1576,8 @@
   }
 }
 
-.product-lp__faq-section__questions:checked~.product-lp__faq-section__answers {
+.product-lp__faq-section__questions:checked
+  ~ .product-lp__faq-section__answers {
   height: auto;
   opacity: 1;
   padding: 15px;
@@ -1560,12 +1590,14 @@
   font-size: 2em;
   line-height: 100%;
   user-select: none;
-  transition: .3s ease;
+  transition: 0.3s ease;
 
   transform: rotate(90deg);
 }
 
-.product-lp__faq-section__questions:checked~.product-lp__faq-section__question .product-lp__faq-section__plus {
+.product-lp__faq-section__questions:checked
+  ~ .product-lp__faq-section__question
+  .product-lp__faq-section__plus {
   transform: rotate(270deg);
 }
 
