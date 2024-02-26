@@ -4,7 +4,7 @@ const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const JsonMinimizerPlugin = require("json-minimizer-webpack-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+// const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -25,52 +25,6 @@ module.exports = {
       patterns: [{ from: "public" }],
     }),
   ],
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new HtmlMinimizerPlugin(),
-      new CssMinimizerPlugin(),
-      new CompressionPlugin(),
-      new JsonMinimizerPlugin(),
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
-          options: {
-            // Lossless optimization with custom option
-            // Feel free to experiment with options for better result for you
-            plugins: [
-              ["gifsicle", { interlaced: true }],
-              ["jpegtran", { progressive: true }],
-              ["optipng", { optimizationLevel: 5 }],
-              // Svgo configuration here https://github.com/svg/svgo#configuration
-              [
-                "svgo",
-                {
-                  plugins: [
-                    {
-                      name: "preset-default",
-                      params: {
-                        overrides: {
-                          removeViewBox: false,
-                          addAttributesToSVGElement: {
-                            params: {
-                              attributes: [
-                                { xmlns: "http://www.w3.org/2000/svg" },
-                              ],
-                            },
-                          },
-                        },
-                      },
-                    },
-                  ],
-                },
-              ],
-            ],
-          },
-        },
-      }),
-    ],
-  },
   module: {
     rules: [
       {
@@ -85,6 +39,71 @@ module.exports = {
         test: /\.json$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(?:js|mjs|cjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [["@babel/preset-env", { targets: "defaults" }]],
+            plugins: ["@babel/plugin-transform-runtime"],
+          },
+        },
+      },
+    ],
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new HtmlMinimizerPlugin(),
+      new CssMinimizerPlugin(),
+      new CompressionPlugin(),
+      new JsonMinimizerPlugin(),
+      // new ImageMinimizerPlugin({
+      //   minimizer: {
+      //     implementation: ImageMinimizerPlugin.imageminMinify,
+      //     options: {
+      //       // Lossless optimization with custom option
+      //       // Feel free to experiment with options for better result for you
+      //       plugins: [
+      //         ["gifsicle", { interlaced: true }],
+      //         ["jpegtran", { progressive: true }],
+      //         ["optipng", { optimizationLevel: 5 }],
+      //         // Svgo configuration here https://github.com/svg/svgo#configuration
+      //         [
+      //           "svgo",
+      //           {
+      //             plugins: [
+      //               {
+      //                 name: "preset-default",
+      //                 params: {
+      //                   overrides: {
+      //                     removeViewBox: false,
+      //                     addAttributesToSVGElement: {
+      //                       params: {
+      //                         attributes: [
+      //                           { xmlns: "http://www.w3.org/2000/svg" },
+      //                         ],
+      //                       },
+      //                     },
+      //                   },
+      //                 },
+      //               },
+      //             ],
+      //           },
+      //         ],
+      //       ],
+      //     },
+      //   },
+      // }),
     ],
   },
 };
