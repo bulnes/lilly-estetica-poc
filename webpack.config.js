@@ -3,7 +3,9 @@ const CopyPlugin = require("copy-webpack-plugin");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const JsonMinimizerPlugin = require("json-minimizer-webpack-plugin");
-// const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+
+const isBuildImage = process.env.BUILD_IMAGE === "true";
 
 module.exports = {
   entry: "./src/index.js",
@@ -65,43 +67,44 @@ module.exports = {
       new HtmlMinimizerPlugin(),
       new CssMinimizerPlugin(),
       new JsonMinimizerPlugin(),
-      // new ImageMinimizerPlugin({
-      //   minimizer: {
-      //     implementation: ImageMinimizerPlugin.imageminMinify,
-      //     options: {
-      //       // Lossless optimization with custom option
-      //       // Feel free to experiment with options for better result for you
-      //       plugins: [
-      //         ["gifsicle", { interlaced: true }],
-      //         ["jpegtran", { progressive: true }],
-      //         ["optipng", { optimizationLevel: 5 }],
-      //         // Svgo configuration here https://github.com/svg/svgo#configuration
-      //         [
-      //           "svgo",
-      //           {
-      //             plugins: [
-      //               {
-      //                 name: "preset-default",
-      //                 params: {
-      //                   overrides: {
-      //                     removeViewBox: false,
-      //                     addAttributesToSVGElement: {
-      //                       params: {
-      //                         attributes: [
-      //                           { xmlns: "http://www.w3.org/2000/svg" },
-      //                         ],
-      //                       },
-      //                     },
-      //                   },
-      //                 },
-      //               },
-      //             ],
-      //           },
-      //         ],
-      //       ],
-      //     },
-      //   },
-      // }),
+      isBuildImage &&
+        new ImageMinimizerPlugin({
+          minimizer: {
+            implementation: ImageMinimizerPlugin.imageminMinify,
+            options: {
+              // Lossless optimization with custom option
+              // Feel free to experiment with options for better result for you
+              plugins: [
+                ["gifsicle", { interlaced: true }],
+                ["jpegtran", { progressive: true }],
+                ["optipng", { optimizationLevel: 5 }],
+                // Svgo configuration here https://github.com/svg/svgo#configuration
+                [
+                  "svgo",
+                  {
+                    plugins: [
+                      {
+                        name: "preset-default",
+                        params: {
+                          overrides: {
+                            removeViewBox: false,
+                            addAttributesToSVGElement: {
+                              params: {
+                                attributes: [
+                                  { xmlns: "http://www.w3.org/2000/svg" },
+                                ],
+                              },
+                            },
+                          },
+                        },
+                      },
+                    ],
+                  },
+                ],
+              ],
+            },
+          },
+        }),
     ],
   },
 };
