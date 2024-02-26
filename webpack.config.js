@@ -2,7 +2,6 @@ const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const CompressionPlugin = require("compression-webpack-plugin");
 const JsonMinimizerPlugin = require("json-minimizer-webpack-plugin");
 // const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
@@ -65,7 +64,6 @@ module.exports = {
     minimizer: [
       new HtmlMinimizerPlugin(),
       new CssMinimizerPlugin(),
-      new CompressionPlugin(),
       new JsonMinimizerPlugin(),
       // new ImageMinimizerPlugin({
       //   minimizer: {
